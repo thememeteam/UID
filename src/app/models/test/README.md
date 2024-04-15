@@ -1,0 +1,1 @@
+add new models in `<folder with model name>/page.tsx`

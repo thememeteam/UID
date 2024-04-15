@@ -1,0 +1,23 @@
+:root {
+    --text-primary: #2c2c2c;
+    --background-fill: #f7f7f7;
+    --card-fill: #fff;
+    --card-stroke: #00000038;
+    --element-fill: #f6f6f6;
+    --element-stroke: #00000050;
+    --accent-fill: #f34b16;
+    --divider-stroke: #00000050;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #dedede;
+        --background-fill: #1e1e1e;
+        --card-fill: #ffffff20;
+        --card-stroke: #ffffff32;
+        --element-fill: #ffffff20;
+        --element-stroke: #ffffff32;
+        --accent-fill: #ff6230;
+        --divider-stroke: #ffffff32;
+    }
+}
