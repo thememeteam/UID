@@ -7,10 +7,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      'body': ['Inter', 'sans-serif'],
-      'display': ['GROZEN MEDICAL DEMO', 'sans-serif']
-    },
     extend: {
       colors: {
         'primary': 'var(--text-primary)',
@@ -27,7 +23,14 @@ const config: Config = {
         'divider': {
           'stroke': 'var(--divider-stroke)'
         }
-      }
+      },
+      fontSize: {
+				caption: ['0.6rem', '1rem'],
+				body: ['1rem', '1.62rem'],
+				h3: ['1.15rem', { lineHeight: '1.75rem', fontWeight: 600 }],
+				h2: ['1.42rem', { lineHeight: '2rem', fontWeight: 600 }],
+				h1: ['2.28rem', { lineHeight: '3.2rem', fontWeight: 600 }],
+			}
     },
   },
   plugins: [],

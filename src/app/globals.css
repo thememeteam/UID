@@ -6,9 +6,32 @@
   @font-face {
     font-family: 'GROZEN MEDICAL DEMO';
     src: url(/grozen-medical.otf) format('opentype');
+    font-weight: 600;
   }
 
   :root {
+    font-family: 'Public Sans', system-ui, sans-serif;
     color-scheme: light dark;
+    font-size: 17px;
+    @apply font-body text-primary bg-background;
+  }
+
+  body {
+    @apply text-body;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'GROZEN MEDICAL DEMO', system-ui, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .font-body {
+    font-family: 'Public Sans', system-ui, sans-serif;
+  }
+
+  .accentline::after {
+    @apply block content-[''] bg-accent h-1.5 w-16 -skew-x-[20deg];
   }
 }
