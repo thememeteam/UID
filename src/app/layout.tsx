@@ -24,11 +24,17 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
       <body className="min-h-screen grid grid-rows-[auto_1fr]">
-        <header className="pt-8">
+      <video autoPlay loop muted 
+            className="absolute -z-10 w-auto  
+            min-w-full min-h-full"> 
+            <source src="stockvid.mp4" 
+                type="video/mp4"/> 
+        </video> 
+
+        <header className="relative pt-2 bg-orange-500 end-60">
           <div className="flex flex-col items-center">
-            <h1 className="text-h1 font-display">Feynman Motors</h1>
-            <nav className="flex gap-4">
-              <Link className={'pb-2'} href={'/'}>Home</Link>
+            <nav className="flex gap-4 p-2">
+              <Link className={'pb-2 hover:text-black transition-colors duration-75 '} href={'/'}>Home</Link>
               <Link className={'pb-2'} href={'/models'}>Models</Link>
               <Link className={'pb-2'} href={'/about'}>About</Link>
               <Link className={'pb-2'} href={'/configurator'}>Configurator</Link>
@@ -36,7 +42,7 @@ export default function RootLayout({
             </nav>
           </div>
         </header>
-        <main className="p-4">
+        <main className="p-4"> 
           {children}
         </main>
       </body>
