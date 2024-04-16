@@ -34,6 +34,7 @@ export default function RootLayout({
               <Link href={'/configurator'}>Configurator</Link>
               <Link href={'/accessories'}>Accessories</Link>
               <Link href={'/about'}>About</Link>
+              <Link href={'/network'}>Dealerships</Link>
             </nav>
         </header>
         <main className="row-start-1 col-start-1"> 
