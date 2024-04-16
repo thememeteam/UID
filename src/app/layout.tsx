@@ -23,26 +23,20 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-screen grid grid-rows-[auto_1fr]">
-      <video autoPlay loop muted 
-            className="absolute -z-10 w-auto  
-            min-w-full min-h-full"> 
-            <source src="stockvid.mp4" 
-                type="video/mp4"/> 
-        </video> 
-
-        <header className="relative pt-2 bg-orange-500 end-60">
-          <div className="flex flex-col items-center">
-            <nav className="flex gap-4 p-2">
-              <Link className={'pb-2 hover:text-black transition-colors duration-75 '} href={'/'}>Home</Link>
-              <Link className={'pb-2'} href={'/models'}>Models</Link>
-              <Link className={'pb-2'} href={'/about'}>About</Link>
-              <Link className={'pb-2'} href={'/configurator'}>Configurator</Link>
-              <Link className={'pb-2'} href={'/accessories'}>Accessories</Link>
+      <body className="min-h-screen grid grid-rows-1 grid-cols-1 h-16 items-start">
+        <header className="row-start-1 col-start-1 sticky top-0 left-0 z-10 w-fit flex flex-row items-center pl-8 py-4 wedge">
+            <Link href={'/'} className="contents">
+              <span className="text-h1 font-display leading-none">Feynman</span>
+            </Link>
+            <div className="h-full w-0 mx-8 border border-divider-stroke" />
+            <nav className="flex gap-6">
+              <Link href={'/models'}>Models</Link>
+              <Link href={'/configurator'}>Configurator</Link>
+              <Link href={'/accessories'}>Accessories</Link>
+              <Link href={'/about'}>About</Link>
             </nav>
-          </div>
         </header>
-        <main className="p-4"> 
+        <main className="row-start-1 col-start-1"> 
           {children}
         </main>
       </body>
