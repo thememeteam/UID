@@ -9,9 +9,12 @@
     font-weight: 600;
   }
 
+  * {
+    color-scheme: only dark;
+  }
+
   :root {
     font-family: 'Public Sans', system-ui, sans-serif;
-    color-scheme: light dark;
     font-size: 17px;
     background-clip: padding-box;
     @apply font-body text-primary bg-background;
