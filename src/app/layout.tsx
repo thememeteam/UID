@@ -23,8 +23,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-screen grid grid-rows-1 grid-cols-1 h-16 items-start">
-        <header className="row-start-1 col-start-1 sticky top-0 left-0 z-10 w-fit flex flex-row items-center pl-8 py-4 wedge">
+      <body className="min-h-screen grid grid-rows-1 grid-cols-1 items-start">
+        <header className="h-16 row-start-1 col-start-1 sticky top-0 left-0 z-10 w-fit flex flex-row items-center pl-8 py-4 wedge">
             <Link href={'/'} className="contents">
               <span className="text-h1 font-display leading-none">Feynman</span>
             </Link>
