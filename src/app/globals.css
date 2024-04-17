@@ -13,6 +13,7 @@
     font-family: 'Public Sans', system-ui, sans-serif;
     color-scheme: light dark;
     font-size: 17px;
+    background-clip: padding-box;
     @apply font-body text-primary bg-background;
   }
 
@@ -20,7 +21,7 @@
     @apply text-body;
   }
 
-  p {
+  p:not(:last-child) {
     @apply mb-4;
   }
 }
@@ -49,6 +50,6 @@
     width: calc(100% + 2.5rem);
     height: 100%;
     clip-path: polygon(0% 0%, 100% 0%, calc(100% - 2.2rem) 100%, 0% 100%);
-    @apply backdrop-blur-md;
+    @apply bg-[#0000005f] backdrop-blur-md;
   }
 }

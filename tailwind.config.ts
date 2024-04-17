@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'primary': 'var(--text-primary)',
+        'secondary': 'var(--text-secondary)',
         'background': 'var(--background-fill)',
         'card': {
           DEFAULT: 'var(--card-fill)',
@@ -25,7 +26,7 @@ const config: Config = {
         }
       },
       fontSize: {
-				caption: ['0.6rem', '1rem'],
+				caption: ['0.8rem', '1rem'],
 				body: ['1rem', '1.62rem'],
 				h3: ['1.15rem', { lineHeight: '1.75rem', fontWeight: 600 }],
 				h2: ['1.42rem', { lineHeight: '2rem', fontWeight: 600 }],

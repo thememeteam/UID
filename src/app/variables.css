@@ -1,5 +1,6 @@
 :root {
     --text-primary: #2c2c2c;
+    --text-secomdary: #0f0f0f;
     --background-fill: #f7f7f7;
     --card-fill: #fff;
     --card-stroke: #00000038;
@@ -12,8 +13,9 @@
 @media(prefers-color-scheme: dark) {
     :root {
         --text-primary: #dedede;
+        --text-secondary: #5a5a5a;
         --background-fill: #1e1e1e;
-        --card-fill: #ffffff20;
+        --card-fill: #ffffff19;
         --card-stroke: #ffffff32;
         --element-fill: #ffffff20;
         --element-stroke: #ffffff32;

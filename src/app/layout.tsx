@@ -37,9 +37,12 @@ export default function RootLayout({
               <Link href={'/network'}>Dealerships</Link>
             </nav>
         </header>
-        <main className="row-start-1 col-start-1"> 
+        <main className="h-full row-start-1 col-start-1"> 
           {children}
         </main>
+        <footer className="row-start-2 col-start-1 mt-8 p-4 flex gap-2 justify-center text-caption text-secondary border-t border-card-stroke">
+          <span>&copy; 2024 thememeteam under the MIT license</span> • <a href="https://github.com/thememeteam/uid" className="underline">GitHub</a>
+        </footer>
       </body>
     </html>
   );
