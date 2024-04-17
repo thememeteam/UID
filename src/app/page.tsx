@@ -3,7 +3,7 @@ import Article from "@/components/Article";
 const Home: React.FC = () => {
 	return (
 		<>
-			<div className="relative w-screen">
+			<div className="relative w-screen h-screen">
 				<div
 					className="absolute w-full h-full flex flex-col items-center justify-center gap-4"
 					style={{
@@ -11,19 +11,19 @@ const Home: React.FC = () => {
 							"linear-gradient(to bottom, var(--background-fill) 0%, transparent 40%, var(--background-fill) 100%",
 					}}
 				>
-					<p className="text-8xl font-display mix-blend-difference text-orange-400">
+					<span className="nomargin text-8xl font-display mix-blend-difference text-orange-400">
 						Feynman
-					</p>
-					<p className="text-h2 font-display mix-blend-difference">
+					</span>
+					<span className="text-h2 font-display mix-blend-difference">
 						Performance exemplified
-					</p>
+					</span>
 				</div>
 				<video
 					muted
 					autoPlay
 					loop
 					disablePictureInPicture
-					className="h-full object-cover"
+					className="h-full w-full object-cover"
 				>
 					<source src="/stockvid.mp4" />
 				</video>
