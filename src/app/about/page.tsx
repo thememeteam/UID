@@ -25,31 +25,21 @@ const About: React.FC = () => {
 				/>
 			</div>
 			<div className="mx-auto max-w-[90ch]">
-				<div className="flex flex-col gap-16 mx-auto max-w-[90ch] mt-16">
+				<div className="flex flex-col gap-16 mx-auto max-w-[90ch]">
 					<Article className="max-w-[50ch]" title="About us">
 						<p>
-							Aap nigger ho
+						At Feynman Manufacturers, we don't just build cars; we engineer automotive masterpieces. Located in the heart of Bengaluru, we're dedicated to creating sports cars that ignite your passion for driving. Our meticulously crafted lineup combines cutting-edge technology with unparalleled performance, ensuring every journey is a thrilling adventure. 	
 						</p>
 					</Article>
-					<Article className="max-w-[50ch] self-end" title="Our work">
-						<p>Every model we release is our next magnum opus.</p>
+					<Article className="max-w-[50ch] self-end" title="History">
 						<p>
-							We spend years refining every release. Our master
-							engineers work tireless towards increasing
-							horsepower, reducing weight, and enhancing comfort.
-							Then we do it again, ad infinitum.
+						Founded in 2015, Feynman Manufacturers emerged from a vision to redefine the automotive industry. Inspired by the pioneering spirit of its namesake, renowned physicist Richard Feynman, our company set out to push the boundaries of engineering and design. From humble beginnings in a small garage in Kottiyam, we embarked on a journey to create sports cars that would captivate enthusiasts around the world.
 						</p>
 					</Article>
-					<Article className="max-w-[50ch]" title="Get your own">
+					<Article className="max-w-[50ch]" title="Pioneering Experience">
 						<p>
-							Every vehicle that rolls out of the Feynman workshop
-							in Marathahalli is expertly built by hand.
-						</p>
-						<p>
-							We work with our demanding and individualistic
-							clientele to customize every vehicle to their exact
-							specifications. No two Feynmans will ever be the
-							same.
+						Since our inception, Feynman Manufacturers has been synonymous with innovation and excellence. Our early years were marked by groundbreaking advancements in automotive technology, as we sought to marry performance with elegance in every vehicle we produced. With each new model, we continued to raise the bar, setting new standards for speed, precision, and style.
+Today, Feynman Manufacturers stands as a testament to the enduring legacy of our founder's vision. With a diverse lineup of iconic sports cars and a global presence spanning continents, we remain committed to pushing the boundaries of what's possible in the automotive world. 
 						</p>
 					</Article>
 				</div>

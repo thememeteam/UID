@@ -29,17 +29,17 @@ export default function RootLayout({
 			<body className="min-h-screen grid grid-rows-1 grid-cols-1 items-start">
 				<header className="h-16 row-start-1 col-start-1 sticky top-0 left-0 z-10 w-fit flex flex-row items-center pl-8 py-4 wedge">
 					<Link href={"/"} className="contents">
-						<span className="text-h1 font-display leading-none">
+						<span className="text-h1 font-display leading-none text-orange-500">
 							Feynman
 						</span>
 					</Link>
 					<div className="h-full w-0 mx-8 border border-divider-stroke" />
 					<nav className="hidden md:flex gap-6">
-						<Link href={"/models"}>Models</Link>
-						<Link href={"/configurator"}>Configurator</Link>
-						<Link href={"/accessories"}>Accessories</Link>
-						<Link href={"/about"}>About</Link>
-						<Link href={"/network"}>Dealerships</Link>
+						<Link className="hover:text-orange-500" href={"/models"}>Models</Link>
+						<Link className="hover:text-orange-500" href={"/configurator"}>Configurator</Link>
+						<Link className="hover:text-orange-500" href={"/accessories"}>Accessories</Link>
+						<Link className="hover:text-orange-500" href={"/about"}>About</Link>
+						<Link className="hover:text-orange-500" href={"/network"}>Dealership Network</Link>
 					</nav>
 				</header>
 				<main className="h-full row-start-1 col-start-1">
