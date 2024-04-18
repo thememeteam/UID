@@ -38,8 +38,8 @@ export default function RootLayout({
 						<Link href={"/models"}>Models</Link>
 						<Link href={"/configurator"}>Configurator</Link>
 						<Link href={"/accessories"}>Accessories</Link>
-						<Link href={"/about"}>About</Link>
 						<Link href={"/network"}>Dealerships</Link>
+						<Link href={"/about"}>About</Link>
 					</nav>
 				</header>
 				<main className="h-full row-start-1 col-start-1">
