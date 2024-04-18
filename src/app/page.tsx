@@ -3,7 +3,7 @@ import Article from "@/components/Article";
 const Home: React.FC = () => {
 	return (
 		<>
-			<div className="relative w-screen h-screen">
+			<div className="relative w-full h-screen">
 				<div
 					className="absolute w-full h-full flex flex-col items-center justify-center gap-4"
 					style={{
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
 					autoPlay
 					loop
 					disablePictureInPicture
-					className="h-full w-full object-cover"
+					className="h-screen w-full object-cover"
 				>
 					<source src="/stockvid.mp4" />
 				</video>
