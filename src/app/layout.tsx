@@ -34,7 +34,7 @@ export default function RootLayout({
 						</span>
 					</Link>
 					<div className="h-full w-0 mx-8 border border-divider-stroke" />
-					<nav className="flex gap-6">
+					<nav className="hidden md:flex gap-6">
 						<Link href={"/models"}>Models</Link>
 						<Link href={"/configurator"}>Configurator</Link>
 						<Link href={"/accessories"}>Accessories</Link>
