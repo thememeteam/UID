@@ -46,7 +46,7 @@ const About: React.FC = () => {
 							Muthuswamy Feynman, our company set
 							out to push the boundaries of engineering and
 							design. From humble beginnings in a small garage in
-							Kottiyam, we embarked on a journey to create sports
+							Kottayam, we embarked on a journey to create sports
 							cars that would captivate enthusiasts around the
 							world.
 						</p>
