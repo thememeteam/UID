@@ -1,4 +1,5 @@
 import Article from "@/components/Article";
+import Link from "next/link";
 
 const Models: React.FC = () => {
 	return (
@@ -6,13 +7,14 @@ const Models: React.FC = () => {
 			<div className="bg-red-500">
 				<h1>Vitesse</h1>
 			</div>
-			<div className="bg-green-500 flex flex-col justify-center pl-6" >
-				<img src="porsche-normal.jpg"></img>
+			<div className="bg-[url('/porsche-normal.jpg')] bg-cover bg-center relative flex flex-col justify-center p-6" >
+				{/* <img className="absolute top-0 left-0 w-full object-cover" src="porsche-normal.jpg"/> */}
 				<Article title="R6" className="ml-32">
-				<p>track performance, road practicality</p>
+				<p>Track performance, road practicality</p>
+				<Link href="/models/r6" className="bg-accent text-black p-2">Learn more</Link>
 				</Article>
 			</div>
-			<div className="bg-blue-500" >
+			<div className="bg-[url('/P1.webp')] bg-cover bg-bottom relative flex flex-col justify-center p-6" >
 				<h1>Nuclide</h1>
 			</div>
 		</div>
