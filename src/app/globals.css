@@ -17,6 +17,7 @@
     font-family: "Public Sans", system-ui, sans-serif;
     font-size: 17px;
     background-clip: padding-box;
+    accent-color: var(--accent-fill);
     @apply font-body text-primary bg-background;
   }
 
@@ -46,9 +47,9 @@
     z-index: -1;
     left: 0;
     top: 0;
-    width: calc(100% + 2.5rem);
+    width: calc(100% + 2.7rem);
     height: 100%;
     clip-path: polygon(0% 0%, 100% 0%, calc(100% - 2.2rem) 100%, 0% 100%);
-    @apply bg-[#0000005f] backdrop-blur-md;
+    @apply bg-inherit backdrop-blur-md;
   }
 }

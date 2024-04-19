@@ -1,7 +1,10 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas, extend } from "@react-three/fiber";
 import { PresentationControls } from "@react-three/drei";
+import { BoxGeometry, Mesh, MeshNormalMaterial } from "three";
+
+extend({ Canvas, Mesh, BoxGeometry, MeshNormalMaterial });
 
 const Configurator: React.FC = () => {
 	return (
