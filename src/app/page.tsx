@@ -70,7 +70,12 @@ const Home: React.FC = () => {
 						to customize every vehicle to their exact
 						specifications. No two Feynmans will ever be the same.
 					</p>
-					<Link className="bg-gradient-to-r from-orange-500 to-blue-600 inline-block text-transparent bg-clip-text" href={'/configurator'}>CONFIGURE YOUR FEYNMAN</Link>
+					<Link
+						className="bg-accent text-black p-2 -skew-x-[20deg]"
+						href={"/configurator"}
+					>
+						Configure you Feynman
+					</Link>
 				</Article>
 				<Article className="max-w-[50ch] mb-8" title="Our legacy">
 					<p>
@@ -82,7 +87,12 @@ const Home: React.FC = () => {
 						37 years on, we continue to preserve our founder's
 						vision in everything that we do.
 					</p>
-					<Link href={"/about"}>Read our story</Link>
+					<Link
+						className="bg-accent text-black p-2 -skew-x-[20deg]"
+						href={"/about"}
+					>
+						Explore our models
+					</Link>
 				</Article>
 			</div>
 		</>
