@@ -63,7 +63,7 @@ const Home: React.FC = () => {
 				<Article className="max-w-[50ch] self-end" title="Get your own">
 					<p>
 						Every vehicle that rolls out of the Feynman workshop in
-						Marathahalli is expertly built by hand.
+						Kadugodi is expertly built by hand.
 					</p>
 					<p>
 						We work with our demanding and individualistic clientele
