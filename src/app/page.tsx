@@ -70,12 +70,7 @@ const Home: React.FC = () => {
 						to customize every vehicle to their exact
 						specifications. No two Feynmans will ever be the same.
 					</p>
-					<Link
-						className="bg-accent text-black p-2 -skew-x-[20deg]"
-						href={"/configurator"}
-					>
-						Configure your Feynman
-					</Link>
+					<Link className="bg-gradient-to-r from-orange-500 to-blue-600 inline-block text-transparent bg-clip-text" href={'/configurator'}>CONFIGURE YOUR FEYNMAN</Link>
 				</Article>
 				<Article className="max-w-[50ch] mb-8" title="Our legacy">
 					<p>
