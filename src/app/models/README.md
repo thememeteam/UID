@@ -11,4 +11,4 @@ luxury for the week, performance for the weekend
 for the petrolhead family man
 ## mclaren p1
 feynman nuclide
-track weapon. ~~may~~ will spontaneously release energy.
+the ultimate track weapon. ~~may~~ will spontaneously release energy.

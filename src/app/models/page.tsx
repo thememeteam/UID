@@ -14,8 +14,11 @@ const Models: React.FC = () => {
 				<Link href="/models/r6" className="bg-accent text-black p-2">Learn more</Link>
 				</Article>
 			</div>
-			<div className="bg-[url('/P1.webp')] bg-cover bg-bottom relative flex flex-col justify-center p-6" >
-				<h1>Nuclide</h1>
+			<div className="bg-[url('/P1.webp')] bg-cover bg-center relative flex flex-col justify-center p-6" >
+			<Article title="Nuclide" className="self-end mr-32">
+				<p>The ultimate track weapon.<br/><del>May</del> Will spontaneously release energy.</p>
+				<Link href="/models/nuclide" className="bg-accent text-black p-2">Learn more</Link>
+				</Article>
 			</div>
 		</div>
 	);
