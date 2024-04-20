@@ -7,7 +7,7 @@ const Models: React.FC = () => {
 			<div className="bg-[url('/gtc4lusso.png')] bg-cover bg-bottom flex flex-col justify-center p-6 " >
 				<Article title="Vitesse" className="self-end mr-32">
 				<p>Luxury for the week, performance for the weekend</p>
-				<Link href="/models/nuclide" className="bg-accent text-black p-2">Learn more</Link>
+				<Link href="/models/vitesse" className="bg-accent text-black p-2">Learn more</Link>
 				</Article>
 				
 			</div>
