@@ -74,7 +74,7 @@ const Home: React.FC = () => {
 						className="bg-accent text-black p-2 -skew-x-[20deg]"
 						href={"/configurator"}
 					>
-						Configure you Feynman
+						Configure your Feynman
 					</Link>
 				</Article>
 				<Article className="max-w-[50ch] mb-8" title="Our legacy">
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
 						className="bg-accent text-black p-2 -skew-x-[20deg]"
 						href={"/about"}
 					>
-						Explore our models
+						Read about us
 					</Link>
 				</Article>
 			</div>
