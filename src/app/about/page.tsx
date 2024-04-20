@@ -21,11 +21,11 @@ const About: React.FC = () => {
 					autoPlay
 					loop
 					disablePictureInPicture
-					className="max-h-[38rem] w-screen object-cover"
+					className="max-h-[41rem] w-screen object-cover"
 				/>
 			</div>
 			<div className="mx-auto max-w-[90ch]">
-				<div className="flex flex-col gap-16 mx-auto max-w-[90ch]">
+				<div className="flex flex-col gap-16 mt-16 mx-auto max-w-[90ch]">
 					<Article className="max-w-[50ch]" title="About us">
 						<p>
 							At Feynman Manufacturers, we don't just build cars;
@@ -52,7 +52,7 @@ const About: React.FC = () => {
 						</p>
 					</Article>
 					<Article
-						className="max-w-[50ch]"
+						className="max-w-[50ch] mb-8"
 						title="Pioneering Experience"
 					>
 						<p>
