@@ -2,26 +2,55 @@ import Article from "@/components/Article";
 import Link from "next/link";
 
 const Models: React.FC = () => {
-	return (	
-		<div className="w-full h-full grid grid-rows-[repeat(3,32rem)] ">
-			<div className="bg-[url('/gtc4lusso.png')] bg-cover bg-bottom flex flex-col justify-center p-6 " >
-				<Article title="Vitesse" className="self-end mr-32">
-				<p>Luxury for the week, performance for the weekend</p>
-				<Link href="/models/vitesse" className="bg-accent text-black p-2">Learn more</Link>
+	return (
+		<div className="w-full h-full grid grid-rows-[32rem_7rem_32rem_7rem_32rem]">
+			<div className="col-start-1 row-start-1 row-span-2 bg-[url('/m5cs.jpeg')] bg-cover bg-top-left flex flex-col justify-center"
+			>
+				<div
+					className="absolute w-full h-full opacity-90"
+				/>
+				<Article title="Vitesse" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
+					<p>Luxury for the week, performance for the weekend.</p>
+					<Link
+						href="/models/vitesse"
+						className="bg-accent text-black p-2"
+					>
+						Learn more
+					</Link>
 				</Article>
-				
 			</div>
-			<div className="bg-[url('/porsche-normal.jpg')] bg-cover relative flex flex-col justify-center p-6" >
-				{/* <img className="absolute top-0 left-0 w-full object-cover" src="porsche-normal.jpg"/> */}
-				<Article title="R6" className="ml-32">
-				<p>Track performance, road practicality</p>
-				<Link href="/models/r6" className="bg-accent text-black p-2">Learn more</Link>
+			<div className="col-start-1 row-start-2 row-span-3 bg-[url('/porsche-normal.jpg')] bg-right bg-cover relative flex flex-col justify-center opacity"
+			style={{mask: 'linear-gradient(to bottom, transparent 0%, black 7rem)'}}>
+				<div
+					className="absolute w-full h-full opacity-90"
+				/>
+				<Article title="R6" className="w-fit ml-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
+					<p>Track performance, road practicality.</p>
+					<Link
+						href="/models/r6"
+						className="block w-fit mt-6 bg-accent text-black p-2"
+					>
+						Learn more
+					</Link>
 				</Article>
 			</div>
-			<div className="bg-[url('/P1.webp')] bg-cover bg-center relative flex flex-col justify-center p-6" >
-				<Article title="Nuclide" className="self-end mr-32">
-				<p>The ultimate track weapon.<br/><del>May</del> Will spontaneously release energy.</p>
-				<Link href="/models/nuclide" className="bg-accent text-black p-2">Learn more</Link>
+			<div className="col-start-1 row-start-4 row-span-2 bg-[url('/P1.webp')] bg-cover bg-left relative flex flex-col justify-center"
+			style={{mask: 'linear-gradient(to bottom, transparent 0%, black 7rem'}}>
+				<div
+					className="absolute w-full h-full opacity-90"
+				/>
+				<Article title="Nuclide" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
+					<p>
+						The ultimate track weapon.
+						<br />
+						<del>May</del> Will spontaneously release energy.
+					</p>
+					<Link
+						href="/models/nuclide"
+						className="bg-accent text-black p-2"
+					>
+						Learn more
+					</Link>
 				</Article>
 			</div>
 		</div>
