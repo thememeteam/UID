@@ -33,7 +33,7 @@ const Home: React.FC = () => {
 					<source src="/stockvid.mp4" />
 				</video>
 			</div>
-			<div className="flex flex-col gap-16 mx-auto max-w-[90ch] mt-16">
+			<div className="flex flex-col gap-16 mx-auto max-w-[100ch] mt-16">
 				<div className="mt-12 text-center self-center">
 					<p className="font-display text-h1 text-nowrap">
 						We make high-performance vehicles.
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
 					</p>
 				</div>
 				<hr className="border-divider-stroke my-8 w-1/5 self-center" />
-				<Article className="max-w-[50ch]" title="Our work">
+				<Article className="max-w-[50ch] " title="Our work">
 					<p>Every model we release is our next magnum opus.</p>
 					<p>
 						We spend years refining every release. Our master
@@ -59,7 +59,10 @@ const Home: React.FC = () => {
 					>
 						Explore our models
 					</Link>
-				</Article>
+				</Article>		
+				<div className="self-end max-w-[50ch] max-h-[30ch] flex flex-">
+					<img src="p1_group_photo.webp  " className=""/>
+					</div>
 				<Article className="max-w-[50ch] self-end" title="Get your own">
 					<p>
 						Every vehicle that rolls out of the Feynman workshop in

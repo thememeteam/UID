@@ -9,10 +9,10 @@ const Models: React.FC = () => {
 				<div
 					className="absolute w-full h-full opacity-90"
 				/>
-				<Article title="Vitesse" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
+				<Article title="M5" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
 					<p>Luxury for the week, performance for the weekend.</p>
 					<Link
-						href="/models/vitesse"
+						href="/models/M5"
 						className="bg-accent text-black p-2"
 					>
 						Learn more
@@ -24,10 +24,10 @@ const Models: React.FC = () => {
 				<div
 					className="absolute w-full h-full opacity-90"
 				/>
-				<Article title="R6" className="w-fit ml-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
+				<Article title="Viper" className="w-fit ml-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke">
 					<p>Track performance, road practicality.</p>
 					<Link
-						href="/models/r6"
+						href="/models/Viper"
 						className="block w-fit mt-6 bg-accent text-black p-2"
 					>
 						Learn more
