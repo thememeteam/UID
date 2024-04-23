@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei'
 
 export const Nuclide = () => {
-    const { nodes, materials } = useGLTF('/assets/scene.gltf')
+    const { nodes, materials } = useGLTF('/assets/nuclide/scene.gltf')
     return (
         <>
             <group position={[0.635, 0.328, 1.328]}>
@@ -462,3 +462,4 @@ export const Nuclide = () => {
 
     )
 }
+useGLTF.preload('/assets/nuclide/scene.gltf')
