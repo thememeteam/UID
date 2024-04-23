@@ -49,7 +49,7 @@ const Models: React.FC = () => {
 					<p>
 						The ultimate track weapon.
 						<br />
-						<del>May</del> Will spontaneously release energy.
+						Will spontaneously release energy.
 					</p>
 					<Link
 						href="/models/nuclide"

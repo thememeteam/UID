@@ -1,29 +1,14 @@
 import Article from "@/components/Article";
+import Hero from "@/components/Hero";
 
 const About: React.FC = () => {
 	return (
 		<>
-			<div className="relative h-screen">
-				<div
-					className="absolute w-full h-full flex flex-col items-center justify-center gap-2"
-					style={{
-						background:
-							"linear-gradient(to bottom, var(--background-fill) 0%, transparent 40%, var(--background-fill) 100%",
-					}}
-				>
-					<p className="text-6xl font-display mix-blend-difference text-orange-400">
-						Striving for excellence
-					</p>
-				</div>
-				<video
-					src="aboutvid.mp4"
-					muted
-					autoPlay
-					loop
-					disablePictureInPicture
-					className="max-h-[41rem] w-screen object-cover"
-				/>
-			</div>
+			<Hero type="video" src="/aboutvid.mp4" alt="About Video">
+				<span className="block mix-blend-difference nomargin text-6xl font-display text-accent">
+					Striving for Excellence
+				</span>
+			</Hero>
 			<div className="mx-auto max-w-[90ch]">
 				<div className="flex flex-col gap-16 mt-16 mx-auto max-w-[90ch]">
 					<Article className="max-w-[50ch]" title="About us">
@@ -43,12 +28,11 @@ const About: React.FC = () => {
 							Founded in 1987, Feynman Manufacturers emerged from
 							a vision to redefine the automotive industry.
 							Inspired by the pioneering spirit of its namesake,
-							Muthuswamy Feynman, our company set
-							out to push the boundaries of engineering and
-							design. From humble beginnings in a small garage in
-							Kottayam, we embarked on a journey to create sports
-							cars that would captivate enthusiasts around the
-							world.
+							Muthuswamy Feynman, our company set out to push the
+							boundaries of engineering and design. From humble
+							beginnings in a small garage in Kottayam, we
+							embarked on a journey to create sports cars that
+							would captivate enthusiasts around the world.
 						</p>
 					</Article>
 					<Article
