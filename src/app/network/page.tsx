@@ -5,16 +5,15 @@ const Network: React.FC = () => {
 	return (
 		<>
 			<Spacer />
-			<div className="grid w-fit gap-8 grid-cols-[auto_auto] grid-rows-[auto_1fr] items-center ml-16">
+			<div className="grid h-3/5 gap-8 grid-cols-[1fr_1fr] grid-rows-[auto_1fr] items-center ml-16">
 				<iframe
 					title="maps"
 					src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
-					width="800"
+					style={{height: '100%', width: '100%'}}
 					className="row-start-1 row-span-2"
-					height="550"
 				/>
 				<h1 className="text-h1 font-display accentline">Dealerships</h1>
-				<ul className="">
+				<ul className="overflow-scroll max-h-full">
 					<li>
 						<ListItem
 							title="Lavelle Road"
