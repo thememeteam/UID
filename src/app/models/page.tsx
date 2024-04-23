@@ -14,7 +14,7 @@ const Models: React.FC = () => {
 				<Article title="M5" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge">
 					<p>Luxury for the week,<br /> performance for the weekend.</p>
 					<Link
-						href="/models/M5"
+						href="/models/m5"
 						className="bg-accent text-black p-2"
 					>
 						Learn more
@@ -31,7 +31,7 @@ const Models: React.FC = () => {
 				<Article title="Viper" className="w-fit ml-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge">
 					<p>Track performance, road practicality.</p>
 					<Link
-						href="/models/Viper"
+						href="/models/viper"
 						className="block w-fit mt-6 bg-accent text-black p-2"
 					>
 						Learn more
