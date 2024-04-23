@@ -5,7 +5,7 @@ const Models: React.FC = () => {
 	return (
 		<div className="w-full h-full grid grid-rows-[32rem_7rem_32rem_7rem_32rem]">
 			<div className="col-start-1 row-start-1 row-span-2 
-				bg-[url('/m5cs.jpeg')] bg-cover bg-top-left 
+				bg-[url('/assets/m5/m5cs.jpeg')] bg-cover bg-top-left 
 				flex flex-col justify-center"
 			>
 				<div
@@ -22,7 +22,7 @@ const Models: React.FC = () => {
 				</Article>
 			</div>
 			<div className="col-start-1 row-start-2 row-span-3
-				bg-[url('/porsche-normal.jpg')] bg-right bg-cover 
+				bg-[url('/assets/viper/porsche-normal.jpg')] bg-right bg-cover 
 				relative flex flex-col justify-center opacity"
 			style={{mask: 'linear-gradient(to bottom, transparent 0%, black 7rem)'}}>
 				<div
@@ -39,7 +39,7 @@ const Models: React.FC = () => {
 				</Article>
 			</div>
 			<div className="col-start-1 row-start-4 row-span-2
-				bg-[url('/p1.jpg')] bg-cover bg-left
+				bg-[url('/assets/nuclide/p1.jpg')] bg-cover bg-left
 				relative flex flex-col justify-center"
 			style={{mask: 'linear-gradient(to bottom, transparent 0%, black 7rem'}}>
 				<div

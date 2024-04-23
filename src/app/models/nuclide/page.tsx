@@ -16,7 +16,7 @@ const NuclidePage: React.FC = () => {
                     </p>
                 </div>
                 <video
-                    src="../nuclidevid.mp4"
+                    src="/assets/../nuclidevid.mp4"
                     muted
                     autoPlay
                     loop

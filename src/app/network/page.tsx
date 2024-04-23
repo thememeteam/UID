@@ -13,7 +13,7 @@ const Network: React.FC = () => {
 					className="row-start-1 row-span-2"
 				/>
 				<h1 className="text-h1 font-display accentline">Dealerships</h1>
-				<ul className="overflow-scroll self-start max-h-full">
+				<ul className="overflow-y-scroll self-start max-h-full">
 					<li>
 						<ListItem
 							title="Lavelle Road"

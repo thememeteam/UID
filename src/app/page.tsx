@@ -5,7 +5,7 @@ import Link from "next/link";
 const Home: React.FC = () => {
 	return (
 		<>
-			<Hero type="video" src="/stockvid.mp4" alt="Homepage Video">
+			<Hero type="video" src="/assets/stockvid.mp4" alt="Homepage Video">
 				<span className="block mix-blend-difference nomargin text-8xl text-accent">
 					Feynman
 				</span>
@@ -41,10 +41,10 @@ const Home: React.FC = () => {
 							Explore our models
 						</Link>
 					</Article>
-					<img src="/person.jpg" alt=""/>
+					<img src="/assets/person.jpg" alt=""/>
 				</div>
 				<div className="grid grid-cols-2 gap-14 mr-44">
-					<img src="/gt3filler.webp" alt="" />
+					<img src="/assets/viper/gt3filler.webp" alt="" />
 					<Article className="max-w-[50ch]" title="Get your own">
 						<p>
 							Every vehicle that rolls out of the Feynman workshop
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
 							Read about us
 						</Link>
 					</Article>
-					<img src="p1_group_photo.webp" alt="" />
+					<img src="/assets/nuclide/p1_group_photo.webp" alt="" />
 				</div>
 			</div>
 		</>
