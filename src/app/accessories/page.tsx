@@ -14,7 +14,7 @@ const Accessories: React.FC = () => {
 					</p>
 				</div>
 				<img
-					src="/p1gtr.jpg"
+					src="/p1gtr4.jpg"
 					className="max-h-[38rem] w-screen object-cover"
 				/>
 			</div>
