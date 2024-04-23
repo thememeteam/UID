@@ -5,12 +5,11 @@ const About: React.FC = () => {
 	return (
 		<>
 			<Hero type="video" src="/aboutvid.mp4" alt="About Video">
-			<div className="p-8 relative font-display">
-					<div className="absolute -top-8 -left-12 w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
+				<div className="p-8 relative font-display">
 					<span className="block mix-blend-difference nomargin text-center text-8xl text-accent">
-						Striving for<br /> excellence
+						Striving for
+						<br /> excellence
 					</span>
-					<div className="absolute -bottom-6 -right-12 w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
 				</div>
 			</Hero>
 			<div className="mx-auto max-w-[90ch]">

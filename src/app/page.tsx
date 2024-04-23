@@ -6,16 +6,12 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<Hero type="video" src="/stockvid.mp4" alt="Homepage Video">
-				<div className="p-8 relative font-display">
-					<div className="absolute -top-8 -left-12 w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
-					<span className="block mix-blend-difference nomargin text-8xl text-accent">
-						Feynman
-					</span>
-					<span className="block w-fit mx-auto text-h2 opacity-75">
-						Performance exemplified
-					</span>
-					<div className="absolute -bottom-6 -right-12 w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
-				</div>
+				<span className="block mix-blend-difference nomargin text-8xl text-accent">
+					Feynman
+				</span>
+				<span className="block w-fit mx-auto text-h2 opacity-75">
+					Performance exemplified
+				</span>
 			</Hero>
 			<div className="flex flex-col gap-16 mx-auto max-w-[100ch] mt-16">
 				<div className="mt-12 text-center self-center">
