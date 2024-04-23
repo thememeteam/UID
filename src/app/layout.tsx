@@ -24,7 +24,12 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className="min-h-screen grid grid-rows-1 grid-cols-1 items-start">
-				<header className="h-16 row-start-1 col-start-1 sticky top-0 left-0 z-40 w-fit flex flex-row items-center pl-8 py-4 bg-neutral-900 bg-opacity-30 wedge">
+				<header className="row-start-1 col-start-1 
+					sticky top-0 left-0 z-40
+					flex flex-row items-center 
+					h-16 w-fit pl-8 pr-12 py-4 
+					bg-card backdrop-blur-md
+					wedge">
 					<Link href={"/"} className="contents">
 						<span className="text-h1 font-display leading-none transition-color ease-out duration-75 hover:text-accent">
 							Feynman

@@ -45,58 +45,64 @@ const Home: React.FC = () => {
 					</p>
 				</div>
 				<hr className="border-divider-stroke my-8 w-1/5 self-center" />
-				<Article className="max-w-[50ch] " title="Our work">
-					<p>Every model we release is our next magnum opus.</p>
-					<p>
-						We spend years refining every release. Our master
-						engineers work tirelessly towards increasing horsepower,
-						reducing weight, and enhancing comfort. Then we do it
-						again, ad infinitum.
-					</p>
-					<Link
-						className="bg-accent text-black p-2 -skew-x-[20deg]"
-						href={"/models"}
-					>
-						Explore our models
-					</Link>
-				</Article>		
-				<div className="self-end max-w-[50ch] max-h-[30ch] flex flex-">
-					<img src="p1_group_photo.webp  " className=""/>
-					</div>
-				<Article className="max-w-[50ch] self-end" title="Get your own">
-					<p>
-						Every vehicle that rolls out of the Feynman workshop in
-						Kadugodi is expertly built by hand.
-					</p>
-					<p>
-						We work with our demanding and individualistic clientele
-						to customize every vehicle to their exact
-						specifications. No two Feynmans will ever be the same.
-					</p>
-					<Link
-						className="bg-accent text-black p-2 -skew-x-[20deg]"
-						href={"/configurator"}
-					>
-						Configure your Feynman
-					</Link>
-				</Article>
-				<Article className="max-w-[50ch] mb-8" title="Our legacy">
-					<p>
-						We were founded in 1987 by Muthuswamy Feynman, and
-						quickly rose to fame for our unrelenting passion for
-						engineering and meticulous attention to detail.
-					</p>
-					<p>
-						37 years on, we continue to preserve our founder's
-						vision in everything that we do.
-					</p>
-					<Link
-						className="bg-accent text-black p-2 -skew-x-[20deg]"
-						href={"/about"}
-					>
-						Read about us
-					</Link>
-				</Article>
+				<div className="grid grid-cols-2 gap-8">
+					<Article title="Our work">
+						<p>Every model we release is our next magnum opus.</p>
+						<p>
+							We spend years refining every release. Our master
+							engineers work tirelessly towards increasing horsepower,
+							reducing weight, and enhancing comfort. Then we do it
+							again, ad infinitum.
+						</p>
+						<Link
+							className="bg-accent text-black p-2 -skew-x-[20deg]"
+							href={"/models"}
+						>
+							Explore our models
+						</Link>
+					</Article>	
+					<img src="p1_group_photo.webp"/>	
+				</div>
+				<div className="grid grid-cols-2 gap-8">
+					<img src="p1_group_photo.webp"/>	
+					<Article className="max-w-[50ch]" title="Get your own">
+						<p>
+							Every vehicle that rolls out of the Feynman workshop in
+							Kadugodi is expertly built by hand.
+						</p>
+						<p>
+							We work with our demanding and individualistic clientele
+							to customize every vehicle to their exact
+							specifications. No two Feynmans will ever be the same.
+						</p>
+						<Link
+							className="bg-accent text-black p-2 -skew-x-[20deg]"
+							href={"/configurator"}
+						>
+							Configure your Feynman
+						</Link>
+					</Article>
+				</div>
+				<div className="grid grid-cols-2 gap-8 mb-12">
+					<Article className="max-w-[50ch] mb-8" title="Our legacy">
+						<p>
+							We were founded in 1987 by Muthuswamy Feynman, and
+							quickly rose to fame for our unrelenting passion for
+							engineering and meticulous attention to detail.
+						</p>
+						<p>
+							37 years on, we continue to preserve our founder's
+							vision in everything that we do.
+						</p>
+						<Link
+							className="bg-accent text-black p-2 -skew-x-[20deg]"
+							href={"/about"}
+						>
+							Read about us
+						</Link>
+					</Article>
+					<img src="p1_group_photo.webp"/>	
+				</div>
 			</div>
 		</>
 	);
