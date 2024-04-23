@@ -1,8 +1,10 @@
+import Hero from "@/components/Hero";
+
 const M5Page: React.FC = () => {
     return (
         
 		<>
-        <div className="relative max-h-screen">
+        {/* <div className="relative max-h-screen">
             <div
                 className="absolute w-full h-full flex flex-col items-center justify-center gap-2"
                 style={{
@@ -18,8 +20,12 @@ const M5Page: React.FC = () => {
                 src="/m5model1.jpg"
                 className="max-h-[38rem] w-screen object-cover"
             />
-        </div>
-        
+        </div> */}
+        <Hero type="video" src="/M5video.mp4" alt="showcase of a BMW M5">
+            <span className=" mix-blend-difference nomargin text-8xl font-display text-accent">
+                Feynman M5
+            </span>
+        </Hero>
     </>	
     
     );
