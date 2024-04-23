@@ -1,11 +1,11 @@
-import ListItem from "@/components/ListItem";
+import ListItem from "@/components/network/ListItem";
 import Spacer from "@/components/Spacer";
 
 const Network: React.FC = () => {
 	return (
-		<>
+		<div className="flex h-full items-center justify-center">
 			<Spacer />
-			<div className="grid h-3/5 gap-8 grid-cols-[1fr_1fr] grid-rows-[auto_1fr] items-center ml-16">
+			<div className="grid h-3/5 gap-8 grid-cols-[1fr_1fr] grid-rows-[auto_1fr] items-center">
 				<iframe
 					title="maps"
 					src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
@@ -13,7 +13,7 @@ const Network: React.FC = () => {
 					className="row-start-1 row-span-2"
 				/>
 				<h1 className="text-h1 font-display accentline">Dealerships</h1>
-				<ul className="overflow-scroll max-h-full">
+				<ul className="overflow-scroll self-start max-h-full">
 					<li>
 						<ListItem
 							title="Lavelle Road"
@@ -74,7 +74,7 @@ const Network: React.FC = () => {
 					</li>
 				</ul>
 			</div>
-		</>
+		</div>
 	);
 };
 
