@@ -15,9 +15,9 @@ const About: React.FC = () => {
 			</Hero>
 			<div className="mx-auto max-w-[90ch]">
 				<div className="flex flex-col gap-16 mt-16 mx-auto max-w-[90ch]">
-					<Article className="max-w-[50ch]" title="About us">
-						<p>
-							At Feynman Manufacturers, we don't just build cars;
+				<div className="grid grid-cols-2 gap-8">
+					<Article title="About Us">
+						<p>At Feynman Manufacturers, we don't just build cars;
 							we engineer automotive masterpieces. Located in the
 							heart of Bengaluru, we're dedicated to creating
 							sports cars that ignite your passion for driving.
@@ -26,10 +26,15 @@ const About: React.FC = () => {
 							performance, ensuring every journey is a thrilling
 							adventure.
 						</p>
+		
 					</Article>
-					<Article className="max-w-[50ch] self-end" title="History">
+					<img src="mtc.jpg" alt=""/>
+				</div>
+				<div className="grid grid-cols-2 gap-8">
+					<img src="history.jpg" alt="" />
+					<Article className="max-w-[50ch]" title="History">
 						<p>
-							Founded in 1987, Feynman Manufacturers emerged from
+						Founded in 1987, Feynman Manufacturers emerged from
 							a vision to redefine the automotive industry.
 							Inspired by the pioneering spirit of its namesake,
 							Muthuswamy Feynman, our company set out to push the
@@ -39,12 +44,10 @@ const About: React.FC = () => {
 							would captivate enthusiasts around the world.
 						</p>
 					</Article>
-					<Article
-						className="max-w-[50ch] mb-8"
-						title="Pioneering Experience"
-					>
-						<p>
-							Since our inception, Feynman Manufacturers has been
+				</div>
+				<div className="grid grid-cols-2 gap-8 mb-8">
+					<Article title="Pioneering Experience">
+						<p>Since our inception, Feynman Manufacturers has been
 							synonymous with innovation and excellence. Our early
 							years were marked by groundbreaking advancements in
 							automotive technology, as we sought to marry
@@ -58,7 +61,11 @@ const About: React.FC = () => {
 							committed to pushing the boundaries of what's
 							possible in the automotive world.
 						</p>
+		
 					</Article>
+					<img src="leman.jpg" alt=""/>
+				</div>
+					
 				</div>
 			</div>
 		</>

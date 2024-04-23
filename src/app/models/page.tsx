@@ -39,7 +39,7 @@ const Models: React.FC = () => {
 				</Article>
 			</div>
 			<div className="col-start-1 row-start-4 row-span-2
-				bg-[url('/P1.webp')] bg-cover bg-left
+				bg-[url('/p1.jpg')] bg-cover bg-left
 				relative flex flex-col justify-center"
 			style={{mask: 'linear-gradient(to bottom, transparent 0%, black 7rem'}}>
 				<div

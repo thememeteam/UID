@@ -45,10 +45,10 @@ const Home: React.FC = () => {
 							Explore our models
 						</Link>
 					</Article>
-					<img src="p1_group_photo.webp" />
+					<img src="p1_group_photo.webp" alt=""/>
 				</div>
 				<div className="grid grid-cols-2 gap-8">
-					<img src="p1_group_photo.webp" />
+					<img src="p1_group_photo.webp" alt="" />
 					<Article className="max-w-[50ch]" title="Get your own">
 						<p>
 							Every vehicle that rolls out of the Feynman workshop
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
 							Read about us
 						</Link>
 					</Article>
-					<img src="p1_group_photo.webp" />
+					<img src="p1_group_photo.webp" alt="" />
 				</div>
 			</div>
 		</>
