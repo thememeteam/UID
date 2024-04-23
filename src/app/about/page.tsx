@@ -5,9 +5,13 @@ const About: React.FC = () => {
 	return (
 		<>
 			<Hero type="video" src="/aboutvid.mp4" alt="About Video">
-				<span className="block mix-blend-difference nomargin text-6xl font-display text-accent">
-					Striving for Excellence
-				</span>
+			<div className="p-8 relative font-display">
+					<div className="absolute -top-8 -left-12 w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
+					<span className="block mix-blend-difference nomargin text-center text-8xl text-accent">
+						Striving for<br /> excellence
+					</span>
+					<div className="absolute -bottom-6 -right-12 w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
+				</div>
 			</Hero>
 			<div className="mx-auto max-w-[90ch]">
 				<div className="flex flex-col gap-16 mt-16 mx-auto max-w-[90ch]">
