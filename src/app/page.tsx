@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 					Performance exemplified
 				</span>
 			</Hero>
-			<div className="flex flex-col gap-16 mx-auto max-w-[100ch] mt-16">
+			<div className="flex flex-col gap-16 mx-auto max-w-[130ch] mt-16">
 				<div className="mt-12 text-center self-center">
 					<p className="font-display text-h1 text-nowrap">
 						We make high-performance vehicles.
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 					</p>
 				</div>
 				<hr className="border-divider-stroke my-8 w-1/5 self-center" />
-				<div className="grid grid-cols-2 gap-8">
+				<div className="grid grid-cols-2 gap-8 ml-44" >
 					<Article title="Our work">
 						<p>Every model we release is our next magnum opus.</p>
 						<p>
@@ -41,10 +41,10 @@ const Home: React.FC = () => {
 							Explore our models
 						</Link>
 					</Article>
-					<img src="p1_group_photo.webp" alt=""/>
+					<img src="/person.jpg" alt=""/>
 				</div>
-				<div className="grid grid-cols-2 gap-8">
-					<img src="p1_group_photo.webp" alt="" />
+				<div className="grid grid-cols-2 gap-14 mr-44">
+					<img src="/gt3filler.webp" alt="" />
 					<Article className="max-w-[50ch]" title="Get your own">
 						<p>
 							Every vehicle that rolls out of the Feynman workshop
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
 						</Link>
 					</Article>
 				</div>
-				<div className="grid grid-cols-2 gap-8 mb-12">
+				<div className="grid grid-cols-2 gap-8 mb-12 ml-44">
 					<Article className="max-w-[50ch] mb-8" title="Our legacy">
 						<p>
 							We were founded in 1987 by Muthuswamy Feynman, and

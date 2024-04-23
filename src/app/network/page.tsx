@@ -5,7 +5,7 @@ const Network: React.FC = () => {
 	return (
 		<>
 			<Spacer />
-			<div className="grid w-fit gap-8 grid-cols-[auto_auto] grid-rows-[auto_1fr] items-center">
+			<div className="grid w-fit gap-8 grid-cols-[auto_auto] grid-rows-[auto_1fr] items-center ml-16">
 				<iframe
 					title="maps"
 					src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
