@@ -24,7 +24,7 @@ const Home: React.FC = () => {
 						league of its own.
 					</p>
 				</div>
-				<hr className="border-divider-stroke my-8 w-1/5 self-center" />
+				<hr className="border-divider-stroke my-6 w-1/5 self-center" />
 				<div className="grid grid-cols-2 gap-8 ml-44" >
 					<Article title="Our work">
 						<p>Every model we release is our next magnum opus.</p>
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
 					<img src="/assets/person.jpg" alt=""/>
 				</div>
 				<div className="grid grid-cols-2 gap-14 mr-44">
-					<img src="/assets/viper/gt3filler.webp" alt="" />
+					<img src="/assets/viper/gt3filler.webp" alt="" className="band" />
 					<Article className="max-w-[50ch]" title="Get your own">
 						<p>
 							Every vehicle that rolls out of the Feynman workshop
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
 							Read about us
 						</Link>
 					</Article>
-					<img src="/assets/nuclide/p1_group_photo.webp" alt="" />
+					<img src="/assets/nuclide/p1_group_photo.webp" alt="" className="wedge" />
 				</div>
 			</div>
 		</>

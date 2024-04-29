@@ -9,16 +9,17 @@
     font-weight: 600;
   }
 
-  * {
-    color-scheme: only dark;
-  }
-
   :root {
+    color-scheme: only dark;
     font-family: "Public Sans", system-ui, sans-serif;
     font-size: 17px;
     background-clip: padding-box;
     accent-color: var(--accent-fill);
     @apply font-body text-primary bg-background;
+  }
+
+  ::selection {
+    @apply text-[Canvas] bg-accent-light;
   }
 
   p:not(:last-child) {
@@ -37,11 +38,21 @@
     font-family: "Public Sans", system-ui, sans-serif;
   }
 
+  .dots {
+    background: radial-gradient(circle, var(--element-fill) 0%, var(--element-fill) 4%, var(--background-fill) 4%, var(--background-fill) 100%);
+    background-repeat: repeat;
+    background-size: 48px 48px;
+  }
+
   .accentline::after {
     @apply block content-[''] bg-accent h-1.5 w-16 -skew-x-[20deg] mb-2;
   }
 
   .wedge {
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), calc(100% - 2.2rem) 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), calc(100% - 3rem) 100%, 0% 100%);
+  }
+
+  .band {
+    clip-path: polygon(0% 4rem, 4rem 0%, 100% 0%, 100% calc(100% - 4rem), calc(100% - 4rem) 100%, 0% 100%);
   }
 }
