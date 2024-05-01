@@ -27,10 +27,14 @@ const About: React.FC = () => {
 								journey is a thrilling adventure.
 							</p>
 						</Article>
-						<img src="/assets/mtc.jpg" alt="" />
+						<img src="/assets/mtc.jpg" alt="" className="band" />
 					</div>
 					<div className="grid grid-cols-2 gap-8">
-						<img src="/assets/history.jpg" alt="" />
+						<img
+							src="/assets/history.jpg"
+							alt=""
+							className="band"
+						/>
 						<Article className="max-w-[50ch]" title="History">
 							<p>
 								Founded in 1987, Feynman Manufacturers emerged
@@ -65,7 +69,7 @@ const About: React.FC = () => {
 								automotive world.
 							</p>
 						</Article>
-						<img src="/assets/leman.jpg" alt="" />
+						<img src="/assets/leman.jpg" alt="" className="band" />
 					</div>
 				</div>
 			</div>

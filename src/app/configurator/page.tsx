@@ -1,12 +1,31 @@
 "use client";
 import Segmented from "@/components/Segmented";
 import Spacer from "@/components/Spacer";
+import Segmented from "@/components/Segmented";
+import Spacer from "@/components/Spacer";
 import NuclideModel from "@/components/models/Nuclide";
 import SLSModel from "@/components/models/SLS";
 import ViperModel from "@/components/models/Viper";
+import {
+	AccumulativeShadows,
+	CubeCamera,
+	Environment,
+	MeshReflectorMaterial,
+	OrthographicCamera,
+	PerspectiveCamera,
+	Plane,
+	PresentationControls,
+	RandomizedLight,
+	Shadow,
+	SpotLight,
+	SpotLightShadow,
+	Stage,
+} from "@react-three/drei";
+import { Canvas, extend } from "@react-three/fiber";
 import { PresentationControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
+import { Camera, ColorManagement, Mesh, MeshNormalMaterial } from "three";
 
 const options = ["SLS", "Nuclide", "Viper"] as const;
 type CarOptions = (typeof options)[number];

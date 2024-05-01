@@ -12,10 +12,7 @@ const Accessories: React.FC = () => {
 					Accessories
 				</span>
 			</Hero>
-			<div className="grid grid-cols-2 gap-2">
-				<div></div>
-				<div></div>
-			</div>
+			<div className="grid grid-cols-2 gap-2"></div>
 		</>
 	);
 };
