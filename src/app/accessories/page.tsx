@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import parts from './parts.json';
+
 const Accessories: React.FC = () => {
 	return (
 		<>
@@ -8,16 +8,9 @@ const Accessories: React.FC = () => {
 					Accessories
 				</span>
 			</Hero>
-			<div className="grid grid-cols-4 gap-2">
-				parts.map(record =>{
-					return(
-						<div className="box" key = {record.partnumber }>
-							<h1></h1>
-						</div>
-					)
-				}
-					
-				)
+			<div className="grid grid-cols-2 gap-2">
+				<div></div>
+				<div></div>
 			</div>
 		</>
 	);
