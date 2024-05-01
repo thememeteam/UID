@@ -5,14 +5,14 @@ const Models: React.FC = () => {
 	return (
 		<div className="w-full h-full grid grid-rows-[32rem_7rem_32rem_7rem_32rem]">
 			<div className="col-start-1 row-start-1 row-span-2 
-				bg-[url('/assets/m5/m5cs.jpeg')] bg-cover bg-top-left 
+				bg-[url('/assets/m5/sl63two2.jpg')] bg-cover bg-top-left 
 				flex flex-col justify-center"
 			>
 				<div
 					className="absolute w-full h-full opacity-90"
 				/>
-				<Article title="M5" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge">
-					<p>Luxury for the week,<br /> performance for the weekend.</p>
+				<Article title="SLS" className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge">
+					<p>Luxury for the week,<br /> Sheer Drop-Top Thrill for the weekend.</p>
 					<Link
 						href="/models/m5"
 						className="bg-accent text-black p-2"

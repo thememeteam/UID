@@ -48,7 +48,7 @@ const About: React.FC = () => {
 						<Article title="Pioneering Experience">
 							<p>Since our inception, Feynman Manufacturers has been
 								synonymous with innovation and excellence. Our early
-								years were marked by groundbreaking advancements in
+								years were marked by groundbreaking advancements in 
 								automotive technology, as we sought to marry
 								performance with elegance in every vehicle we
 								produced. With each new model, we continued to raise

@@ -14,7 +14,7 @@ const Configurator: React.FC = () => {
 	return (
 		<>
 			<Spacer />
-			<Segmented options={['M5', 'Nuclide', 'Viper']} onChange={(e) => setCurrent(e)} />
+			<Segmented options={['SLS', 'Nuclide', 'Viper']} onChange={(e) => setCurrent(e)} />
 			{<div className="w-full h-fit">
 				<div style={{ width: "100%", height: "100vh " }} className="items-center align-middle justify-between">
 					<Canvas shadows camera={{position: [0, 0, 4.5], fov: 30 }}>
