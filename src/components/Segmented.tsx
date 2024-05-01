@@ -20,7 +20,7 @@ const Segmented: React.FC<SegmentedProps> = ({ options, className, onChange }) =
                         setTimeout(() => onChange(e), 0);
                     }}
 					className="p-4 text-center"
-                    style={{backgroundColor: selected === e ? 'var(--accent-fill)' : 'initial'}}
+                    style={selected === e ? {backgroundColor:  'var(--accent-fill)', color: 'var(--text-accent)'} : {}}
 				>
 					{e}
 				</button>
