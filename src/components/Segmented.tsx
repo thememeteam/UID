@@ -29,9 +29,9 @@ const Segmented: React.FC<SegmentedProps> = ({
 					style={
 						selected === e
 							? {
-								backgroundColor: "var(--accent-fill)",
-								color: "var(--text-accent)",
-							}
+									backgroundColor: "var(--accent-fill)",
+									color: "var(--text-accent)",
+								}
 							: {}
 					}
 				>
