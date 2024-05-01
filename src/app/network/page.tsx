@@ -1,5 +1,5 @@
-import ListItem from "@/components/network/ListItem";
 import Spacer from "@/components/Spacer";
+import ListItem from "@/components/network/ListItem";
 
 const Network: React.FC = () => {
 	return (
@@ -9,7 +9,7 @@ const Network: React.FC = () => {
 				<iframe
 					title="maps"
 					src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
-					style={{height: '100%', width: '100%'}}
+					style={{ height: "100%", width: "100%" }}
 					className="row-start-1 row-span-2"
 				/>
 				<h1 className="text-h1 font-display accentline">Dealerships</h1>
@@ -20,8 +20,10 @@ const Network: React.FC = () => {
 							address={
 								<>
 									<p>
-										UMIYA Landmark, Lavelle Road, Shanthala Nagar,
-										<br /> Ashok Nagar, Bengaluru, Karnataka 560001
+										UMIYA Landmark, Lavelle Road, Shanthala
+										Nagar,
+										<br /> Ashok Nagar, Bengaluru, Karnataka
+										560001
 									</p>
 									<p>Ph: +91 80 4161 0610</p>
 								</>
@@ -34,7 +36,8 @@ const Network: React.FC = () => {
 							address={
 								<>
 									<p>
-										SKAV909, 9, 1, Richmond Rd, Ashok Nagar, Bengaluru, <br />
+										SKAV909, 9, 1, Richmond Rd, Ashok Nagar,
+										Bengaluru, <br />
 										Karnataka 560001 <br />
 									</p>
 									<p>Ph: +91 1800 3005 3987</p>
@@ -48,8 +51,10 @@ const Network: React.FC = () => {
 							address={
 								<>
 									<p>
-										107, Kasturba Rd, opp. Venkatappa Art Gallery, <br />
-										Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001
+										107, Kasturba Rd, opp. Venkatappa Art
+										Gallery, <br />
+										Shanthala Nagar, Ashok Nagar, Bengaluru,
+										Karnataka 560001
 									</p>
 									<p>Ph: +91 96864 56215</p>
 								</>
@@ -63,11 +68,12 @@ const Network: React.FC = () => {
 							title="Sankey Road"
 							address={
 								<>
-								<p>
-									Opp: BDA Head Office, 22, Sankey Rd, Military Compound, <br />{" "}
-									Seshadripuram, Bengaluru, Karnataka 560020 
-								</p>
-								<p>Ph: +91 63641 02911</p>
+									<p>
+										Opp: BDA Head Office, 22, Sankey Rd,
+										Military Compound, <br /> Seshadripuram,
+										Bengaluru, Karnataka 560020
+									</p>
+									<p>Ph: +91 63641 02911</p>
 								</>
 							}
 						/>

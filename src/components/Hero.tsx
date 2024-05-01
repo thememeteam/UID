@@ -1,8 +1,8 @@
 interface HeroProps {
-	type: "image" | "video"
-	src: string
-	alt: string
-	children?: React.ReactNode
+	type: "image" | "video";
+	src: string;
+	alt: string;
+	children?: React.ReactNode;
 }
 
 const Hero: React.FC<HeroProps> = ({ type, src, alt, children }) => {

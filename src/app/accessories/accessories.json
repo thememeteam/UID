@@ -1,34 +1,34 @@
 {
-    "Accessories":[
-      {
-        "partNumber": "ACC-001",
-        "name": "Floor Mats",
-        "description": "Durable and easy-to-clean floor mats for the car interior."
-      },
-      {
-        "partNumber": "ACC-002",
-        "name": "Cargo Organizer",
-        "description": "A versatile organizer for keeping the trunk or cargo area tidy."
-      },
-      {
-        "partNumber": "ACC-003",
-        "name": "Roof Rack",
-        "description": "A sturdy roof rack for carrying additional cargo or equipment."
-      },
-      {
-        "partNumber": "ACC-004",
-        "name": "Sunshades",
-        "description": "Retractable sunshades for the side and rear windows."
-      },
-      {
-        "partNumber": "ACC-005",
-        "name": "Car Cover",
-        "description": "A breathable and water-resistant cover for protecting the car."
-      },
-      {
-        "partNumber": "ACC-006",
-        "name": "Bike Rack",
-        "description": "A secure rack for transporting bicycles on the car."
-      }
-    ]
-  }
+  "Accessories": [
+    {
+      "partNumber": "ACC-001",
+      "name": "Floor Mats",
+      "description": "Durable and easy-to-clean floor mats for the car interior."
+    },
+    {
+      "partNumber": "ACC-002",
+      "name": "Cargo Organizer",
+      "description": "A versatile organizer for keeping the trunk or cargo area tidy."
+    },
+    {
+      "partNumber": "ACC-003",
+      "name": "Roof Rack",
+      "description": "A sturdy roof rack for carrying additional cargo or equipment."
+    },
+    {
+      "partNumber": "ACC-004",
+      "name": "Sunshades",
+      "description": "Retractable sunshades for the side and rear windows."
+    },
+    {
+      "partNumber": "ACC-005",
+      "name": "Car Cover",
+      "description": "A breathable and water-resistant cover for protecting the car."
+    },
+    {
+      "partNumber": "ACC-006",
+      "name": "Bike Rack",
+      "description": "A secure rack for transporting bicycles on the car."
+    }
+  ]
+}

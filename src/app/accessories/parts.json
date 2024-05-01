@@ -1,350 +1,350 @@
 [
-    {
-        "partNumber": "SU-SPR-BIL",
-        "name": "Bilstein Monotube Shock Absorbers"
-    },
-    {
-        "partNumber": "SU-SPR-BIL-BDY",
-        "name": "Shock Absorber Body"
-    },
-    {
-        "partNumber": "SU-SPR-BIL-PST",
-        "name": "Shock Absorber Piston"
-    },
-    {
-        "partNumber": "SU-SPR-BIL-VLV",
-        "name": "Shock Absorber Valving"
-    },
-    {
-        "partNumber": "SU-SPR-BIL-RSR",
-        "name": "Shock Absorber Reservoir"
-    },
-    {
-        "partNumber": "SU-SPR-FRT",
-        "name": "Front Coil Springs"
-    },
-    {
-        "partNumber": "SU-SPR-FRT-SPR",
-        "name": "Front Spring Coils"
-    },
-    {
-        "partNumber": "SU-SPR-RER",
-        "name": "Rear Coil Springs"
-    },
-    {
-        "partNumber": "SU-SPR-RER-SPR",
-        "name": "Rear Spring Coils"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30",
-        "name": "Garrett GTX3076R Turbocharger System"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-TCH",
-        "name": "GTX3076R Turbocharger"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-TCH-HSG",
-        "name": "Turbocharger Housing"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-TCH-WHL",
-        "name": "Turbine Wheel"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-TCH-CMP",
-        "name": "Compressor Wheel"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-TCH-BRG",
-        "name": "Bearing Assembly"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-TCH-SHF",
-        "name": "Turbine Shaft"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-INT",
-        "name": "Turbocharger Intercooler"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-INT-COR",
-        "name": "Intercooler Core"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-INT-FNS",
-        "name": "Intercooler Fins"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-INT-TBS",
-        "name": "Intercooler Tubing"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-WGT",
-        "name": "Wastegate Actuator"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-WGT-VLV",
-        "name": "Wastegate Valve"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-WGT-DCR",
-        "name": "Wastegate Diaphragm"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-WGT-ROD",
-        "name": "Wastegate Actuator Rod"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-BPV",
-        "name": "Blow-Off Valve"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-BPV-VLV",
-        "name": "Blow-Off Valve"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-BPV-DCR",
-        "name": "Blow-Off Valve Diaphragm"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-PIP",
-        "name": "Piping and Hoses"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-PIP-CMP",
-        "name": "Compressor Inlet Pipe"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-PIP-CHP",
-        "name": "Compressor Housing Pipe"
-    },
-    {
-        "partNumber": "TC-SYS-GTX30-PIP-TBH",
-        "name": "Turbocharger Boost Hoses"
-    },
-    {
-        "partNumber": "EL-ABS-V9.1",
-        "name": "Anti-Lock Braking System Module"
-    },
-    {
-        "partNumber": "EL-ABS-V9.1-ECU",
-        "name": "ABS Electronic Control Unit"
-    },
-    {
-        "partNumber": "EL-ABS-V9.1-SFW",
-        "name": "ABS Software"
-    },
-    {
-        "partNumber": "BR-BRK-VT52",
-        "name": "Ventilated Disc Brake System"
-    },
-    {
-        "partNumber": "BR-CAL-FR",
-        "name": "Front Brake Calipers"
-    },
-    {
-        "partNumber": "BR-CAL-FR-CST",
-        "name": "Front Caliper Castings"
-    },
-    {
-        "partNumber": "BR-CAL-FR-PST",
-        "name": "Front Caliper Pistons"
-    },
-    {
-        "partNumber": "BR-CAL-FR-BRK",
-        "name": "Front Brake Pads"
-    },
-    {
-        "partNumber": "BR-CAL-RR",
-        "name": "Rear Brake Calipers"
-    },
-    {
-        "partNumber": "BR-CAL-RR-CST",
-        "name": "Rear Caliper Castings"
-    },
-    {
-        "partNumber": "BR-CAL-RR-PST",
-        "name": "Rear Caliper Pistons"
-    },
-    {
-        "partNumber": "BR-CAL-RR-BRK",
-        "name": "Rear Brake Pads"
-    },
-    {
-        "partNumber": "BR-CAL-RR-PKB",
-        "name": "Parking Brake Mechanism"
-    },
-    {
-        "partNumber": "BR-DSC-FR",
-        "name": "Front Brake Discs"
-    },
-    {
-        "partNumber": "BR-DSC-FR-CST",
-        "name": "Front Disc Castings"
-    },
-    {
-        "partNumber": "BR-DSC-FR-VNT",
-        "name": "Front Disc Venting"
-    },
-    {
-        "partNumber": "BR-DSC-FR-DRL",
-        "name": "Front Disc Cross-Drilling"
-    },
-    {
-        "partNumber": "BR-DSC-RR",
-        "name": "Rear Brake Discs"
-    },
-    {
-        "partNumber": "BR-DSC-RR-CST",
-        "name": "Rear Disc Castings"
-    },
-    {
-        "partNumber": "BR-DSC-RR-VNT",
-        "name": "Rear Disc Venting"
-    },
-    {
-        "partNumber": "EN-CYL-BLK",
-        "name": "Cylinder Block"
-    },
-    {
-        "partNumber": "EN-CYL-BLK-CST",
-        "name": "Cylinder Block Casting"
-    },
-    {
-        "partNumber": "EN-CYL-BLK-BOR",
-        "name": "Cylinder Bores"
-    },
-    {
-        "partNumber": "EN-CYL-BLK-CJK",
-        "name": "Cooling Jackets"
-    },
-    {
-        "partNumber": "EN-CYL-BLK-MBC",
-        "name": "Main Bearing Caps"
-    },
-    {
-        "partNumber": "EN-CYL-HD",
-        "name": "Cylinder Head"
-    },
-    {
-        "partNumber": "EN-CYL-HD-CST",
-        "name": "Cylinder Head Casting"
-    },
-    {
-        "partNumber": "EN-CYL-HD-VLV",
-        "name": "Valves"
-    },
-    {
-        "partNumber": "EN-CYL-HD-CAM",
-        "name": "Camshafts"
-    },
-    {
-        "partNumber": "EN-CYL-HD-VVT",
-        "name": "Variable Valve Timing System"
-    },
-    {
-        "partNumber": "EN-CYL-HD-INM",
-        "name": "Intake Manifold"
-    },
-    {
-        "partNumber": "EN-CYL-HD-EXM",
-        "name": "Exhaust Manifolds"
-    },
-    {
-        "partNumber": "EN-CRK-SFT",
-        "name": "Crankshaft"
-    },
-    {
-        "partNumber": "EN-CRK-SFT-FRG",
-        "name": "Crankshaft Forging"
-    },
-    {
-        "partNumber": "EN-CRK-SFT-CWT",
-        "name": "Counterweights"
-    },
-    {
-        "partNumber": "EN-CRK-SFT-MBJ",
-        "name": "Main Bearing Journals"
-    },
-    {
-        "partNumber": "EN-CRK-SFT-CBJ",
-        "name": "Connecting Rod Journals"
-    },
-    {
-        "partNumber": "EN-CRK-SFT-DMP",
-        "name": "Torsional Vibration Damper"
-    },
-    {
-        "partNumber": "EN-CON-ROD",
-        "name": "Connecting Rods"
-    },
-    {
-        "partNumber": "EN-CON-ROD-FRG",
-        "name": "Connecting Rod Forgings"
-    },
-    {
-        "partNumber": "EN-CON-ROD-BBG",
-        "name": "Big-End Bearings"
-    },
-    {
-        "partNumber": "EN-CON-ROD-SBG",
-        "name": "Small-End Bearings"
-    },
-    {
-        "partNumber": "EN-PST-RNG",
-        "name": "Piston Rings"
-    },
-    {
-        "partNumber": "EN-PST-RNG-CPR",
-        "name": "Compression Rings"
-    },
-    {
-        "partNumber": "EN-PST-RNG-OCR",
-        "name": "Oil Control Rings"
-    },
-    {
-        "partNumber": "EN-PST-SKT",
-        "name": "Piston and Skirt"
-    },
-    {
-        "partNumber": "EN-PST-SKT-PST",
-        "name": "Piston Forgings"
-    },
-    {
-        "partNumber": "EN-PST-SKT-SKT",
-        "name": "Piston Skirts"
-    },
-    {
-        "partNumber": "EN-V8-5.7L",
-        "name": "V8 Gasoline Engine"
-    },
-    {
-        "partNumber": "TR-8HP70",
-        "name": "8-Speed Automatic Transmission"
-    },
-    {
-        "partNumber": "TR-TC-LUK",
-        "name": "Torque Converter"
-    },
-    {
-        "partNumber": "TR-TC-LUK-IMP",
-        "name": "Torque Converter Impeller"
-    },
-    {
-        "partNumber": "TR-TC-LUK-TRB",
-        "name": "Torque Converter Turbine"
-    },
-    {
-        "partNumber": "TR-TC-LUK-STA",
-        "name": "Torque Converter Stator"
-    },
-    {
-        "partNumber": "TR-TC-LUK-CLT",
-        "name": "Torque Converter Lock-Up Clutch"
-    },
-    {
-        "partNumber": "TR-TC-LUK-DMR",
-        "name": "Torsional Vibration Damper"
-    }
+  {
+    "partNumber": "SU-SPR-BIL",
+    "name": "Bilstein Monotube Shock Absorbers"
+  },
+  {
+    "partNumber": "SU-SPR-BIL-BDY",
+    "name": "Shock Absorber Body"
+  },
+  {
+    "partNumber": "SU-SPR-BIL-PST",
+    "name": "Shock Absorber Piston"
+  },
+  {
+    "partNumber": "SU-SPR-BIL-VLV",
+    "name": "Shock Absorber Valving"
+  },
+  {
+    "partNumber": "SU-SPR-BIL-RSR",
+    "name": "Shock Absorber Reservoir"
+  },
+  {
+    "partNumber": "SU-SPR-FRT",
+    "name": "Front Coil Springs"
+  },
+  {
+    "partNumber": "SU-SPR-FRT-SPR",
+    "name": "Front Spring Coils"
+  },
+  {
+    "partNumber": "SU-SPR-RER",
+    "name": "Rear Coil Springs"
+  },
+  {
+    "partNumber": "SU-SPR-RER-SPR",
+    "name": "Rear Spring Coils"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30",
+    "name": "Garrett GTX3076R Turbocharger System"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-TCH",
+    "name": "GTX3076R Turbocharger"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-TCH-HSG",
+    "name": "Turbocharger Housing"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-TCH-WHL",
+    "name": "Turbine Wheel"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-TCH-CMP",
+    "name": "Compressor Wheel"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-TCH-BRG",
+    "name": "Bearing Assembly"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-TCH-SHF",
+    "name": "Turbine Shaft"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-INT",
+    "name": "Turbocharger Intercooler"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-INT-COR",
+    "name": "Intercooler Core"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-INT-FNS",
+    "name": "Intercooler Fins"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-INT-TBS",
+    "name": "Intercooler Tubing"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-WGT",
+    "name": "Wastegate Actuator"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-WGT-VLV",
+    "name": "Wastegate Valve"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-WGT-DCR",
+    "name": "Wastegate Diaphragm"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-WGT-ROD",
+    "name": "Wastegate Actuator Rod"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-BPV",
+    "name": "Blow-Off Valve"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-BPV-VLV",
+    "name": "Blow-Off Valve"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-BPV-DCR",
+    "name": "Blow-Off Valve Diaphragm"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-PIP",
+    "name": "Piping and Hoses"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-PIP-CMP",
+    "name": "Compressor Inlet Pipe"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-PIP-CHP",
+    "name": "Compressor Housing Pipe"
+  },
+  {
+    "partNumber": "TC-SYS-GTX30-PIP-TBH",
+    "name": "Turbocharger Boost Hoses"
+  },
+  {
+    "partNumber": "EL-ABS-V9.1",
+    "name": "Anti-Lock Braking System Module"
+  },
+  {
+    "partNumber": "EL-ABS-V9.1-ECU",
+    "name": "ABS Electronic Control Unit"
+  },
+  {
+    "partNumber": "EL-ABS-V9.1-SFW",
+    "name": "ABS Software"
+  },
+  {
+    "partNumber": "BR-BRK-VT52",
+    "name": "Ventilated Disc Brake System"
+  },
+  {
+    "partNumber": "BR-CAL-FR",
+    "name": "Front Brake Calipers"
+  },
+  {
+    "partNumber": "BR-CAL-FR-CST",
+    "name": "Front Caliper Castings"
+  },
+  {
+    "partNumber": "BR-CAL-FR-PST",
+    "name": "Front Caliper Pistons"
+  },
+  {
+    "partNumber": "BR-CAL-FR-BRK",
+    "name": "Front Brake Pads"
+  },
+  {
+    "partNumber": "BR-CAL-RR",
+    "name": "Rear Brake Calipers"
+  },
+  {
+    "partNumber": "BR-CAL-RR-CST",
+    "name": "Rear Caliper Castings"
+  },
+  {
+    "partNumber": "BR-CAL-RR-PST",
+    "name": "Rear Caliper Pistons"
+  },
+  {
+    "partNumber": "BR-CAL-RR-BRK",
+    "name": "Rear Brake Pads"
+  },
+  {
+    "partNumber": "BR-CAL-RR-PKB",
+    "name": "Parking Brake Mechanism"
+  },
+  {
+    "partNumber": "BR-DSC-FR",
+    "name": "Front Brake Discs"
+  },
+  {
+    "partNumber": "BR-DSC-FR-CST",
+    "name": "Front Disc Castings"
+  },
+  {
+    "partNumber": "BR-DSC-FR-VNT",
+    "name": "Front Disc Venting"
+  },
+  {
+    "partNumber": "BR-DSC-FR-DRL",
+    "name": "Front Disc Cross-Drilling"
+  },
+  {
+    "partNumber": "BR-DSC-RR",
+    "name": "Rear Brake Discs"
+  },
+  {
+    "partNumber": "BR-DSC-RR-CST",
+    "name": "Rear Disc Castings"
+  },
+  {
+    "partNumber": "BR-DSC-RR-VNT",
+    "name": "Rear Disc Venting"
+  },
+  {
+    "partNumber": "EN-CYL-BLK",
+    "name": "Cylinder Block"
+  },
+  {
+    "partNumber": "EN-CYL-BLK-CST",
+    "name": "Cylinder Block Casting"
+  },
+  {
+    "partNumber": "EN-CYL-BLK-BOR",
+    "name": "Cylinder Bores"
+  },
+  {
+    "partNumber": "EN-CYL-BLK-CJK",
+    "name": "Cooling Jackets"
+  },
+  {
+    "partNumber": "EN-CYL-BLK-MBC",
+    "name": "Main Bearing Caps"
+  },
+  {
+    "partNumber": "EN-CYL-HD",
+    "name": "Cylinder Head"
+  },
+  {
+    "partNumber": "EN-CYL-HD-CST",
+    "name": "Cylinder Head Casting"
+  },
+  {
+    "partNumber": "EN-CYL-HD-VLV",
+    "name": "Valves"
+  },
+  {
+    "partNumber": "EN-CYL-HD-CAM",
+    "name": "Camshafts"
+  },
+  {
+    "partNumber": "EN-CYL-HD-VVT",
+    "name": "Variable Valve Timing System"
+  },
+  {
+    "partNumber": "EN-CYL-HD-INM",
+    "name": "Intake Manifold"
+  },
+  {
+    "partNumber": "EN-CYL-HD-EXM",
+    "name": "Exhaust Manifolds"
+  },
+  {
+    "partNumber": "EN-CRK-SFT",
+    "name": "Crankshaft"
+  },
+  {
+    "partNumber": "EN-CRK-SFT-FRG",
+    "name": "Crankshaft Forging"
+  },
+  {
+    "partNumber": "EN-CRK-SFT-CWT",
+    "name": "Counterweights"
+  },
+  {
+    "partNumber": "EN-CRK-SFT-MBJ",
+    "name": "Main Bearing Journals"
+  },
+  {
+    "partNumber": "EN-CRK-SFT-CBJ",
+    "name": "Connecting Rod Journals"
+  },
+  {
+    "partNumber": "EN-CRK-SFT-DMP",
+    "name": "Torsional Vibration Damper"
+  },
+  {
+    "partNumber": "EN-CON-ROD",
+    "name": "Connecting Rods"
+  },
+  {
+    "partNumber": "EN-CON-ROD-FRG",
+    "name": "Connecting Rod Forgings"
+  },
+  {
+    "partNumber": "EN-CON-ROD-BBG",
+    "name": "Big-End Bearings"
+  },
+  {
+    "partNumber": "EN-CON-ROD-SBG",
+    "name": "Small-End Bearings"
+  },
+  {
+    "partNumber": "EN-PST-RNG",
+    "name": "Piston Rings"
+  },
+  {
+    "partNumber": "EN-PST-RNG-CPR",
+    "name": "Compression Rings"
+  },
+  {
+    "partNumber": "EN-PST-RNG-OCR",
+    "name": "Oil Control Rings"
+  },
+  {
+    "partNumber": "EN-PST-SKT",
+    "name": "Piston and Skirt"
+  },
+  {
+    "partNumber": "EN-PST-SKT-PST",
+    "name": "Piston Forgings"
+  },
+  {
+    "partNumber": "EN-PST-SKT-SKT",
+    "name": "Piston Skirts"
+  },
+  {
+    "partNumber": "EN-V8-5.7L",
+    "name": "V8 Gasoline Engine"
+  },
+  {
+    "partNumber": "TR-8HP70",
+    "name": "8-Speed Automatic Transmission"
+  },
+  {
+    "partNumber": "TR-TC-LUK",
+    "name": "Torque Converter"
+  },
+  {
+    "partNumber": "TR-TC-LUK-IMP",
+    "name": "Torque Converter Impeller"
+  },
+  {
+    "partNumber": "TR-TC-LUK-TRB",
+    "name": "Torque Converter Turbine"
+  },
+  {
+    "partNumber": "TR-TC-LUK-STA",
+    "name": "Torque Converter Stator"
+  },
+  {
+    "partNumber": "TR-TC-LUK-CLT",
+    "name": "Torque Converter Lock-Up Clutch"
+  },
+  {
+    "partNumber": "TR-TC-LUK-DMR",
+    "name": "Torsional Vibration Damper"
+  }
 ]

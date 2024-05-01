@@ -1,7 +1,7 @@
 interface ArticleProps {
-	title: string
-	className?: string | undefined
-	children: React.ReactNode
+	title: string;
+	className?: string | undefined;
+	children: React.ReactNode;
 }
 
 const Article: React.FC<ArticleProps> = ({ title, className, children }) => {

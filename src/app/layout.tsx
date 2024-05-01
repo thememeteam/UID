@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import "./variables.css";
-import "./globals.css";
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+import "./globals.css";
+import "./variables.css";
 
 export const metadata: Metadata = {
 	title: "Feynman Motors",

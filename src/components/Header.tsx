@@ -1,18 +1,18 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = {
-    "/models": "Models",
-    "/configurator": "Configurator",
-    "/accessories": "Accessories",
-    "/network": "Dealerships",
-    "/about": "About"
+	"/models": "Models",
+	"/configurator": "Configurator",
+	"/accessories": "Accessories",
+	"/network": "Dealerships",
+	"/about": "About",
 };
 
 const Header: React.FC = () => {
-    const pathname = usePathname();
+	const pathname = usePathname();
 
 	return (
 		<header
@@ -31,16 +31,20 @@ const Header: React.FC = () => {
 			</Link>
 			<div className="h-full w-0 mx-8 border border-divider-stroke" />
 			<nav className="hidden md:flex gap-6 ">
-                {Object.entries(links).map(e => (
-                    <Link
-					className="transition-color ease-out duration-75 hover:text-accent"
-                    style={{color: pathname.startsWith(e[0]) ? "var(--accent-fill)" : ""}}
-                    key={e[0]}
-					href={e[0]}
-				>
-					{e[1]}
-				</Link>
-                ))}
+				{Object.entries(links).map((e) => (
+					<Link
+						className="transition-color ease-out duration-75 hover:text-accent"
+						style={{
+							color: pathname.startsWith(e[0])
+								? "var(--accent-fill)"
+								: "",
+						}}
+						key={e[0]}
+						href={e[0]}
+					>
+						{e[1]}
+					</Link>
+				))}
 			</nav>
 		</header>
 	);
