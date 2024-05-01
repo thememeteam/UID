@@ -45,7 +45,7 @@
   }
 
   .accentline::after {
-    @apply block content-[''] bg-accent h-1.5 w-16 -skew-x-[20deg] mb-2;
+    @apply block content-[''] bg-accent h-1.5 w-16 -skew-x-[20deg] mb-2 mt-2;
   }
 
   .wedge {

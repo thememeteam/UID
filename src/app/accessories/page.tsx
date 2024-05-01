@@ -9,15 +9,11 @@ const Accessories: React.FC = () => {
 				</span>
 			</Hero>
 			<div className="grid grid-cols-4 gap-2">
-				parts.map(record =>{
-					return(
-						<div className="box" key = {record.partnumber }>
-							<h1></h1>
-						</div>
-					)
+				{
+					parts.map((e) => (
+						<div key={e.partNumber}>{e.name}</div>
+					))
 				}
-					
-				)
 			</div>
 		</>
 	);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 interface SegmentedProps {
-	options: string[];
+	options: readonly string[];
     className?: string;
 	onChange: (e: string) => void;
 }

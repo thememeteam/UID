@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 					wedge`}
 		>
 			<Link href={"/"} className="contents">
-				<span className="text-h1 font-display leading-none transition-color ease-out duration-75 hover:text-accent">
+				<span className="text-h1 font-display transition-color ease-out duration-75 hover:text-accent">
 					Feynman
 				</span>
 			</Link>
