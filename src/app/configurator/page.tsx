@@ -51,7 +51,7 @@ const Configurator: React.FC = () => {
 					options={options}
 					onChange={(e) => setCurrent(e as CarOptions)}
 				/>
-				<div className="absolute bottom-0 right-4 w-2 h-20 rotate-[36.87deg] border-r border-card-stroke" />
+				<div className="absolute bottom-0 right-[2.95rem] w-0 h-16 origin-bottom-right -skew-x-[36.87deg] border-r-[1.5px] border-card-stroke" />
 			</div>
 		</div>
 	);
