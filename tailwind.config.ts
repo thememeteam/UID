@@ -9,23 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--text-primary)',
-        secondary: 'var(--text-secondary)',
-        background: 'var(--background-fill)',
+        primary: 'rgb(var(--text-primary) / <alpha-value>)',
+        secondary: 'rgb(var(--text-secondary) / <alpha-value>)',
+        background: 'rgb(var(--background-fill) / <alpha-value>)',
         card: {
-          DEFAULT: 'var(--card-fill)',
-          stroke: 'var(--card-stroke)'
+          DEFAULT: 'rgb(var(--card-fill) / <alpha-value>)',
+          stroke: 'rgb(var(--card-stroke) / <alpha-value>)'
         },
         element: {
-          DEFAULT: 'var(--element-fill)',
-          stroke: 'var(--element-stroke)'
+          DEFAULT: 'rgb(var(--element-fill) / <alpha-value>)',
+          stroke: 'rgb(var(--element-stroke) / <alpha-value>)'
         },
         accent: {
-          DEFAULT: 'var(--accent-fill)',
-          light: 'var(--accent-light-fill)'
+          DEFAULT: 'rgb(var(--accent-fill) / <alpha-value>)',
+          light: 'rgb(var(--accent-light-fill) / <alpha-value>)'
         },
         divider: {
-          stroke: 'var(--divider-stroke)'
+          stroke: 'rgb(var(--divider-stroke) / <alpha-value>)'
         }
       },
       fontSize: {

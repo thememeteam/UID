@@ -9,7 +9,7 @@ const NuclidePage: React.FC = () => {
 				src="/assets/nuclide/nuclidevid.mp4"
 				alt="Nuclide hero video"
 			>
-				<span className=" mix-blend-difference nomargin text-8xl font-display text-accent">
+				<span className=" mix-blend-difference text-8xl font-display text-accent">
 					Nuclide
 				</span>
 			</Hero>

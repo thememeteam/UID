@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<Hero type="video" src="/assets/stockvid.mp4" alt="Homepage Video">
-				<span className="block mix-blend-difference nomargin text-8xl text-accent">
+				<span className="block mix-blend-difference text-8xl text-accent">
 					Feynman
 				</span>
 				<span className="block w-fit mx-auto text-h2 opacity-75">
