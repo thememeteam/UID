@@ -15,11 +15,11 @@ const Configurator: React.FC = () => {
 	const [current, setCurrent] = useState<CarOptions>("SLS");
 
 	return (
-		<div className="w-full h-full grid grid-rows-[auto_1fr] grid-cols-2">
+		<div className="w-full h-full grid grid-rows-[auto_1fr] grid-cols-[2fr_1fr]">
 			<div className="row-start-1 col-span-2">
 				<Spacer />
 			</div>
-			<div className="row-start-2 col-start-1 col-span-2">
+			<div className="row-start-2 col-start-1">
 				<Canvas shadows camera={{ position: [0, 0, 4.5], fov: 30 }}>
 					<spotLight
 						position={[0, 15, 0]}
@@ -46,11 +46,12 @@ const Configurator: React.FC = () => {
 					</PresentationControls>
 				</Canvas>
 			</div>
-			<div className="row-start-2 col-start-2 m-8 bg-card backdrop-blur-md wedge">
+			<div className="row-start-2 col-start-2 relative m-8 border border-card-stroke wedge">
 				<Segmented
 					options={options}
 					onChange={(e) => setCurrent(e as CarOptions)}
 				/>
+				<div className="absolute bottom-0 right-4 w-2 h-20 rotate-[36.87deg] border-r border-card-stroke" />
 			</div>
 		</div>
 	);
