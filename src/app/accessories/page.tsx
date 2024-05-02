@@ -8,7 +8,7 @@ const Accessories: React.FC = () => {
 				src="/assets/nuclide/p1gtr4.jpg"
 				alt="Accesories header"
 			>
-				<span className="block mix-blend-difference nomargin text-8xl  text-accent">
+				<span className="block mix-blend-difference text-8xl text-accent">
 					Accessories
 				</span>
 			</Hero>

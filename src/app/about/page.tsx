@@ -6,7 +6,7 @@ const About: React.FC = () => {
 		<>
 			<Hero type="video" src="/assets/aboutvid.mp4" alt="About Video">
 				<div className="p-8 relative font-display">
-					<span className="block mix-blend-difference nomargin text-center text-8xl text-accent">
+					<span className="block mix-blend-difference text-center text-8xl text-accent">
 						Striving for
 						<br /> excellence
 					</span>
