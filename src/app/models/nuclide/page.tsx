@@ -20,7 +20,7 @@ const NuclidePage: React.FC = () => {
 							The Feynman Nuclide isn't just a car; it's a
 							symphony of engineering mastery and automotive
 							artistry. With its sleek, aerodynamic silhouette and
-							aggressive stance, the P1 commands attention from
+							aggressive stance, the Nuclide commands attention from
 							every angle. Its carbon fiber bodywork isn't just
 							for show; it's a testament to Feynman's relentless
 							pursuit of lightweight performance.
@@ -31,7 +31,7 @@ const NuclidePage: React.FC = () => {
 							Underneath the stunning exterior lies a hybrid
 							powertrain that combines a potent twin-turbocharged
 							V8 engine with an electric motor, delivering a
-							jaw-dropping total output that catapults the P1 into
+							jaw-dropping total output that catapults the Nuclide into
 							hypercar territory. Acceleration is blistering,
 							propelling occupants from 0 to 60 mph in mere
 							seconds, while the top speed effortlessly breaches

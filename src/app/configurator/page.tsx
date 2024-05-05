@@ -13,6 +13,7 @@ import { useState } from "react";
 
 const options = ["SLS", "Nuclide", "Viper"] as const;
 type CarOptions = (typeof options)[number];
+
 const Configurator: React.FC = () => {
 	const [current, setCurrent] = useState<CarOptions>("SLS");
 

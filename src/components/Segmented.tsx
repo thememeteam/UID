@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 interface SegmentedProps {
+
 	options: readonly string[];
 	className?: string;
-	onChange: (e: string) => void;
+	onChange?: (e: string) => void;
 }
 
 const Segmented: React.FC<SegmentedProps> = ({
@@ -23,17 +24,13 @@ const Segmented: React.FC<SegmentedProps> = ({
 					type="button"
 					onClick={() => {
 						setSelected(e);
-						setTimeout(() => onChange(e), 0);
+						setTimeout(() => onChange?.(e), 0);
 					}}
 					className="p-4 text-center"
-					style={
-						selected === e
-							? {
-									backgroundColor: "var(--accent-fill)",
-									color: "var(--text-accent)",
-								}
-							: {}
-					}
+					style={{
+						backgroundColor:
+							selected === e ? "var(--accent-fill)" : "initial",
+					}}
 				>
 					{e}
 				</button>
