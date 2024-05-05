@@ -1,11 +1,10 @@
 import { useState } from "react";
 
 interface SegmentedProps {
-	options: string[];
-	className?: string;
+
 	options: readonly string[];
 	className?: string;
-	onChange: (e: string) => void;
+	onChange?: (e: string) => void;
 }
 
 const Segmented: React.FC<SegmentedProps> = ({
@@ -17,7 +16,7 @@ const Segmented: React.FC<SegmentedProps> = ({
 
 	return (
 		<div
-			className={`${className} gap-2 grid grid-cols-[repeat(3,1fr)] grid-flow-col`}
+			className={`${className} gap-2 grid auto-cols-fr grid-flow-col`}
 		>
 			{options.map((e) => (
 				<button
@@ -25,7 +24,7 @@ const Segmented: React.FC<SegmentedProps> = ({
 					type="button"
 					onClick={() => {
 						setSelected(e);
-						setTimeout(() => onChange(e), 0);
+						setTimeout(() => onChange?.(e), 0);
 					}}
 					className="p-4 text-center"
 					style={{

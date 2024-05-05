@@ -64,7 +64,7 @@ const Models: React.FC = () => {
 					<p>
 						The ultimate track weapon.
 						<br />
-						Will spontaneously release energy.
+						Where Performance Meets Perfection.
 					</p>
 					<Link
 						href="/models/nuclide"

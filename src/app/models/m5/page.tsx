@@ -9,7 +9,7 @@ const M5Page: React.FC = () => {
 				src="/assets/m5/SLSfinal.mp4"
 				alt="showcase of a BMW M5"
 			>
-				<span className=" mix-blend-difference nomargin text-8xl font-display text-accent">
+				<span className=" mix-blend-difference text-8xl font-display text-accent">
 					Feynman SLS
 				</span>
 			</Hero>

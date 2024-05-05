@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<Hero type="video" src="/assets/stockvid.mp4" alt="Homepage Video">
-				<span className="block mix-blend-difference nomargin text-8xl text-accent">
+				<span className="block mix-blend-difference text-8xl text-accent">
 					Feynman
 				</span>
 				<span className="block w-fit mx-auto text-h2 opacity-75">
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
 							Explore our models
 						</Link>
 					</Article>
-					<img src="/assets/person.jpg" alt="" />
+					<img src="/assets/person.jpg" alt="" className="band"/>
 				</div>
 				<div className="grid grid-cols-2 gap-14 mr-44">
 					<img
@@ -87,9 +87,9 @@ const Home: React.FC = () => {
 						</Link>
 					</Article>
 					<img
-						src="/assets/nuclide/p1_group_photo.webp"
+						src="/assets/pagani.jpg"
 						alt=""
-						className="wedge"
+						className="band"
 					/>
 				</div>
 			</div>
