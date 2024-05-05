@@ -15,7 +15,7 @@ const Segmented: React.FC<SegmentedProps> = ({
 
 	return (
 		<div
-			className={`${className} gap-2 grid grid-cols-[repeat(3,1fr)] grid-flow-col`}
+			className={`${className} gap-2 grid auto-cols-fr grid-flow-col`}
 		>
 			{options.map((e) => (
 				<button
