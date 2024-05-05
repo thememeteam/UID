@@ -1,10 +1,12 @@
 import {useGLTF } from "@react-three/drei";
+import React, { useRef } from "react";
 
-const NuclideModel = (props) => {
+function NuclideModel(props){
   const { nodes, materials } = useGLTF("/assets/nuclide/nuclide.glb");
   return (
-    <>
-      <group {...props} position={[-1.152, -0.001, -2.17]}>
+    <group {...props} dispose={null}>
+
+      <group position={[-1.152, -0.001, -2.17]} scale={1}>
         <mesh
           castShadow
           receiveShadow
@@ -222,7 +224,7 @@ const NuclideModel = (props) => {
           material={materials.tires2}
         />
       </group>
-    </>
+    </group>
   );
 };
 

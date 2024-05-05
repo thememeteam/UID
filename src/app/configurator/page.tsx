@@ -23,7 +23,7 @@ const Configurator: React.FC = () => {
 				<Spacer />
 			</div>
 			<div className="row-start-2 col-start-1">
-				<Canvas camera={{ position: [150, 75, 0] }}>
+				<Canvas camera={{ fov:40, position: [0, 40, 250] }}>
 					<CameraControls
 						makeDefault
 						infinityDolly={true}
@@ -34,12 +34,9 @@ const Configurator: React.FC = () => {
 					<Environment preset="warehouse" />
 					
 					{/* don't do conditional rendering for better performance */}
-					<NuclideModel
-						scale={0.01}
-						visible={current === "Nuclide"}
-					/>
-					<ViperModel scale={0.01} visible={current === "Viper"} />
-					<SLSModel scale={0.01} visible={current === "SLS"} />
+					<NuclideModel position={[-35,0,-70]} scale={0.01} visible={current === "Nuclide"}/>
+					<ViperModel position={[-35,0,-70]} scale={0.01} visible={current === "Viper"} />
+					<SLSModel position={[-35,0,-70]} scale={0.01} visible={current === "SLS"} />
 
 					<mesh rotation={[Math.PI / 2, Math.PI, 0]} scale={500}>
 						<planeGeometry />

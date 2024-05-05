@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function customize() {
-	return <div></div>;
+	return <div>
+		<p>Yo bois</p>
+	</div>;
 }
 
