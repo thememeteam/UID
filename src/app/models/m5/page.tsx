@@ -10,7 +10,7 @@ const M5Page: React.FC = () => {
 				alt="showcase of a BMW M5"
 			>
 				<span className=" mix-blend-difference text-8xl font-display text-accent">
-					Feynman SLS
+					SLS
 				</span>
 			</Hero>
 			<div className="mx-auto max-w-[90ch]">
