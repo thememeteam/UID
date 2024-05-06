@@ -23,7 +23,7 @@ const Configurator: React.FC = () => {
 				<Spacer />
 			</div>
 			<div className="row-start-2 col-start-1">
-				<Canvas camera={{ fov:40, position: [0, 40, 250] }}>
+				<Canvas camera={{ fov: 40, position: [0, 40, 200] }}>
 					<CameraControls
 						makeDefault
 						infinityDolly={true}
@@ -32,22 +32,25 @@ const Configurator: React.FC = () => {
 						maxPolarAngle={Math.PI / 2 - 0.01}
 					/>
 					<Environment preset="warehouse" />
-					
+
 					{/* don't do conditional rendering for better performance */}
-					<NuclideModel position={[-35,0,-70]} scale={0.01} visible={current === "Nuclide"}/>
-					<ViperModel position={[-35,0,-70]} scale={0.01} visible={current === "Viper"} />
-					<SLSModel position={[-35,0,-70]} scale={0.01} visible={current === "SLS"} />
+					<NuclideModel position={[-35, 0, -70]} scale={0.01} visible={current === "Nuclide"} />
+					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"} />
+					<SLSModel position={[-35, 0, -70]} scale={0.01} visible={current === "SLS"} />
 
 					<mesh rotation={[Math.PI / 2, Math.PI, 0]} scale={500}>
 						<planeGeometry />
 						<MeshReflectorMaterial
-							blur={[512, 512]}
+							blur={[3840, 2160]}
 							mixBlur={1}
 							resolution={2048}
 							mixStrength={10}
+							mixContrast={1}
+							minDepthThreshold={0.5}
+							maxDepthThreshold={2}
 							roughness={1}
 							color={0x1a1a1a}
-							mirror={0}
+							mirror={0.05}
 						/>
 					</mesh>
 				</Canvas>

@@ -41,7 +41,7 @@ const Home: React.FC = () => {
 							Explore our models
 						</Link>
 					</Article>
-					<img src="/assets/person.jpg" alt="" className="band"/>
+					<img src="/assets/person.jpg" alt="" className="band" />
 				</div>
 				<div className="grid grid-cols-2 gap-14 mr-44">
 					<img

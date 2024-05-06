@@ -1,4 +1,4 @@
-import {useGLTF } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 const ViperModel = (props) => {
   const { nodes, materials } = useGLTF("/assets/viper/viper.glb");
   return (
