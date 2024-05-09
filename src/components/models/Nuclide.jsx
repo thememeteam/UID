@@ -192,6 +192,7 @@ function NuclideModel(props) {
           geometry={nodes.mesh_0_30.geometry}
           material={materials.Stitchwork}
         />
+        
         <mesh
           castShadow
           receiveShadow

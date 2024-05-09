@@ -34,7 +34,7 @@ const Configurator: React.FC = () => {
 					<Environment preset="warehouse" />
 
 					{/* don't do conditional rendering for better performance */}
-					<NuclideModel position={[-35, 0, -70]} scale={0.01} visible={current === "Nuclide"} />
+					<NuclideModel position={[-38, 0, -70]} scale={0.01} visible={current === "Nuclide"} />
 					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"} />
 					<SLSModel position={[-35, 0, -70]} scale={0.01} visible={current === "SLS"} />
 
