@@ -1,4 +1,4 @@
-const SearchIcon: React.FC<IconProps> = ({ className }) => {
+const CloseIcon: React.FC<IconProps> = ({ className }) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -8,14 +8,14 @@ const SearchIcon: React.FC<IconProps> = ({ className }) => {
 			stroke="currentColor"
 			className={className}
 		>
-            <title>search</title>
+            <title>close</title>
 			<path
 				strokeLinecap="round"
 				strokeLinejoin="round"
-				d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+				d="M6 18 18 6M6 6l12 12"
 			/>
 		</svg>
 	);
 };
 
-export default SearchIcon;
+export default CloseIcon;

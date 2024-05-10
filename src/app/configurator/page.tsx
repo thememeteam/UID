@@ -11,11 +11,9 @@ import {
 import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
 
-const options = ["SLS", "Nuclide", "Viper"] as const;
-type CarOptions = (typeof options)[number];
 
 const Configurator: React.FC = () => {
-	const [current, setCurrent] = useState<CarOptions>("SLS");
+	const [current, setCurrent] = useState<Models>("SLS");
 
 	return (
 		<div className="w-full h-full grid grid-rows-[auto_1fr] grid-cols-[2fr_1fr]">
@@ -50,15 +48,15 @@ const Configurator: React.FC = () => {
 							maxDepthThreshold={2}
 							roughness={1}
 							color={0x1a1a1a}
-							mirror={0.05}
+							mirror={0}
 						/>
 					</mesh>
 				</Canvas>
 			</div>
 			<div className="row-start-2 col-start-2 relative m-8 border border-card-stroke wedge">
 				<Segmented
-					options={options}
-					onChange={(e) => setCurrent(e as CarOptions)}
+					options={models}
+					onChange={(e) => setCurrent(e as Models)}
 				/>
 			</div>
 		</div>
