@@ -10,6 +10,8 @@ import {
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
+import { type Models, models } from "@/globals";
+import { MeshNormalMaterial, MeshStandardMaterial } from "three";
 
 
 const Configurator: React.FC = () => {
@@ -33,8 +35,8 @@ const Configurator: React.FC = () => {
 
 					{/* don't do conditional rendering for better performance */}
 					<NuclideModel position={[-38, 0, -70]} scale={0.01} visible={current === "Nuclide"} />
-					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"} />
 					<SLSModel position={[-35, 0, -70]} scale={0.01} visible={current === "SLS"} />
+					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"}  material={new MeshNormalMaterial()} />
 
 					<mesh rotation={[Math.PI / 2, Math.PI, 0]} scale={500}>
 						<planeGeometry />
