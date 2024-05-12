@@ -9,13 +9,39 @@ import {
 	MeshReflectorMaterial
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { useState } from "react";
-import { type Models, models } from "@/globals";
-import { MeshNormalMaterial, MeshStandardMaterial } from "three";
+import { type Reducer, useReducer, useState } from "react";
+import { type Models, models, type CarMaterials } from "@/globals";
+import { Material, MeshNormalMaterial, MeshStandardMaterial } from "three";
+import MaterialEditor from "@/components/configurator/MaterialEditor";
 
+const initialState: CarMaterials = {
+	body: new MeshStandardMaterial({
+		color: 0x1f1f1f,
+		roughness: 0
+	}),
+	brakeCalipers: new MeshStandardMaterial({}),
+	interiorBase: new MeshStandardMaterial({}),
+	interiorAccent: new MeshStandardMaterial({})
+}
+
+const actionTypes = ["body", "rims", "calipers", "interiorBase", "interiorAccent"] as const;
+type ActionTypes = typeof actionTypes[number];
+
+export type MaterialAction = { type: ActionTypes; key: keyof MeshStandardMaterial; value: any }
+
+const reducer: Reducer<CarMaterials, MaterialAction> = (state, action) => {
+	switch(action.type) {
+		case "body":
+			state.body[action.key] = action.value;
+			return state;
+		default:
+			return state;
+	}
+}
 
 const Configurator: React.FC = () => {
 	const [current, setCurrent] = useState<Models>("SLS");
+	const [materials, dispatch] = useReducer(reducer, initialState);
 
 	return (
 		<div className="w-full h-full grid grid-rows-[auto_1fr] grid-cols-[2fr_1fr]">
@@ -34,9 +60,9 @@ const Configurator: React.FC = () => {
 					<Environment preset="warehouse" />
 
 					{/* don't do conditional rendering for better performance */}
-					<NuclideModel position={[-38, 0, -70]} scale={0.01} visible={current === "Nuclide"} />
-					<SLSModel position={[-35, 0, -70]} scale={0.01} visible={current === "SLS"} />
-					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"}  material={new MeshNormalMaterial()} />
+					<NuclideModel position={[-38, 0, -70]} scale={0.01} visible={current === "Nuclide"} materials={materials}/>
+					<SLSModel position={[-35, 0, -70]} scale={0.01} visible={current === "SLS"} materials={materials} />
+					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"} materials={materials} />
 
 					<mesh rotation={[Math.PI / 2, Math.PI, 0]} scale={500}>
 						<planeGeometry />
@@ -60,6 +86,7 @@ const Configurator: React.FC = () => {
 					options={models}
 					onChange={(e) => setCurrent(e as Models)}
 				/>
+				<MaterialEditor state={materials} dispatch={dispatch}  />
 			</div>
 		</div>
 	);

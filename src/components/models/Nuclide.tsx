@@ -1,7 +1,8 @@
+import { CarProps } from "@/globals";
 import { useGLTF } from "@react-three/drei";
 import React, { useRef } from "react";
 
-function NuclideModel(props) {
+const NuclideModel: React.FC<CarProps> = (props) => {
   const { nodes, materials } = useGLTF("/assets/nuclide/nuclide.glb");
   return (
     <group {...props} dispose={null}>
@@ -130,7 +131,7 @@ function NuclideModel(props) {
           castShadow
           receiveShadow
           geometry={nodes.mesh_0_20.geometry}
-          material={materials.WhitePaintjob}
+          material={props.materials.body}
         />
         <mesh
           castShadow

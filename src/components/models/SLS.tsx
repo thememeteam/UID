@@ -1,7 +1,8 @@
+import { CarProps } from "@/globals";
 import { useGLTF } from "@react-three/drei";
 import React, { useRef } from "react";
 
-function SLSModel(props) {
+const SLSModel: React.FC<CarProps> = (props) => {
   const { nodes, materials } = useGLTF("/assets/sls/sls.glb");
   return (
     <group {...props} dispose={null}>
@@ -112,7 +113,7 @@ function SLSModel(props) {
           castShadow
           receiveShadow
           geometry={nodes.mesh_0_17.geometry}
-          material={materials.SL63_paint}
+          material={props.materials.body}
         />
         <mesh
           castShadow

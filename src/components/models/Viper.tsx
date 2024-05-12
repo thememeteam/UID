@@ -1,23 +1,11 @@
+import type { CarProps } from "@/globals";
 import { useGLTF } from "@react-three/drei";
-import type { GroupProps } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
-import {
-	type Mesh,
-	MeshNormalMaterial,
-	MeshDistanceMaterial,
-	MeshDepthMaterial,
-	MeshToonMaterial,
-	type Material,
-} from "three";
+import { useRef } from "react";
+import type { Mesh } from "three";
 
-const ViperModel: React.FC<GroupProps & {material: Material}> = (props) => {
+const ViperModel: React.FC<CarProps> = (props) => {
 	const { nodes, materials } = useGLTF("/assets/viper/viper.glb");
 	const bodyRef = useRef<Mesh>(null);
-
-	// useEffect(() => {
-	// 	bodyRef.current.material = new MeshNormalMaterial();
-	// 	console.log('asdf');
-	// }, []);
 
 	return (
 		<group {...props} dispose={null}>
@@ -45,7 +33,7 @@ const ViperModel: React.FC<GroupProps & {material: Material}> = (props) => {
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_3.geometry}
-					material={props.material}
+					material={props.materials.body}
 				/>
 				<mesh
 					castShadow
