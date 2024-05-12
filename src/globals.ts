@@ -10,9 +10,11 @@ interface IconProps {
 
 interface CarMaterials {
 	body: MeshStandardMaterial;
-	brakeCalipers: MeshStandardMaterial;
+	rims: MeshStandardMaterial;
+	calipers: MeshStandardMaterial;
 	interiorBase: MeshStandardMaterial;
 	interiorAccent: MeshStandardMaterial;
+	interiorAccentMetallic: MeshStandardMaterial;
 }
 
 type CarProps = GroupProps & {materials: CarMaterials};

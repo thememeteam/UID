@@ -14,164 +14,181 @@ const ViperModel: React.FC<CarProps> = (props) => {
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0.geometry}
-					material={materials.black}
+					material={materials["black.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_1.geometry}
-					material={materials["black_matt.001"]}
+					material={materials["black_matt.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_2.geometry}
-					material={materials["black_matt.001"]}
+					material={props.materials.calipers}
 				/>
 				<mesh
-					// ref={bodyRef}
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_3.geometry}
-					material={props.materials.body}
+					material={props.materials.rims}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_4.geometry}
-					material={materials.brakes2}
+					material={materials["black_matt.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_5.geometry}
-					material={materials["chrome.001"]}
+					material={props.materials.body}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_6.geometry}
-					material={materials.chrome_d}
+					material={materials["brakes2.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_7.geometry}
-					material={materials.d_glass}
+					material={materials["chrome.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_8.geometry}
-					material={materials.d_red}
+					material={materials["chrome_d.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_9.geometry}
-					material={materials["glass.001"]}
+					material={materials["d_glass.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_10.geometry}
-					material={materials.gold}
+					material={materials["d_red.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_11.geometry}
-					material={materials.grid}
+					material={materials["glass.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_12.geometry}
-					material={materials.interior_blue}
+					material={materials["gold.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_13.geometry}
-					material={materials.interior_bump}
+					material={materials["grid.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_14.geometry}
-					material={materials.interior_carbon}
+					material={props.materials.interiorAccent}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_15.geometry}
-					material={materials["interior_decals.001"]}
+					material={materials["interior_blue.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_16.geometry}
-					material={materials.interior_red}
+					material={materials["interior_bump.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_17.geometry}
-					material={materials.interior_silver}
+					material={materials["interior_carbon.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_18.geometry}
-					material={materials.interior_speakers}
+					material={props.materials.interiorBase}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_19.geometry}
-					material={materials.interior_stripes}
+					material={materials["interior_decals.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_20.geometry}
-					material={materials.lights}
+					material={materials["interior_red.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_21.geometry}
-					material={materials.logo}
+					material={materials["interior_silver.002"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_22.geometry}
-					material={materials.plate}
+					material={materials["interior_speakers.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_23.geometry}
-					material={materials.r_glass}
+					material={materials["lights.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_24.geometry}
-					material={materials.r_lights}
+					material={materials["logo.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_25.geometry}
-					material={materials.silver_d}
+					material={materials["plate.001"]}
 				/>
 				<mesh
 					castShadow
 					receiveShadow
 					geometry={nodes.mesh_0_26.geometry}
-					material={materials.tire_mat5}
+					material={materials["r_glass.001"]}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.mesh_0_27.geometry}
+					material={materials["r_lights.001"]}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.mesh_0_28.geometry}
+					material={materials["silver_d.001"]}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.mesh_0_29.geometry}
+					material={materials["tire_mat5.001"]}
 				/>
 			</group>
 		</group>

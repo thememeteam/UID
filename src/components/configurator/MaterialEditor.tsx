@@ -12,6 +12,14 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 	const [bodyColor, setBodyColor] = useState(`#${state.body.color.getHexString()}`);
 	const [metalness, setMetalness] = useState(0);
 
+	const [rimColor, setRimColor] = useState(`#${state.rims.color.getHexString()}`);
+	const [caliperColor, setCaliperColor] = useState(`#${state.calipers.color.getHexString()}`);
+
+	const [interiorBaseColor, setInteriorBaseColor] = useState(`#${state.interiorBase.color.getHexString()}`);
+	const [interiorAccentColor, setInteriorAccentColor] = useState(`#${state.interiorAccent.color.getHexString()}`);
+
+
+
 	return (
 		<div>
 			<details>
@@ -71,33 +79,35 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 			<details>
 				<summary>Wheels</summary>
 				<div>
-					{/* <label>
+					<label>
 						Rim Color:
 						<input
 							type="color"
-							value={state.ri}
-							onChange={(e) =>
-								dispatchAndNotify({
-									type: "wheels",
-									key: "rimColor",
-									value: e.target.value,
+							value={rimColor}
+							onChange={(e) => {
+								setRimColor(e.target.value);
+								dispatch({
+									type: "rims",
+									key: "color",
+									value: new Color(e.target.value),
 								})
-							}
+							}}
 						/>
-					</label> */}
+					</label>
 					<br />
 					<label>
 						Brake Caliper Color:
 						<input
 							type="color"
-							value={state.brakeCalipers.color.getHexString()}
-							onChange={(e) =>
+							value={caliperColor}
+							onChange={(e) => {
+								setCaliperColor(e.target.value);
 								dispatch({
 									type: "calipers",
 									key: "color",
-									value: e.target.value,
+									value: new Color(e.target.value),
 								})
-							}
+							}}
 						/>
 					</label>
 				</div>
@@ -109,14 +119,15 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 						Base Color:
 						<input
 							type="color"
-							value={state.interiorBase.color.getHexString()}
-							onChange={(e) =>
+							value={interiorBaseColor}
+							onChange={(e) => {
+								setInteriorBaseColor(e.target.value);
 								dispatch({
 									type: "interiorBase",
 									key: "color",
-									value: e.target.value,
+									value: new Color(e.target.value),
 								})
-							}
+							}}
 						/>
 					</label>
 					<br />
@@ -124,14 +135,15 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 						Accent Color:
 						<input
 							type="color"
-							value={state.interiorAccent.color.getHexString()}
-							onChange={(e) =>
+							value={interiorAccentColor}
+							onChange={(e) => {
+								setInteriorAccentColor(e.target.value);
 								dispatch({
 									type: "interiorAccent",
 									key: "color",
-									value: e.target.value,
+									value: new Color(e.target.value),
 								})
-							}
+							}}
 						/>
 					</label>
 				</div>

@@ -16,12 +16,30 @@ import MaterialEditor from "@/components/configurator/MaterialEditor";
 
 const initialState: CarMaterials = {
 	body: new MeshStandardMaterial({
-		color: 0x1f1f1f,
+		color: 0x2f2f2f,
 		roughness: 0
 	}),
-	brakeCalipers: new MeshStandardMaterial({}),
-	interiorBase: new MeshStandardMaterial({}),
-	interiorAccent: new MeshStandardMaterial({})
+	rims: new MeshStandardMaterial({
+		color: 'black',
+		roughness: 0
+	}),
+	calipers: new MeshStandardMaterial({
+		color: 0xf77315,
+		roughness: 0.3
+	}),
+	interiorBase: new MeshStandardMaterial({
+		color: 'black',
+		roughness: 0.5
+	}),
+	interiorAccent: new MeshStandardMaterial({
+		color: 0xf77315,
+		roughness: 1
+	}),
+	interiorAccentMetallic: new MeshStandardMaterial({
+		color: 0xf77315,
+		roughness: 0.2,
+		metalness: 1
+	})
 }
 
 const actionTypes = ["body", "rims", "calipers", "interiorBase", "interiorAccent"] as const;
@@ -30,13 +48,13 @@ type ActionTypes = typeof actionTypes[number];
 export type MaterialAction = { type: ActionTypes; key: keyof MeshStandardMaterial; value: any }
 
 const reducer: Reducer<CarMaterials, MaterialAction> = (state, action) => {
-	switch(action.type) {
-		case "body":
-			state.body[action.key] = action.value;
-			return state;
-		default:
-			return state;
+	if(action.type === "interiorAccent") {
+		state.interiorAccent[action.key] = action.value;
+		state.interiorAccentMetallic[action.key] = action.value;
+		return state;
 	}
+	state[action.type][action.key] = action.value;
+	return state;
 }
 
 const Configurator: React.FC = () => {

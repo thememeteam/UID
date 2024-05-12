@@ -23,7 +23,7 @@ const NuclideModel: React.FC<CarProps> = (props) => {
           castShadow
           receiveShadow
           geometry={nodes.mesh_0_2.geometry}
-          material={materials.Blue}
+          material={props.materials.interiorAccent}
         />
         <mesh
           castShadow
