@@ -210,7 +210,7 @@ const NuclideModel: React.FC<CarProps> = (props) => {
           castShadow
           receiveShadow
           geometry={nodes.mesh_0_33.geometry}
-          material={materials.Rims}
+          material={props.materials.rims}
         />
         <mesh
           castShadow

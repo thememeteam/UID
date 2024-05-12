@@ -1,18 +1,18 @@
 "use client";
 import Segmented from "@/components/Segmented";
 import Spacer from "@/components/Spacer";
+import MaterialEditor from "@/components/configurator/MaterialEditor";
 import NuclideModel from "@/components/models/Nuclide";
 import SLSModel from "@/components/models/SLS";
 import ViperModel from "@/components/models/Viper";
+import { type CarMaterials, type Models, models } from "@/globals";
 import {
 	CameraControls, Environment,
 	MeshReflectorMaterial
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { type Reducer, useReducer, useState } from "react";
-import { type Models, models, type CarMaterials } from "@/globals";
-import { Material, MeshNormalMaterial, MeshStandardMaterial } from "three";
-import MaterialEditor from "@/components/configurator/MaterialEditor";
+import { DoubleSide, MeshStandardMaterial } from "three";
 
 const initialState: CarMaterials = {
 	body: new MeshStandardMaterial({
@@ -21,7 +21,9 @@ const initialState: CarMaterials = {
 	}),
 	rims: new MeshStandardMaterial({
 		color: 'black',
-		roughness: 0
+		roughness: 0,
+		metalness: 1,
+		side: DoubleSide
 	}),
 	calipers: new MeshStandardMaterial({
 		color: 0xf77315,
