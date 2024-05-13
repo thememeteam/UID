@@ -7,12 +7,11 @@ const Models: React.FC = () => {
 			<div
 				className="col-start-1 row-start-1 row-span-2 
 				bg-[url('/assets/m5/sl63two2.jpg')] bg-cover bg-top-left 
-				flex flex-col justify-center"
+				flex flex-col justify-end md:justify-center p-8"
 			>
-				<div className="absolute w-full h-full opacity-90" />
 				<Article
 					title="SLS"
-					className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge"
+					className="md:self-end md:mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge"
 				>
 					<p>
 						Luxury for the week,
@@ -28,16 +27,18 @@ const Models: React.FC = () => {
 			</div>
 			<div
 				className="col-start-1 row-start-2 row-span-3
-				bg-[url('/assets/viper/porsche-normal.jpg')] bg-right bg-cover 
-				relative flex flex-col justify-center opacity"
-				style={{
-					mask: "linear-gradient(to bottom, transparent 0%, black 7rem)",
-				}}
+				
+				relative flex flex-col justify-end md:justify-center opacity p-8"
 			>
-				<div className="absolute w-full h-full opacity-90" />
+				<div
+					className="absolute top-0 left-0 w-full h-full bg-[url('/assets/viper/porsche-normal.jpg')] bg-right bg-cover"
+					style={{
+						mask: "linear-gradient(to bottom, transparent 0%, black 7rem)",
+					}}
+				/>
 				<Article
 					title="Viper"
-					className="w-fit ml-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge"
+					className="w-full md:w-fit z-10 md:ml-32 bg-card backdrop-blur-md p-8 border border-card-stroke wedge"
 				>
 					<p>Track performance, road practicality.</p>
 					<Link
@@ -51,15 +52,14 @@ const Models: React.FC = () => {
 			<div
 				className="col-start-1 row-start-4 row-span-2
 				bg-[url('/assets/nuclide/p1.jpg')] bg-cover bg-left
-				relative flex flex-col justify-center"
+				relative flex flex-col justify-end md:justify-center p-8"
 				style={{
 					mask: "linear-gradient(to bottom, transparent 0%, black 7rem",
 				}}
 			>
-				<div className="absolute w-full h-full opacity-90" />
 				<Article
 					title="Nuclide"
-					className="self-end mr-32 z-10 bg-card backdrop-blur-md p-8 border border-card-stroke wedge"
+					className="w-full md:w-fit self-end md:mr-32 bg-card backdrop-blur-md p-8 border border-card-stroke wedge [mask:none]"
 				>
 					<p>
 						The ultimate track weapon.

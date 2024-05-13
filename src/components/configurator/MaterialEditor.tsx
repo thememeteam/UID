@@ -18,15 +18,13 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 	const [interiorBaseColor, setInteriorBaseColor] = useState(`#${state.interiorBase.color.getHexString()}`);
 	const [interiorAccentColor, setInteriorAccentColor] = useState(`#${state.interiorAccent.color.getHexString()}`);
 
-
-
 	return (
-		<div>
-			<details>
+		<div className="flex flex-col gap-2 my-2">
+			<details className="px-4 py-1">
 				<summary>Body</summary>
-				<div>
-					<label>
-						Base Color:
+				<div className="flex flex-col gap-2 ml-4 mt-2">
+					<label className="flex flex-row justify-between">
+						Base Color
 						<input
 							type="color"
 							value={bodyColor}
@@ -40,27 +38,29 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 							}}
 						/>
 					</label>
-					<br />
-					<label>
-						Metalness:
-						<input
-							type="range"
-							min={0}
-							max={100}
-							value={metalness}
-							onChange={(e) => {
-								setMetalness(Number.parseInt(e.target.value));
-								dispatch({
-									type: "body",
-									key: "metalness",
-									value: Number.parseInt(e.target.value) / 100,
-								})
-							}}
-						/>
-						{metalness}%
+					<label  className="flex flex-row justify-between">
+						Metalness
+						<div>
+							<input
+								className="mr-2"
+								type="range"
+								min={0}
+								max={100}
+								value={metalness}
+								onChange={(e) => {
+									setMetalness(Number.parseInt(e.target.value));
+									dispatch({
+										type: "body",
+										key: "metalness",
+										value: Number.parseInt(e.target.value) / 100,
+									})
+								}}
+							/>
+							{metalness}%
+						</div>
 					</label>
-					<br />
-					<label>
+					<label  className="flex flex-row justify-between">
+						Matte Paint
 						<input
 							type="checkbox"
 							// checked={state.body.roughness === 0.5}
@@ -72,15 +72,14 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 								})
 							}
 						/>
-						Matte Paint
 					</label>
 				</div>
 			</details>
-			<details>
+			<details className="px-4 py-1">
 				<summary>Wheels</summary>
-				<div>
-					<label>
-						Rim Color:
+				<div className="flex flex-col gap-2 ml-4 mt-2">
+					<label  className="flex flex-row justify-between">
+						Rim Color
 						<input
 							type="color"
 							value={rimColor}
@@ -94,9 +93,8 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 							}}
 						/>
 					</label>
-					<br />
-					<label>
-						Brake Caliper Color:
+					<label  className="flex flex-row justify-between">
+						Brake Caliper Color
 						<input
 							type="color"
 							value={caliperColor}
@@ -112,11 +110,11 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 					</label>
 				</div>
 			</details>
-			<details>
+			<details className="px-4 py-1">
 				<summary>Interior</summary>
-				<div>
-					<label>
-						Base Color:
+				<div className="flex flex-col gap-2 ml-4 mt-2">
+					<label  className="flex flex-row justify-between">
+						Base Color
 						<input
 							type="color"
 							value={interiorBaseColor}
@@ -130,9 +128,8 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 							}}
 						/>
 					</label>
-					<br />
-					<label>
-						Accent Color:
+					<label  className="flex flex-row justify-between">
+						Accent Color
 						<input
 							type="color"
 							value={interiorAccentColor}

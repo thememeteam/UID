@@ -11,6 +11,7 @@ import {
 	MeshReflectorMaterial
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { useSearchParams } from "next/navigation";
 import { type Reducer, useReducer, useState } from "react";
 import { DoubleSide, MeshStandardMaterial } from "three";
 
@@ -60,7 +61,11 @@ const reducer: Reducer<CarMaterials, MaterialAction> = (state, action) => {
 }
 
 const Configurator: React.FC = () => {
-	const [current, setCurrent] = useState<Models>("SLS");
+	const params = useSearchParams();
+	const paramValue = params.get("model") ?? "SLS";
+	const model: Models = models.includes(paramValue as Models) ? paramValue as Models : "SLS";
+
+	const [current, setCurrent] = useState<Models>(model);
 	const [materials, dispatch] = useReducer(reducer, initialState);
 
 	return (
@@ -104,6 +109,7 @@ const Configurator: React.FC = () => {
 			<div className="row-start-2 col-start-1 self-end md:self-stretch md:col-start-2 relative m-8 bg-card md:bg-none backdrop-blur-md md:backdrop-filter-none border border-card-stroke wedge">
 				<Segmented
 					options={models}
+					selected={current}
 					onChange={(e) => setCurrent(e as Models)}
 				/>
 				<MaterialEditor state={materials} dispatch={dispatch}  />

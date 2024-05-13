@@ -3,16 +3,18 @@ import { useState } from "react";
 interface SegmentedProps {
 
 	options: readonly string[];
+	selected?: string;
 	className?: string;
 	onChange?: (e: string) => void;
 }
 
 const Segmented: React.FC<SegmentedProps> = ({
 	options,
+	selected,
 	className,
 	onChange,
 }) => {
-	const [selected, setSelected] = useState<string>(options[0]);
+	const [selectedState, setSelectedState] = useState<string>(options.includes(selected) ? selected : options[0]);
 
 	return (
 		<div
@@ -23,7 +25,7 @@ const Segmented: React.FC<SegmentedProps> = ({
 					key={e}
 					type="button"
 					onClick={() => {
-						setSelected(e);
+						setSelectedState(e);
 						setTimeout(() => onChange?.(e), 0);
 					}}
 					className="p-4 text-center"
