@@ -4,7 +4,9 @@ import ListItem from "@/components/network/ListItem";
 const Network: React.FC = () => {
 	return (
 		<div className="grid grid-flow-row h-full items-center justify-center">
-			<Spacer className="row-start-1 col-start-1 md:col-span-2" />
+			<div className="row-start-1 col-start-1 md:col-span-2">
+				<Spacer />
+			</div>
 			<iframe
 				title="maps"
 				src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"

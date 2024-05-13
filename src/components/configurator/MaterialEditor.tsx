@@ -4,19 +4,29 @@ import { type Dispatch, type Reducer, useReducer, useState } from "react";
 import { Color, MeshStandardMaterial } from "three";
 
 interface MaterialEditorProps {
-	state: CarMaterials,
+	state: CarMaterials;
 	dispatch: Dispatch<MaterialAction>;
 }
 
 const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
-	const [bodyColor, setBodyColor] = useState(`#${state.body.color.getHexString()}`);
+	const [bodyColor, setBodyColor] = useState(
+		`#${state.body.color.getHexString()}`,
+	);
 	const [metalness, setMetalness] = useState(0);
 
-	const [rimColor, setRimColor] = useState(`#${state.rims.color.getHexString()}`);
-	const [caliperColor, setCaliperColor] = useState(`#${state.calipers.color.getHexString()}`);
+	const [rimColor, setRimColor] = useState(
+		`#${state.rims.color.getHexString()}`,
+	);
+	const [caliperColor, setCaliperColor] = useState(
+		`#${state.calipers.color.getHexString()}`,
+	);
 
-	const [interiorBaseColor, setInteriorBaseColor] = useState(`#${state.interiorBase.color.getHexString()}`);
-	const [interiorAccentColor, setInteriorAccentColor] = useState(`#${state.interiorAccent.color.getHexString()}`);
+	const [interiorBaseColor, setInteriorBaseColor] = useState(
+		`#${state.interiorBase.color.getHexString()}`,
+	);
+	const [interiorAccentColor, setInteriorAccentColor] = useState(
+		`#${state.interiorAccent.color.getHexString()}`,
+	);
 
 	return (
 		<div className="flex flex-col gap-2 my-2">
@@ -38,28 +48,31 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 							}}
 						/>
 					</label>
-					<label  className="flex flex-row justify-between">
+					<label className="flex flex-row justify-between">
 						Metalness
-						<div>
+						<div className="flex flex-row items-center gap-2">
+							{metalness}%
 							<input
-								className="mr-2"
 								type="range"
 								min={0}
 								max={100}
 								value={metalness}
 								onChange={(e) => {
-									setMetalness(Number.parseInt(e.target.value));
+									setMetalness(
+										Number.parseInt(e.target.value),
+									);
 									dispatch({
 										type: "body",
 										key: "metalness",
-										value: Number.parseInt(e.target.value) / 100,
-									})
+										value:
+											Number.parseInt(e.target.value) /
+											100,
+									});
 								}}
 							/>
-							{metalness}%
 						</div>
 					</label>
-					<label  className="flex flex-row justify-between">
+					<label className="flex flex-row justify-between">
 						Matte Paint
 						<input
 							type="checkbox"
@@ -78,7 +91,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 			<details className="px-4 py-1">
 				<summary>Wheels</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
-					<label  className="flex flex-row justify-between">
+					<label className="flex flex-row justify-between">
 						Rim Color
 						<input
 							type="color"
@@ -89,11 +102,11 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 									type: "rims",
 									key: "color",
 									value: new Color(e.target.value),
-								})
+								});
 							}}
 						/>
 					</label>
-					<label  className="flex flex-row justify-between">
+					<label className="flex flex-row justify-between">
 						Brake Caliper Color
 						<input
 							type="color"
@@ -104,7 +117,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 									type: "calipers",
 									key: "color",
 									value: new Color(e.target.value),
-								})
+								});
 							}}
 						/>
 					</label>
@@ -113,7 +126,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 			<details className="px-4 py-1">
 				<summary>Interior</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
-					<label  className="flex flex-row justify-between">
+					<label className="flex flex-row justify-between">
 						Base Color
 						<input
 							type="color"
@@ -124,11 +137,11 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 									type: "interiorBase",
 									key: "color",
 									value: new Color(e.target.value),
-								})
+								});
 							}}
 						/>
 					</label>
-					<label  className="flex flex-row justify-between">
+					<label className="flex flex-row justify-between">
 						Accent Color
 						<input
 							type="color"
@@ -139,7 +152,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 									type: "interiorAccent",
 									key: "color",
 									value: new Color(e.target.value),
-								})
+								});
 							}}
 						/>
 					</label>

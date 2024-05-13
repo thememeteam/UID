@@ -14,8 +14,6 @@ const Segmented: React.FC<SegmentedProps> = ({
 	className,
 	onChange,
 }) => {
-	const [selectedState, setSelectedState] = useState<string>(options.includes(selected) ? selected : options[0]);
-
 	return (
 		<div
 			className={`${className} gap-2 grid auto-cols-fr grid-flow-col`}
@@ -25,7 +23,6 @@ const Segmented: React.FC<SegmentedProps> = ({
 					key={e}
 					type="button"
 					onClick={() => {
-						setSelectedState(e);
 						setTimeout(() => onChange?.(e), 0);
 					}}
 					className="p-4 text-center"

@@ -1,8 +1,6 @@
-const Spacer: React.FC<{ className: string }> = ({ className }) => {
+const Spacer: React.FC = () => {
 	return (
-		<div className={className}>
-			<div className="h-16" />
-		</div>
+		<div className="h-16" />
 	);
 };
 
