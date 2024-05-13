@@ -57,7 +57,7 @@ const NuclidePage: React.FC = () => {
 						</p>
 						<Link
 							className="bg-accent text-black p-2 -skew-x-[20deg]"
-							href={"/configurator"}
+							href={"/configurator/?model=Nuclide"}
 						>
 							Configure your Nuclide
 						</Link>
