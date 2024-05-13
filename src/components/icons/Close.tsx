@@ -1,3 +1,5 @@
+import type { IconProps } from "@/globals";
+
 const CloseIcon: React.FC<IconProps> = ({ className }) => {
 	return (
 		<svg

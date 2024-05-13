@@ -1,6 +1,6 @@
 import type { IconProps } from "@/globals";
 
-const SearchIcon: React.FC<IconProps> = ({ className }) => {
+const MenuIcon: React.FC<IconProps> = ({ className }) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -10,14 +10,14 @@ const SearchIcon: React.FC<IconProps> = ({ className }) => {
 			stroke="currentColor"
 			className={className}
 		>
-            <title>search</title>
+            <title>menu</title>
 			<path
 				strokeLinecap="round"
 				strokeLinejoin="round"
-				d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+				d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
 			/>
 		</svg>
 	);
 };
 
-export default SearchIcon;
+export default MenuIcon;

@@ -6,16 +6,16 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<Hero type="video" src="/assets/stockvid.mp4" alt="Homepage Video">
-				<span className="block mix-blend-difference text-8xl text-accent">
+				<span className="block mix-blend-difference text-5xl md:text-8xl text-accent">
 					Feynman
 				</span>
-				<span className="block w-fit mx-auto text-h2 opacity-75">
+				<span className="block w-fit mx-auto md:text-h2 opacity-75">
 					Performance exemplified
 				</span>
 			</Hero>
-			<div className="flex flex-col gap-16 mx-auto max-w-[130ch] mt-16">
+			<div className="flex flex-col gap-8 md:gap-16 md:mx-auto max-w-[130ch] mt-16">
 				<div className="mt-12 text-center self-center">
-					<p className="font-display text-h1 text-nowrap">
+					<p className="font-display text-3xl md:text-h1 md:text-nowrap">
 						We make high-performance vehicles.
 					</p>
 					<p className="font-body font-normal mx-auto max-w-[50ch]">
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 					</p>
 				</div>
 				<hr className="border-divider-stroke my-6 w-1/5 self-center" />
-				<div className="grid grid-cols-2 gap-8 ml-44">
+				<div className="grid md:grid-cols-2 gap-8">
 					<Article title="Our work">
 						<p>Every model we release is our next magnum opus.</p>
 						<p>
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
 					</Article>
 					<img src="/assets/person.jpg" alt="" className="band" />
 				</div>
-				<div className="grid grid-cols-2 gap-14 mr-44">
+				<div className="grid md:grid-cols-2 gap-14">
 					<img
 						src="/assets/viper/gt3filler.webp"
 						alt=""
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
 						</Link>
 					</Article>
 				</div>
-				<div className="grid grid-cols-2 gap-8 mb-12 ml-44">
+				<div className="grid md:grid-cols-2 gap-8 mb-12">
 					<Article className="max-w-[50ch] mb-8" title="Our legacy">
 						<p>
 							We were founded in 1987 by Muthuswamy Feynman, and
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
 						className="band"
 					/>
 				</div>
-			</div>
+			</div> 
 		</>
 	);
 };

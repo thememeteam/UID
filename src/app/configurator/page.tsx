@@ -64,7 +64,7 @@ const Configurator: React.FC = () => {
 	const [materials, dispatch] = useReducer(reducer, initialState);
 
 	return (
-		<div className="w-full h-full grid grid-rows-[auto_1fr] grid-cols-[2fr_1fr]">
+		<div className="w-full h-full grid grid-rows-[auto_1fr] md:grid-cols-[2fr_1fr]">
 			<div className="row-start-1 col-span-2">
 				<Spacer />
 			</div>
@@ -101,7 +101,7 @@ const Configurator: React.FC = () => {
 					</mesh>
 				</Canvas>
 			</div>
-			<div className="row-start-2 col-start-2 relative m-8 border border-card-stroke wedge">
+			<div className="row-start-2 col-start-1 self-end md:self-stretch md:col-start-2 relative m-8 bg-card md:bg-none backdrop-blur-md md:backdrop-filter-none border border-card-stroke wedge">
 				<Segmented
 					options={models}
 					onChange={(e) => setCurrent(e as Models)}

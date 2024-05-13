@@ -26,12 +26,12 @@ const Accessories: React.FC = () => {
 				src="/assets/nuclide/p1gtr4.jpg"
 				alt="Accesories header"
 			>
-				<span className="block mix-blend-difference text-8xl text-accent">
+				<span className="block mix-blend-difference text-4xl md:text-8xl text-accent">
 					Accessories
 				</span>
 			</Hero>
-			<div className="mt-12 text-center self-center mb-24">
-				<p className="mr-48 ml-48 font-display text-h1 text-wrap">
+			<div className="mt-12 mb-24 mx-8 md:mx-auto  md:w-[60ch] text-center self-center">
+				<p className="font-display text-3xl md:text-h1 text-wrap">
 					Customise Your Vehicle with Feynman certified accessories
 				</p>
 				<p className="font-body font-normal mx-auto max-w-[50ch]">
@@ -41,28 +41,23 @@ const Accessories: React.FC = () => {
 					whatever the road, or the lack thereof, may throw at you.
 				</p>
 			</div>
-			<div className="mr-72 ml-72">
-				<Segmented
-					options={["Accessories", "Parts"]}
-					onChange={(e) => setCurrentTab(e as Tabs)}
-				/>
-			</div>
-			<div>
-				<div className="grid grid-cols-4 content-center  space-y-10 mb-10">
-					<div></div>
-					<div className="grid col-span-2 relative">
-						<input
-							type="search"
-							onChange={(e) =>
-								setFilter(e.target.value.toLowerCase())
-							}
-							placeholder="S&#x0065;arch"
-							className="indent-14 placeholder:text-center py-3 rounded-2xl pr-4"
-						/>
-						<SearchIcon className="w-6 h-full absolute left-0 ml-4 text-secondary" />
-					</div>
+			<div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12">
+				<div>
+					<Segmented
+						options={["Accessories", "Parts"]}
+						onChange={(e) => setCurrentTab(e as Tabs)}
+					/>
 				</div>
-				<div className="grid grid-cols-2 gri gap-2 mr-24 ml-24 gap-x-10 ">
+				<div className="grid relative">
+					<input
+						type="search"
+						onChange={(e) => setFilter(e.target.value.toLowerCase())}
+						placeholder="Search"
+						className="indent-14 placeholder:text-center py-3 rounded-2xl pr-4"
+					/>
+					<SearchIcon className="w-6 h-full absolute left-0 ml-4 text-secondary" />
+				</div>
+				<div className="grid md:grid-cols-[1fr_1fr_1fr] gap-4">
 					{actualData
 						.filter((e) =>
 							filter
@@ -83,15 +78,22 @@ const Accessories: React.FC = () => {
 									<h4>Part number: {item.partNumber}</h4>
 								</div>
 								{item.url && (
-									<img className="w-80 " src={item.url} />
+									<img className="w-80" src={item.url} />
 								)}
 							</div>
 						))}
 				</div>
 			</div>
-			<Dialog isOpen={isOpen} onClose={() => setIsOpen(false)} className="backdrop:backdrop-blur-md">
+			<Dialog
+				isOpen={isOpen}
+				onClose={() => setIsOpen(false)}
+				className="backdrop:backdrop-blur-md"
+			>
 				<div className="bg-background p-8 relative">
-					<button className="absolute right-0 top-0 p-2" onClick={() => setIsOpen(false)}>
+					<button
+						className="absolute right-0 top-0 p-2"
+						onClick={() => setIsOpen(false)}
+					>
 						<CloseIcon className="w-6 h-6" />
 					</button>
 				</div>

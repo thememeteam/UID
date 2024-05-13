@@ -16,9 +16,9 @@ const Hero: React.FC<HeroProps> = ({ type, src, alt, children }) => {
 				}}
 			>
 				<div className="p-8 relative font-display">
-					<div className="absolute -top-8 -left-12 w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
+					<div className="hidden md:block absolute -top-8 -left-12 w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
 					{children}
-					<div className="absolute -bottom-6 -right-12 w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
+					<div className="hidden md:block absolute -bottom-6 -right-12 w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
 				</div>
 			</div>
 			{type === "video" && (

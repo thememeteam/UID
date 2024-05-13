@@ -3,15 +3,14 @@ import ListItem from "@/components/network/ListItem";
 
 const Network: React.FC = () => {
 	return (
-		<div className="flex h-full items-center justify-center">
-			<Spacer />
-			<div className="grid h-3/5 gap-8 grid-cols-[1fr_1fr] grid-rows-[auto_1fr] items-center">
-				<iframe
-					title="maps"
-					src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
-					style={{ height: "100%", width: "100%" }}
-					className="row-start-1 row-span-2"
-				/>
+		<div className="grid grid-flow-row h-full items-center justify-center">
+			<Spacer className="row-start-1 col-start-1 md:col-span-2" />
+			<iframe
+				title="maps"
+				src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
+				className="w-full md:w-96 h-80 md:h-full"
+			/>
+			<div className="mt-8 md:mt-0 mx-4">
 				<h1 className="text-h1 font-display accentline">Dealerships</h1>
 				<ul className="overflow-y-scroll self-start max-h-full">
 					<li>
@@ -63,7 +62,6 @@ const Network: React.FC = () => {
 					</li>
 
 					<li>
-						{" "}
 						<ListItem
 							title="Sankey Road"
 							address={
@@ -80,6 +78,14 @@ const Network: React.FC = () => {
 					</li>
 				</ul>
 			</div>
+			{/* <Spacer />
+			<div className="grid pt-16 md:pt-0 max-h-11 md:h-3/5 gap-8 md:grid-cols-[1fr_1fr] items-center">
+				
+				<div className="">
+					
+					
+				</div>
+			</div> */}
 		</div>
 	);
 };
