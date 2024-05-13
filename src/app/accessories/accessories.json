@@ -27,12 +27,7 @@
   {
     "partNumber": "ACC-006",
     "name": "Bike Rack",
-    "description": "A secure rack for transporting bicycles on the car."
-  },
-  {
-    "partNumber": "RIS-001",
-    "name": "Rishab's mom",
-    "description": "not gay(I verified)",
+    "description": "A secure rack for transporting bicycles on the car.",
     "url" : "/assets/leman.jpg"
   }
 ]
