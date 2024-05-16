@@ -1,7 +1,7 @@
 :root {
   --text-primary: #dedede;
   --text-secondary: #5a5a5a;
-  --text-accent: Canvas;
+  --accent-text: Canvas;
   --background-fill: #1e1e1e;
   --card-fill: #00000053;
   --card-stroke: #ffffff32;

@@ -23,8 +23,12 @@
   }
 
   p:not(:last-child) {
-    @apply mb-4;
+    margin-bottom: 1.3rem;
   }
+
+  /* * {
+    outline: 1px solid red;
+  } */
 }
 
 @layer components {
@@ -48,6 +52,14 @@
     @apply block content-[''] bg-accent h-1.5 w-16 -skew-x-[20deg] mb-2 mt-2;
   }
 
+  .accentbutton {
+    @apply block relative w-fit text-[Canvas] px-4 py-1.5;
+  }
+
+  .accentbutton::after {
+    @apply block content-[''] absolute top-0 left-0 -z-10 w-full h-full bg-accent -skew-x-[17deg]
+  }
+
   .wedge {
     position: relative;
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), calc(100% - 3rem) 100%, 0% 100%);
@@ -60,5 +72,13 @@
 
   .band {
     clip-path: polygon(0% 4rem, 4rem 0%, 100% 0%, 100% calc(100% - 4rem), calc(100% - 4rem) 100%, 0% 100%);
+  }
+
+  .infogrid > :nth-child(3n) {
+    grid-column-start: 2;
+  }
+
+  .infogrid > :nth-child(4n) {
+    justify-self: end;
   }
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 interface SegmentedProps {
-
 	options: readonly string[];
 	selected?: string;
 	className?: string;
@@ -15,9 +14,7 @@ const Segmented: React.FC<SegmentedProps> = ({
 	onChange,
 }) => {
 	return (
-		<div
-			className={`${className} gap-2 grid auto-cols-fr grid-flow-col`}
-		>
+		<div className={`${className} gap-2 grid auto-cols-fr grid-flow-col`}>
 			{options.map((e) => (
 				<button
 					key={e}
@@ -29,6 +26,8 @@ const Segmented: React.FC<SegmentedProps> = ({
 					style={{
 						backgroundColor:
 							selected === e ? "var(--accent-fill)" : "initial",
+						color:
+							selected === e ? "var(--accent-text)" : "initial",
 					}}
 				>
 					{e}

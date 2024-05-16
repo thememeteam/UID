@@ -17,17 +17,13 @@ const Models: React.FC = () => {
 						Luxury for the week,
 						<br /> Sheer Drop-Top Thrill for the weekend.
 					</p>
-					<Link
-						href="/models/m5"
-						className="bg-accent text-black p-2"
-					>
+					<Link href="/models/m5" className="accentbutton">
 						Learn more
 					</Link>
 				</Article>
 			</div>
 			<div
 				className="col-start-1 row-start-2 row-span-3
-				
 				relative flex flex-col justify-end md:justify-center opacity p-8"
 			>
 				<div
@@ -41,10 +37,7 @@ const Models: React.FC = () => {
 					className="w-full md:w-fit z-10 md:ml-32 bg-card backdrop-blur-md p-8 border border-card-stroke wedge"
 				>
 					<p>Track performance, road practicality.</p>
-					<Link
-						href="/models/viper"
-						className="block w-fit mt-6 bg-accent text-black p-2"
-					>
+					<Link href="/models/viper" className="accentbutton">
 						Learn more
 					</Link>
 				</Article>
@@ -66,10 +59,7 @@ const Models: React.FC = () => {
 						<br />
 						Where Performance Meets Perfection.
 					</p>
-					<Link
-						href="/models/nuclide"
-						className="bg-accent text-black p-2"
-					>
+					<Link href="/models/nuclide" className="accentbutton">
 						Learn more
 					</Link>
 				</Article>
