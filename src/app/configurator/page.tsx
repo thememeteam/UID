@@ -7,66 +7,82 @@ import SLSModel from "@/components/models/SLS";
 import ViperModel from "@/components/models/Viper";
 import { type CarMaterials, type Models, models } from "@/globals";
 import {
-	CameraControls, Environment,
-	MeshReflectorMaterial
+	CameraControls,
+	Environment,
+	MeshReflectorMaterial,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useSearchParams } from "next/navigation";
 import { type Reducer, useReducer, useState } from "react";
 import { DoubleSide, MeshStandardMaterial } from "three";
 
-const initialState: CarMaterials = {
-	body: new MeshStandardMaterial({
-		color: 0x2f2f2f,
-		roughness: 0
-	}),
-	rims: new MeshStandardMaterial({
-		color: 'black',
-		roughness: 0,
-		metalness: 1,
-		side: DoubleSide
-	}),
-	calipers: new MeshStandardMaterial({
-		color: 0xf77315,
-		roughness: 0.3
-	}),
-	interiorBase: new MeshStandardMaterial({
-		color: 'black',
-		roughness: 0.5
-	}),
-	interiorAccent: new MeshStandardMaterial({
-		color: 0xf77315,
-		roughness: 1
-	}),
-	interiorAccentMetallic: new MeshStandardMaterial({
-		color: 0xf77315,
-		roughness: 0.2,
-		metalness: 1
-	})
+function initialState(): CarMaterials {
+	return {
+		body: new MeshStandardMaterial({
+			color: 0x2f2f2f,
+			roughness: 0,
+		}),
+		rims: new MeshStandardMaterial({
+			color: "black",
+			roughness: 0,
+			metalness: 1,
+			side: DoubleSide,
+		}),
+		calipers: new MeshStandardMaterial({
+			color: 0xf77315,
+			roughness: 0.3,
+		}),
+		interiorBase: new MeshStandardMaterial({
+			color: "black",
+			roughness: 0.5,
+		}),
+		interiorAccent: new MeshStandardMaterial({
+			color: 0xf77315,
+			roughness: 1,
+		}),
+		interiorAccentMetallic: new MeshStandardMaterial({
+			color: 0xf77315,
+			roughness: 0.2,
+			metalness: 1,
+		}),
+	};
 }
 
-const actionTypes = ["body", "rims", "calipers", "interiorBase", "interiorAccent"] as const;
-type ActionTypes = typeof actionTypes[number];
+const actionTypes = [
+	"body",
+	"rims",
+	"calipers",
+	"interiorBase",
+	"interiorAccent",
+] as const;
+type ActionTypes = (typeof actionTypes)[number];
 
-export type MaterialAction = { type: ActionTypes; key: keyof MeshStandardMaterial; value: any }
+export type MaterialAction = {
+	type: ActionTypes;
+	key: keyof MeshStandardMaterial;
+	value: any;
+};
 
 const reducer: Reducer<CarMaterials, MaterialAction> = (state, action) => {
-	if(action.type === "interiorAccent") {
+	if (action.type === "interiorAccent") {
 		state.interiorAccent[action.key] = action.value;
 		state.interiorAccentMetallic[action.key] = action.value;
 		return state;
 	}
 	state[action.type][action.key] = action.value;
 	return state;
-}
+};
 
 const Configurator: React.FC = () => {
 	const params = useSearchParams();
 	const paramValue = params.get("model") ?? "SLS";
-	const model: Models = models.includes(paramValue as Models) ? paramValue as Models : "SLS";
+	const model: Models = models.includes(paramValue as Models)
+		? (paramValue as Models)
+		: "SLS";
 
 	const [current, setCurrent] = useState<Models>(model);
-	const [materials, dispatch] = useReducer(reducer, initialState);
+	const initState = initialState();
+	const [materials, dispatch] = useReducer(reducer, initState);
 
 	return (
 		<div className="w-full h-full grid grid-rows-[auto_1fr] md:grid-cols-[2fr_1fr]">
@@ -85,9 +101,24 @@ const Configurator: React.FC = () => {
 					<Environment preset="warehouse" />
 
 					{/* don't do conditional rendering for better performance */}
-					<NuclideModel position={[-38, 0, -70]} scale={0.01} visible={current === "Nuclide"} materials={materials}/>
-					<SLSModel position={[-35, 0, -70]} scale={0.01} visible={current === "SLS"} materials={materials} />
-					<ViperModel position={[-35, 0, -70]} scale={0.01} visible={current === "Viper"} materials={materials} />
+					<NuclideModel
+						position={[-38, 0, -70]}
+						scale={0.01}
+						visible={current === "Nuclide"}
+						materials={materials}
+					/>
+					<SLSModel
+						position={[-35, 0, -70]}
+						scale={0.01}
+						visible={current === "SLS"}
+						materials={materials}
+					/>
+					<ViperModel
+						position={[-35, 0, -70]}
+						scale={0.01}
+						visible={current === "Viper"}
+						materials={materials}
+					/>
 
 					<mesh rotation={[Math.PI / 2, Math.PI, 0]} scale={500}>
 						<planeGeometry />
@@ -112,7 +143,7 @@ const Configurator: React.FC = () => {
 					selected={current}
 					onChange={(e) => setCurrent(e as Models)}
 				/>
-				<MaterialEditor state={materials} dispatch={dispatch}  />
+				<MaterialEditor state={materials} dispatch={dispatch} />
 			</div>
 		</div>
 	);
