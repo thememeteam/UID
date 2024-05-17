@@ -120,6 +120,7 @@ const Accessories: React.FC = () => {
 							{
 								(displayData as AccessoriesData)?.description && <><span className="font-display accentline">Details:</span><div className="w-fit ">{(displayData as AccessoriesData).description}</div></>
 							}
+							
 					</div>
 				</div>
 			</Dialog>

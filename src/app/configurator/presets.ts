@@ -49,5 +49,6 @@ export const presets = {
             color: new Color('white'),
             roughness: 1,
         },
-    }
+    },
+    
 };
