@@ -46,7 +46,6 @@ const Accessories: React.FC = () => {
 					whatever the road, or the lack thereof, may throw at you.
 				</p>
 			</div>
-			{/* <div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12"> */}
 			<div className="md:w-3/5 grid gap-y-8 mx-8 md:mx-auto mb-4">
 				<div>
 					<Segmented
