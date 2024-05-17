@@ -53,7 +53,7 @@ const About: React.FC = () => {
 							Since our inception, Feynman Manufacturers has been
 							synonymous with innovation and excellence. Our early
 							years were marked by groundbreaking advancements in
-							automotive technology, as we sought to marry performance
+							automotive technology, as we sought to match performance
 							with elegance in every vehicle we produced. With each
 							new model, we continued to raise the bar, setting new
 							standards for speed, precision, and style. Today,
@@ -63,6 +63,11 @@ const About: React.FC = () => {
 							spanning continents, we remain committed to pushing the
 							boundaries of what's possible in the automotive world.
 						</p>
+					</InfoGridItem>
+					<InfoGridItem title="Our people"
+						image="/assets/nuclide/p1_group_photo.webp"
+						alt="">
+						<p>Our team at Zeta Motors is a talented and diverse group dedicated to pushing the boundaries of automotive innovation. Led by veteran engineers with decades of combined experience, the team comprises experts in various fields, including aerodynamics, powertrain design, materials science, and cutting-edge software development. With a shared passion for creating vehicles that seamlessly blend performance, efficiency, and safety, this close-knit group collaborates tirelessly, leveraging their collective expertise to bring Zeta's visionary concepts to life on the road.</p>
 					</InfoGridItem>
 				</InfoGrid>
 			</div>
