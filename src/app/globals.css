@@ -57,7 +57,7 @@
   }
 
   .accentbutton::after {
-    @apply block content-[''] absolute top-0 left-0 -z-10 w-full h-full bg-accent -skew-x-[17deg]
+    @apply block content-[''] absolute top-0 left-0 -z-10 w-full h-full bg-accent transition-transform hover:-skew-x-[20deg]
   }
 
   .wedge {
@@ -79,5 +79,8 @@
     
   }
 
+  .infogrid > :nth-child(4n + 4) {
+    justify-self: end;  
+  }
   
 }

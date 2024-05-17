@@ -79,13 +79,14 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 						<input
 							type="checkbox"
 							checked={matte}
-							onChange={(e) =>
+							onChange={(e) => {
+								setMatte(e.target.checked);
 								dispatch({
 									type: "body",
 									key: "roughness",
 									value: e.target.checked ? 0.35 : 0,
 								})
-							}
+							}}
 						/>
 					</label>
 				</div>

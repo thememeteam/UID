@@ -33,7 +33,7 @@ const InfoGridItem: React.FC<InfoGridItemProps> = ({
                     className="md:band h-full object-cover"
                 />
 			<Article
-				className="md:max-w-[40ch] mx-8 md:mx-0 md:my-12 text-pretty"
+				className="md:max-w-[40ch] mx-8 md:mx-0 md:my-12"
 				title={title}
 			>
 				{children}

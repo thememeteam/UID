@@ -33,7 +33,7 @@ const Accessories: React.FC = () => {
 					Accessories
 				</span>
 			</Hero>
-			<div className="mt-12 mb-24 mx-8 md:mx-auto  md:w-[60ch] text-center self-center">
+			<div className="mt-12 mb-24 mx-8 md:mx-auto md:w-[60ch] text-center self-center">
 				<p className="font-display text-3xl md:text-h1 text-wrap">
 					Customise Your Vehicle with Feynman certified accessories
 				</p>

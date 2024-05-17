@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 					flex flex-row items-center 
 					h-16 w-fit pl-8 pr-12 py-4
 					bg-card backdrop-blur-md
-					wedge`}
+					wedge select-none`}
 		>
 			<Link href={"/"} className="contents">
 				<span className="text-h2 md:text-h1 font-display transition-color ease-out duration-75 hover:text-accent">

@@ -25,7 +25,7 @@ function initialState(): CarMaterials {
 		}),
 		rims: new MeshStandardMaterial({
 			color: "black",
-			roughness: 0.2,
+			roughness: 0.1,
 			metalness: 0.5,
 			side: DoubleSide,
 		}),
