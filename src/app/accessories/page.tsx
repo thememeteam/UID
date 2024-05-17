@@ -18,7 +18,7 @@ const Accessories: React.FC = () => {
 	const [filter, setFilter] = useState<string>("");
 	const [currentTab, setCurrentTab] = useState<Tabs>("Accessories");
 	const [isOpen, setIsOpen] = useState<boolean>(false);
-	const dData = currentTab === "Accessories" ? aData : pData;
+	// const dData = currentTab === "Accessories" ? aData : pData;
 	const [displayData, setDisplayData] = useState<AccessoriesData | PartsData>();
 	const actualData = currentTab === "Accessories" ? aData : pData;
 
