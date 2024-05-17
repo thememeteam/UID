@@ -15,6 +15,7 @@ import { Canvas } from "@react-three/fiber";
 import { useSearchParams } from "next/navigation";
 import { type Reducer, useReducer, useState } from "react";
 import { DoubleSide, MeshStandardMaterial } from "three";
+import { presets } from "./presets";
 
 function initialState(): CarMaterials {
 	return {
@@ -24,8 +25,8 @@ function initialState(): CarMaterials {
 		}),
 		rims: new MeshStandardMaterial({
 			color: "black",
-			roughness: 0,
-			metalness: 1,
+			roughness: 0.2,
+			metalness: 0.5,
 			side: DoubleSide,
 		}),
 		calipers: new MeshStandardMaterial({
@@ -83,6 +84,7 @@ const Configurator: React.FC = () => {
 	const [current, setCurrent] = useState<Models>(model);
 	const initState = initialState();
 	const [materials, dispatch] = useReducer(reducer, initState);
+	const [editorKey, setEditorKey] = useState(0);
 
 	return (
 		<div className="w-full h-full grid grid-rows-[auto_1fr] md:grid-cols-[2fr_1fr]">
@@ -143,7 +145,36 @@ const Configurator: React.FC = () => {
 					selected={current}
 					onChange={(e) => setCurrent(e as Models)}
 				/>
-				<MaterialEditor state={materials} dispatch={dispatch} />
+				<div className="px-4">
+					<span className="block my-2">Presets</span>
+					<div className="flex flex-row gap-2">
+						{Object.entries(presets).map(([a, b]) => (
+							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+							<div
+								key={a}
+								className="w-10 h-10"
+								style={{
+									backgroundColor: `#${b.body.color.getHexString()}`,
+								}}
+								onClick={() => {
+									for (const [c, d] of Object.entries(b)) {
+										for (const [e, f] of Object.entries(
+											d,
+										)) {
+											dispatch({
+												type: c as ActionTypes,
+												key: e as keyof MeshStandardMaterial,
+												value: f,
+											});
+										}
+									}
+									setEditorKey(e => e + 1);
+								}}
+							/>
+						))}
+					</div>
+					<MaterialEditor key={editorKey} state={materials} dispatch={dispatch} />
+				</div>
 			</div>
 		</div>
 	);

@@ -14,6 +14,8 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 	);
 	const [metalness, setMetalness] = useState(0);
 
+	const [matte, setMatte] = useState(state.body.roughness !== 0);
+
 	const [rimColor, setRimColor] = useState(
 		`#${state.rims.color.getHexString()}`,
 	);
@@ -30,7 +32,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 
 	return (
 		<div className="flex flex-col gap-2 my-2">
-			<details className="px-4 py-1">
+			<details className="py-1">
 				<summary>Body</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
 					<label className="flex flex-row justify-between">
@@ -76,7 +78,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 						Matte Paint
 						<input
 							type="checkbox"
-							// checked={state.body.roughness === 0.5}
+							checked={matte}
 							onChange={(e) =>
 								dispatch({
 									type: "body",
@@ -88,7 +90,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 					</label>
 				</div>
 			</details>
-			<details className="px-4 py-1">
+			<details className="py-1">
 				<summary>Wheels</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
 					<label className="flex flex-row justify-between">
@@ -123,7 +125,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 					</label>
 				</div>
 			</details>
-			<details className="px-4 py-1">
+			<details className="py-1">
 				<summary>Interior</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
 					<label className="flex flex-row justify-between">

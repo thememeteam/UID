@@ -27,11 +27,11 @@ const InfoGridItem: React.FC<InfoGridItemProps> = ({
 }) => {
 	return (
 		<>
-			<img
-				src={image}
-				alt={alt}
-				className="md:band h-full object-cover"
-			/>
+                <img
+                    src={image}
+                    alt={alt}
+                    className="md:band h-full object-cover"
+                />
 			<Article
 				className="md:max-w-[40ch] mx-8 md:mx-0 md:my-12 text-pretty"
 				title={title}

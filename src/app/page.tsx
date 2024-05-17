@@ -83,69 +83,6 @@ const Home: React.FC = () => {
 						</Link>
 					</InfoGridItem>
 				</InfoGrid>
-				{/* <div className="grid md:grid-flow-row-dense md:grid-cols-2 gap-x-16 gap-y-16 md:gap-y-24 items-center max-w-[75rem] mx-auto mb-24">
-					<img
-						src="/assets/person.jpg"
-						alt=""
-						className="md:band h-full object-cover"
-					/>
-					<Article title="Our work" className="md:max-w-[40ch] mx-8 md:my-14">
-						<p>Every model we release is our next magnum opus.</p>
-						<p>
-							We spend years refining every release. Our master
-							engineers work tirelessly towards increasing
-							horsepower, reducing weight, and enhancing comfort.
-							Then we do it again, ad infinitum.
-						</p>
-						<Link
-							className="accentbutton"
-							href={"/models"}
-						>
-							Explore our models
-						</Link>
-					</Article>
-					<img
-						src="/assets/viper/gt3filler.webp"
-						alt=""
-						className="md:band md:col-start-2 h-full object-cover"
-					/>
-					<Article className="justify-self-end md:max-w-[40ch] mx-8 md:my-14" title="Get your own">
-						<p>
-							Every vehicle that rolls out of the Feynman workshop
-							in Kadugodi is expertly built by hand.
-						</p>
-						<p>
-							We work with our demanding and individualistic
-							clientele to customize every vehicle to their exact
-							specifications. No two Feynmans will ever be the
-							same.
-						</p>
-						<Link
-							className="accentbutton"
-							href={"/configurator"}
-						>
-							Configure your Feynman
-						</Link>
-					</Article>
-					<img src="/assets/pagani.jpg" alt="" className="md:band h-full object-cover" />
-					<Article className="md:max-w-[40ch] mx-8 md:my-14" title="Our legacy">
-						<p>
-							We were founded in 1987 by Muthuswamy Feynman, and
-							quickly rose to fame for our unrelenting passion for
-							engineering and meticulous attention to detail.
-						</p>
-						<p>
-							37 years on, we continue to preserve our founder's
-							vision in everything that we do.
-						</p>
-						<Link
-							className="accentbutton"
-							href={"/about"}
-						>
-							Read about us
-						</Link>
-					</Article>
-				</div> */}
 			</div>
 		</>
 	);
