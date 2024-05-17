@@ -45,7 +45,7 @@ const Accessories: React.FC = () => {
 				</p>
 			</div>
 			{/* <div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12"> */}
-			<div className="grid gap-y-8 ml-56 mr-56">
+			<div className="grid gap-y-8 ml-56 mr-56 mb-4">
 				<div>
 					<Segmented
 						options={["Accessories", "Parts"]}

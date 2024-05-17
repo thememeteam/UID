@@ -30,7 +30,7 @@ const M5Page: React.FC = () => {
 						Under the sleek hood lies a formidable 4.0-liter V8 biturbo engine, delivering a staggering 577 horsepower and 590 lb-ft of torque. This unrelenting force propels you from 0 to 60 mph in a mere 3.5 seconds, ensuring an exhilarating driving experience that will leave you breathless. The SPEEDSHIFT MCT 9-speed transmission seamlessly harnesses this power, providing lightning-fast shifts and unparalleled responsiveness.
 						</p>
 						<Link
-							className="bg-accent text-black p-2 -skew-x-[20deg]"
+							className="accentbutton"
 							href={"/configurator/?model=SLS"}
 						>
 							Configure your SLS
