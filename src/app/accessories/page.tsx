@@ -61,7 +61,7 @@ const Accessories: React.FC = () => {
 							setFilter(e.target.value.toLowerCase())
 						}
 						placeholder="Search"
-						className="indent-14 placeholder:text-center py-3 pr-4"
+						className="indent-14 placeholder:text-center py-3 pr-4 rounded-xl"
 					/>
 					<SearchIcon className="w-6 h-full absolute left-0 ml-4 text-secondary" />
 				</div>
@@ -112,7 +112,7 @@ const Accessories: React.FC = () => {
 				</button>
 				<div className="p-16">
 					<div className="grid gap-6">
-						<div className="font-display text-h2 accentline mt-2">
+						<div className="font-display text-h2 accentline ">
 							{displayData?.name}
 						</div>
 						{(displayData as AccessoriesData)?.url && (

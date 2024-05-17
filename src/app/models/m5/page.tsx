@@ -15,8 +15,8 @@ const M5Page: React.FC = () => {
 				</span>
 			</Hero>
 			<div className="mx-auto max-w-[90ch]">
-				<div className="flex flex-col gap-16 mx-auto max-w-[90ch]">
-					<Article className="max-w-[50ch]" title="">
+				<div className="flex flex-col gap-16 mx-auto max-w-[900px]">
+					<Article className="max-w-[100ch]" title="">
 						<p>
 							The Feynman SLS is a masterpiece of engineering and
 							design that redefines the boundaries of automotive
@@ -26,17 +26,7 @@ const M5Page: React.FC = () => {
 							passion for the open road.
 						</p>
 					</Article>
-					<Article className="max-w-[50ch] self-end" title="">
-						<p>
-							The SLS racing legacy includes records for endurance
-							that have themselves endured for decades. As a
-							sports car for the open road, it's won hearts and
-							fulfilled dreams. It's pioneered innovations in
-							performance, safety and luxury. Like no other car,
-							it's truly timeless, and a true icon.
-						</p>
-					</Article>
-					<Article className="max-w-[50ch] mb-8" title="">
+					<Article className="max-w-[100ch] " title="">
 						<p>
 							Under the sleek hood lies a formidable 4.0-liter V8
 							biturbo engine, delivering a staggering 577
@@ -48,19 +38,30 @@ const M5Page: React.FC = () => {
 							power, providing lightning-fast shifts and
 							unparalleled responsiveness.
 						</p>
-						<Link
-							className="accentbutton"
-							href={"/configurator/?model=SLS"}
-						>
-							Configure your SLS
-						</Link>
+
 					</Article>
-					{/* <div className="grid grid-flow-col gap-10 mb-12">
-						<Datum value="3.7 S" caption="0-60 kmph" />
-						<Datum value="3.7 s" caption="0-60 kmph" />
-						<Datum value="3.7 s" caption="0-60 kmph" />
-						<Datum value="3.7 s" caption="0-60 kmph" />
-					</div> */}
+					<div className="grid grid-flow-col gap-10 mb-1">
+						<Datum value="3.1 S" caption="0-100 kmph" />
+						<Datum value="11.7 s" caption="0-180 kmph" />
+						<Datum value="11.1 s" caption="Quarter mile" />
+						<Datum value="317 kmph" caption="Top speed" />
+					</div>
+					<Article className="max-w-[100ch] text- mb-8" title="">
+						<p>
+							The SLS racing legacy includes records for endurance
+							that have themselves endured for decades. As a
+							sports car for the open road, it's won hearts and
+							fulfilled dreams. It's pioneered innovations in
+							performance, safety and luxury. Like no other car,
+							it's truly timeless, and a true icon.
+							<Link
+								className="accentbutton mt-4"
+								href={"/configurator/?model=SLS"}
+							>
+								Configure your SLS
+							</Link>
+						</p>
+					</Article>
 				</div>
 			</div>
 		</>

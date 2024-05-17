@@ -1,6 +1,7 @@
 import Article from "@/components/Article";
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import Datum from "@/components/Datum";
 const NuclidePage: React.FC = () => {
 	return (
 		<>
@@ -14,8 +15,8 @@ const NuclidePage: React.FC = () => {
 				</span>
 			</Hero>
 			<div className="mx-auto max-w-[90ch]">
-				<div className="flex flex-col gap-16 mx-auto max-w-[90ch]">
-					<Article className="max-w-[50ch]" title="">
+				<div className="flex flex-col gap-16 mx-auto max-w-[900px]">
+					<Article className="max-w-[100ch]" title="">
 						<p>
 							The Feynman Nuclide isn't just a car; it's a
 							symphony of engineering mastery and automotive
@@ -26,7 +27,7 @@ const NuclidePage: React.FC = () => {
 							pursuit of lightweight performance.
 						</p>
 					</Article>
-					<Article className="max-w-[50ch] self-end" title="">
+					<Article className="max-w-[100ch]" title="">
 						<p>
 							Underneath the stunning exterior lies a hybrid
 							powertrain that combines a potent twin-turbocharged
@@ -41,7 +42,13 @@ const NuclidePage: React.FC = () => {
 							finesse.
 						</p>
 					</Article>
-					<Article className="max-w-[50ch] mb-8" title="">
+					<div className="grid grid-flow-col gap-10 mb-1">
+						<Datum value="2.8 S" caption="0-100 kmph" />
+						<Datum value="6.8 s" caption="0-200 kmph" />
+						<Datum value="9.8 s" caption="Quarter mile" />
+						<Datum value="350 kmph" caption="Top speed" />
+					</div>
+					<Article className="max-w-[100ch] mb-8" title="">
 						<p>
 							Feynman's race-bred technology ensures that every
 							input from the driver is met with an instantaneous
