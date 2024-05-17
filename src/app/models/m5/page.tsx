@@ -55,7 +55,7 @@ const M5Page: React.FC = () => {
 							performance, safety and luxury. Like no other car,
 							it's truly timeless, and a true icon.
 							<Link
-								className="accentbutton mt-4"
+								className="accentbutton m-auto mt-14 mb-5 pl-8 pr-8 p-2 text-xl"
 								href={"/configurator/?model=SLS"}
 							>
 								Configure your SLS

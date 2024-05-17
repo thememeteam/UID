@@ -37,7 +37,7 @@ const ViperPage: React.FC = () => {
 						Step inside the cockpit, and you'll find yourself immersed in a world of meticulous craftsmanship and cutting-edge technology. The driver-focused interior, meticulously appointed with premium materials and race-inspired details, creates an environment that perfectly blends functionality and luxury. The advanced infotainment system, complete with a high-resolution display and intuitive controls, ensures a seamless and connected driving experience, even on the most demanding tracks.
 						</p>
 						<Link
-							className="accentbutton"
+							className="accentbutton m-auto mt-14 mb-5 pl-8 pr-8 p-2 text-xl"
 							href={"/configurator/?model=Viper"}
 						>
 							Configure your Viper

@@ -63,7 +63,7 @@ const NuclidePage: React.FC = () => {
 							exhilarating.
 						</p>
 						<Link
-							className="accentbutton"
+							className="accentbutton m-auto mt-14 mb-5 pl-8 pr-8 p-2 text-xl"
 							href={"/configurator/?model=Nuclide"}
 						>
 							Configure your Nuclide
