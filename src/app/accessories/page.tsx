@@ -11,15 +11,17 @@ import Dialog from "@/components/Dialog";
 import CloseIcon from "@/components/icons/Close";
 
 type Tabs = "Accessories" | "Parts";
-type AccessoriesData = typeof aData[number];
-type PartsData = typeof pData[number];
+type AccessoriesData = (typeof aData)[number];
+type PartsData = (typeof pData)[number];
 
 const Accessories: React.FC = () => {
 	const [filter, setFilter] = useState<string>("");
 	const [currentTab, setCurrentTab] = useState<Tabs>("Accessories");
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 	// const dData = currentTab === "Accessories" ? aData : pData;
-	const [displayData, setDisplayData] = useState<AccessoriesData | PartsData>();
+	const [displayData, setDisplayData] = useState<
+		AccessoriesData | PartsData
+	>();
 	const actualData = currentTab === "Accessories" ? aData : pData;
 
 	return (
@@ -50,16 +52,17 @@ const Accessories: React.FC = () => {
 					<Segmented
 						options={["Accessories", "Parts"]}
 						selected={currentTab}
-
 						onChange={(e) => setCurrentTab(e as Tabs)}
 					/>
 				</div>
 				<div className="grid relative">
 					<input
 						type="search"
-						onChange={(e) => setFilter(e.target.value.toLowerCase())}
+						onChange={(e) =>
+							setFilter(e.target.value.toLowerCase())
+						}
 						placeholder="Search"
-						className="indent-14 placeholder:text-center py-3 rounded-2xl pr-4"
+						className="indent-14 placeholder:text-center py-3 pr-4"
 					/>
 					<SearchIcon className="w-6 h-full absolute left-0 ml-4 text-secondary" />
 				</div>
@@ -74,11 +77,17 @@ const Accessories: React.FC = () => {
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
 								key={item.partNumber}
-								className="p-4 border border-card-stroke rounded text-center  items-center hover:cursor-pointer"
-								onClick={() => { setIsOpen(true); setDisplayData(item) }}
+								className="p-4 border border-card-stroke rounded text-center items-center hover:cursor-pointer"
+								onClick={() => {
+									setIsOpen(true);
+									setDisplayData(item);
+								}}
 							>
 								{item.url && (
-									<img className=" ml-32 mb-6 mt-6 w-80" src={item.url} />
+									<img
+										className="mx-auto mb-4 w-80"
+										src={item.url}
+									/>
 								)}
 								<div>
 									<h2 className="text-xl font-bold">
@@ -94,33 +103,43 @@ const Accessories: React.FC = () => {
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
 				className="backdrop:backdrop-blur-md bg-background w-1/2 text-wrap band"
-			><div className="mb-10 ">
-					<div className="flex flex-initial  ml-8 ">
-						<div className=" p-8 ">
-							<button
-								className="absolute right-0 top-0 p-2"
-								onClick={() => setIsOpen(false)}
-							>
-								<CloseIcon className="w-6 h-6" />
-							</button>
-							<div className="font-display text-h2 accentline mt-2">
-								{displayData?.name
-								}</div>
+			>
+				<button
+					type="button"
+					className="absolute right-0 top-0 p-6"
+					onClick={() => setIsOpen(false)}
+				>
+					<CloseIcon className="w-6 h-6" />
+				</button>
+				<div className="p-16">
+					<div className="grid gap-6">
+						<div className="font-display text-h2 accentline mt-2">
+							{displayData?.name}
 						</div>
-					</div>
-					<div className="ml-16 mr-16 grid" >
-							{
-								(displayData as AccessoriesData)?.url && <img src={(displayData as AccessoriesData).url} />
-							}
-						<div className="mb-6 mt-4">
+						{(displayData as AccessoriesData)?.url && (
+							<img
+								src={(displayData as AccessoriesData).url}
+								alt={displayData?.name}
+							/>
+						)}
+						<div>
 							<span>Part number:&nbsp;&nbsp;</span>
-							{displayData?.partNumber}
+							<span>{displayData?.partNumber}</span>
 						</div>
-							
-							{
-								(displayData as AccessoriesData)?.description && <><span className="font-display accentline">Details:</span><div className="w-fit ">{(displayData as AccessoriesData).description}</div></>
-							}
-							
+
+						{(displayData as AccessoriesData)?.description && (
+							<>
+								<span className="font-display accentline">
+									Details:
+								</span>
+								<div className="w-fit ">
+									{
+										(displayData as AccessoriesData)
+											.description
+									}
+								</div>
+							</>
+						)}
 					</div>
 				</div>
 			</Dialog>
