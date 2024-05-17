@@ -116,9 +116,9 @@ const Accessories: React.FC = () => {
 							<span>Part number:&nbsp;&nbsp;</span>
 							{displayData?.partNumber}
 						</div>
-							<span className="font-display accentline">Details:</span>
+							
 							{
-								(displayData as AccessoriesData)?.description && <div className="w-fit ">{(displayData as AccessoriesData).description}</div>
+								(displayData as AccessoriesData)?.description && <><span className="font-display accentline">Details:</span><div className="w-fit ">{(displayData as AccessoriesData).description}</div></>
 							}
 					</div>
 				</div>
