@@ -42,7 +42,7 @@ const NuclidePage: React.FC = () => {
 							finesse.
 						</p>
 					</Article>
-					<div className="grid grid-flow-col gap-10 mb-1">
+					<div className="flex flex-wrap gap-10 mb-1">
 						<Datum value="2.8 S" caption="0-100 kmph" />
 						<Datum value="6.8 s" caption="0-200 kmph" />
 						<Datum value="9.8 s" caption="Quarter mile" />

@@ -26,7 +26,7 @@ const ViperPage: React.FC = () => {
 						At the heart of this high-performance machine lies a naturally aspirated 4.0-liter flat-six engine, delivering an awe-inspiring 502 horsepower and an insatiable appetite for the racetrack. With its lightning-fast throttle response and an exhilarating redline of 9,000 rpm, the Viper offers an unparalleled driving experience that will leave you breathless. The precision-engineered chassis and aerodynamic design ensure unrivaled handling and stability, even at the highest speeds.
 						</p>
 					</Article>
-					<div className="grid grid-flow-col gap-10 mb-1">
+					<div className="flex flex-wrap gap-10 mb-1">
 						<Datum value="3.4 S" caption="0-100 kmph" />
 						<Datum value="10.6 s" caption="0-200 kmph" />
 						<Datum value="10.8 s" caption="Quarter mile" />

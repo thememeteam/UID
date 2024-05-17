@@ -1,4 +1,5 @@
 import Article from "@/components/Article";
+import CTAButton from "@/components/CTAButton";
 import Datum from "@/components/Datum";
 import Hero from "@/components/Hero";
 import Link from "next/link";
@@ -38,15 +39,14 @@ const M5Page: React.FC = () => {
 							power, providing lightning-fast shifts and
 							unparalleled responsiveness.
 						</p>
-
 					</Article>
-					<div className="grid grid-flow-col gap-10 mb-1">
+					<div className="flex flex-wrap gap-10 mb-1">
 						<Datum value="3.1 S" caption="0-100 kmph" />
 						<Datum value="11.7 s" caption="0-180 kmph" />
 						<Datum value="11.1 s" caption="Quarter mile" />
 						<Datum value="317 kmph" caption="Top speed" />
 					</div>
-					<Article className="max-w-[100ch] text- mb-8" title="">
+					<Article className="max-w-[100ch]" title="">
 						<p>
 							The SLS racing legacy includes records for endurance
 							that have themselves endured for decades. As a
@@ -54,15 +54,17 @@ const M5Page: React.FC = () => {
 							fulfilled dreams. It's pioneered innovations in
 							performance, safety and luxury. Like no other car,
 							it's truly timeless, and a true icon.
-							<Link
-								className="accentbutton m-auto mt-14 mb-5 pl-8 pr-8 p-2 text-xl"
-								href={"/configurator/?model=SLS"}
-							>
-								Configure your SLS
-							</Link>
 						</p>
 					</Article>
 				</div>
+				<CTAButton className="mx-auto my-24">
+					<Link
+						className="accentbutton px-8 p-2 text-xl"
+						href={"/configurator/?model=SLS"}
+					>
+						Configure your SLS
+					</Link>
+				</CTAButton>
 			</div>
 		</>
 	);
