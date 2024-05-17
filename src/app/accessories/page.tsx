@@ -78,7 +78,7 @@ const Accessories: React.FC = () => {
 								onClick={() => { setIsOpen(true); setDisplayData(item) }}
 							>
 								{item.url && (
-									<img className=" ml-16 mb-6 mt-6 w-80" src={item.url} />
+									<img className=" ml-32 mb-6 mt-6 w-80" src={item.url} />
 								)}
 								<div>
 									<h2 className="text-xl font-bold">
