@@ -53,7 +53,7 @@ const About: React.FC = () => {
 							Since our inception, Feynman Manufacturers has been
 							synonymous with innovation and excellence. Our early
 							years were marked by groundbreaking advancements in
-							automotive technology, as we sought to marry performance
+							automotive technology, as we sought to match performance
 							with elegance in every vehicle we produced. With each
 							new model, we continued to raise the bar, setting new
 							standards for speed, precision, and style. Today,
