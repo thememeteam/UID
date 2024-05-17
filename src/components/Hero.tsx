@@ -15,10 +15,10 @@ const Hero: React.FC<HeroProps> = ({ type, src, alt, children }) => {
 						"linear-gradient(to bottom, var(--background-fill) 0%, transparent 40%, var(--background-fill) 100%",
 				}}
 			>
-				<div className="p-8 relative font-display">
-					<div className="hidden md:block absolute -top-8 -left-12 w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
+				<div className="group p-8 relative font-display mix-blend-difference z-10">
 					{children}
-					<div className="hidden md:block absolute -bottom-6 -right-12 w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
+					<div className="hidden md:block absolute -top-8 -left-12 group-hover:-top-12 group-hover:-left-16 transition-all w-64 h-28 border-t-2 border-l-2 border-divider-stroke" />
+					<div className="hidden md:block absolute -bottom-8 -right-12 group-hover:-bottom-12 group-hover:-right-16 transition-all w-64 h-28 border-b-2 border-r-2 border-divider-stroke" />
 				</div>
 			</div>
 			{type === "video" && (
