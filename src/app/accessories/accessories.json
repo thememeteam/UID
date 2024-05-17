@@ -3,7 +3,7 @@
     "name": "Carbon Fiber Rear Spoiler",
     "partNumber": "CF-RS-001",
     "description": "Sleek and aerodynamic carbon fiber rear spoiler that adds a sporty touch to your vehicle's exterior.",
-    "url": "/assets/acc/rearspoiler.jpeg"
+    "url": "/assets/acc/spoiler.jpg"
   },
   {
     "name": "Carbon Fiber Front Lip Spoiler",
@@ -15,48 +15,48 @@
     "name": "Carbon Fiber Side Skirts",
     "partNumber": "CF-SS-003",
     "description": "Upgrade your car's profile with these lightweight and durable carbon fiber side skirts, providing a lowered and muscular appearance.",
-    "url": "/assets/acc/sideskirts.jpeg"
+    "url": "/assets/acc/side.jpg"
   },
   {
     "name": "Carbon Fiber Rear Diffuser",
     "partNumber": "CF-RD-004",
     "description": "Improve aerodynamics and add a touch of style with this sleek carbon fiber rear diffuser, designed to enhance airflow and downforce.",
-    "url": ""
+    "url": "/assets/acc/diffuser.jpg"
   },
   {
     "name": "Carbon Fiber Hood Scoop",
     "partNumber": "CF-HS-005",
     "description": "Give your car a powerful and aggressive look with this functional carbon fiber hood scoop, allowing increased airflow to the engine.",
-    "url": ""
+    "url": "/assets/acc/hoods.jpg"
   },
   {
     "name": "Carbon Fiber Rear Wing",
     "partNumber": "CF-RW-006",
     "description": "Unleash the racing spirit of your car with this adjustable carbon fiber rear wing, providing enhanced downforce and a bold aesthetic.",
-    "url": ""
+    "url": "/assets/acc/wing.jpg"
   },
   {
     "name": "Carbon Fiber Mirror Covers",
     "partNumber": "CF-MC-007",
     "description": "Add a touch of carbon fiber sophistication to your car with these lightweight and stylish carbon fiber mirror covers.",
-    "url": ""
+    "url": "/assets/acc/mirror.jpg"
   },
   {
     "name": "Carbon Fiber Roof Scoop",
     "partNumber": "CF-RS-008",
     "description": "Enhance the aerodynamic profile of your car with this sleek and lightweight carbon fiber roof spoiler, improving downforce and visual appeal.",
-    "url": ""
+    "url": "/assets/acc/roofscoop.webp"
   },
   {
     "name": "Carbon Fiber Fender Vents",
     "partNumber": "CF-FV-009",
     "description": "Improve engine cooling and add a race-inspired look with these functional carbon fiber fender vents, designed for style and performance.",
-    "url": ""
+    "url": "/assets/acc/fender.jpg"
   },
   {
     "name": "Carbon Fiber Hood",
     "partNumber": "CF-TS-010",
     "description": "Add a touch of sporty elegance to your car's rear with this carbon fiber hood, offering improved aerodynamics and a bold visual statement.",
-    "url": ""
+    "url": "/assets/acc/hood1.jpg"
   }
  ]  

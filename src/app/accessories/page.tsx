@@ -18,7 +18,7 @@ const Accessories: React.FC = () => {
 	const [filter, setFilter] = useState<string>("");
 	const [currentTab, setCurrentTab] = useState<Tabs>("Accessories");
 	const [isOpen, setIsOpen] = useState<boolean>(false);
-	const dData = currentTab === "Accessories" ? aData : pData;
+	// const dData = currentTab === "Accessories" ? aData : pData;
 	const [displayData, setDisplayData] = useState<AccessoriesData | PartsData>();
 	const actualData = currentTab === "Accessories" ? aData : pData;
 
@@ -45,7 +45,7 @@ const Accessories: React.FC = () => {
 				</p>
 			</div>
 			{/* <div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12"> */}
-			<div className="grid gap-y-8 ml-56 mr-56">
+			<div className="grid gap-y-8 ml-56 mr-56 mb-4">
 				<div>
 					<Segmented
 						options={["Accessories", "Parts"]}
@@ -78,7 +78,7 @@ const Accessories: React.FC = () => {
 								onClick={() => { setIsOpen(true); setDisplayData(item) }}
 							>
 								{item.url && (
-									<img className=" ml-32 mb-6 mt-6 w-80" src={item.url} />
+									<img className=" ml-16 mb-6 mt-6 w-80" src={item.url} />
 								)}
 								<div>
 									<h2 className="text-xl font-bold">
@@ -93,28 +93,36 @@ const Accessories: React.FC = () => {
 			<Dialog
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
-				className="backdrop:backdrop-blur-md"
-			>
-				<div className="bg-background p-8 relative">
-					<button
-						className="absolute right-0 top-0 p-2"
-						onClick={() => setIsOpen(false)}
-					>
-						<CloseIcon className="w-6 h-6" />
-					</button>
+				className="backdrop:backdrop-blur-md bg-background w-1/2 text-wrap band"
+			><div className="mb-10 ">
+					<div className="flex flex-initial  ml-8 ">
+						<div className=" p-8 ">
+							<button
+								className="absolute right-0 top-0 p-2"
+								onClick={() => setIsOpen(false)}
+							>
+								<CloseIcon className="w-6 h-6" />
+							</button>
+							<div className="font-display text-h2 accentline mt-2">
+								{displayData?.name
+								}</div>
+						</div>
+					</div>
+					<div className="ml-16 mr-16 grid" >
+							{
+								(displayData as AccessoriesData)?.url && <img src={(displayData as AccessoriesData).url} />
+							}
+						<div className="mb-6 mt-4">
+							<span>Part number:&nbsp;&nbsp;</span>
+							{displayData?.partNumber}
+						</div>
+							
+							{
+								(displayData as AccessoriesData)?.description && <><span className="font-display accentline">Details:</span><div className="w-fit ">{(displayData as AccessoriesData).description}</div></>
+							}
+							
+					</div>
 				</div>
-				<div>
-					{displayData?.name
-					}</div>
-				<div>
-					{displayData?.partNumber}
-				</div>
-				{
-					(displayData as AccessoriesData)?.description && <div>{(displayData as AccessoriesData).description}</div>
-				}
-				{
-					(displayData as AccessoriesData)?.url && <img  src={(displayData as AccessoriesData).url}   />
-				}
 			</Dialog>
 		</>
 	);
