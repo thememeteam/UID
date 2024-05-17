@@ -40,7 +40,7 @@ const M5Page: React.FC = () => {
 							unparalleled responsiveness.
 						</p>
 					</Article>
-					<div className="flex flex-wrap gap-10 mb-1">
+					<div className="flex flex-wrap gap-10 mb-1 m-auto">
 						<Datum value="3.1 S" caption="0-100 kmph" />
 						<Datum value="11.7 s" caption="0-180 kmph" />
 						<Datum value="11.1 s" caption="Quarter mile" />

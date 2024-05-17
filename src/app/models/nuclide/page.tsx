@@ -2,6 +2,7 @@ import Article from "@/components/Article";
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import Datum from "@/components/Datum";
+import CTAButton from "@/components/CTAButton";
 const NuclidePage: React.FC = () => {
 	return (
 		<>
@@ -42,7 +43,7 @@ const NuclidePage: React.FC = () => {
 							finesse.
 						</p>
 					</Article>
-					<div className="flex flex-wrap gap-10 mb-1">
+					<div className="flex flex-wrap gap-10 mb-1 m-auto">
 						<Datum value="2.8 S" caption="0-100 kmph" />
 						<Datum value="6.8 s" caption="0-200 kmph" />
 						<Datum value="9.8 s" caption="Quarter mile" />
@@ -62,15 +63,17 @@ const NuclidePage: React.FC = () => {
 							atmosphere that's equal parts luxurious and
 							exhilarating.
 						</p>
-						<Link
-							className="accentbutton m-auto mt-14 mb-5 pl-8 pr-8 p-2 text-xl"
-							href={"/configurator/?model=Nuclide"}
-						>
-							Configure your Nuclide
-						</Link>
+						<CTAButton className="mx-auto my-24">
+							<Link
+								className="accentbutton m-auto mt-14 mb-5 pl-8 pr-8 p-2 text-xl"
+								href={"/configurator/?model=Nuclide"}
+							>
+								Configure your Nuclide
+							</Link>
+						</CTAButton>
 					</Article>
 				</div>
-			</div>
+			</div >
 		</>
 	);
 };
