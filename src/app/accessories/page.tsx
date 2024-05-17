@@ -47,7 +47,7 @@ const Accessories: React.FC = () => {
 				</p>
 			</div>
 			{/* <div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12"> */}
-			<div className="grid gap-y-8 ml-56 mr-56 mb-4">
+			<div className="md:w-3/5 grid gap-y-8 mx-8 md:mx-auto mb-4">
 				<div>
 					<Segmented
 						options={["Accessories", "Parts"]}
@@ -102,7 +102,7 @@ const Accessories: React.FC = () => {
 			<Dialog
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
-				className="backdrop:backdrop-blur-md bg-background w-1/2 text-wrap band"
+				className="backdrop:backdrop-blur-md bg-background md:w-1/2 text-wrap band"
 			>
 				<button
 					type="button"
@@ -130,7 +130,7 @@ const Accessories: React.FC = () => {
 						{(displayData as AccessoriesData)?.description && (
 							<>
 								<span className="font-display accentline">
-									Details:
+									Details
 								</span>
 								<div className="w-fit ">
 									{
