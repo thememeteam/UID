@@ -74,11 +74,10 @@
     clip-path: polygon(0% 4rem, 4rem 0%, 100% 0%, 100% calc(100% - 4rem), calc(100% - 4rem) 100%, 0% 100%);
   }
 
-  .infogrid > :nth-child(3n) {
+  .infogrid > :nth-child(4n + 3) {
     grid-column-start: 2;
+    
   }
 
-  .infogrid > :nth-child(4n) {
-    justify-self: end;
-  }
+  
 }
