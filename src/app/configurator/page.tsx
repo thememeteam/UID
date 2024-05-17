@@ -147,12 +147,12 @@ const Configurator: React.FC = () => {
 				/>
 				<div className="px-4">
 					<span className="block my-2">Presets</span>
-					<div className="flex flex-row gap-2">
+					<div className="grid grid-flow-col gap-2">
 						{Object.entries(presets).map(([a, b]) => (
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
 								key={a}
-								className="w-10 h-10"
+								className="aspect-square border border-card-stroke"
 								style={{
 									backgroundColor: `#${b.body.color.getHexString()}`,
 								}}

@@ -26,6 +26,12 @@
     margin-bottom: 1.3rem;
   }
 
+  input[type=color] {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
   /* * {
     outline: 1px solid red;
   } */

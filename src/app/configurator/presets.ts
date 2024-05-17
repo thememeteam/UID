@@ -43,25 +43,6 @@ export const presets = {
             color: new Color(0xdadada)
         }
     },
-    m5cs: {
-        body: {
-            color: new Color(0x002901),
-            roughness: 0.35,
-            metalness: 0
-        },
-        rims: {
-            color: new Color(0x4f4308)
-        },
-        calipers: {
-            color: new Color('black')
-        },
-        interiorBase: {
-            color: new Color("black")
-        },
-        interiorAccent: {
-            color: new Color('white')
-        }
-    },
     white: {
         body: {
             color: new Color(0xdadada),
@@ -81,9 +62,28 @@ export const presets = {
             color: new Color(ACCENT)
         }
     },
+    m5cs: {
+        body: {
+            color: new Color(0x002901),
+            roughness: 0.35,
+            metalness: 0
+        },
+        rims: {
+            color: new Color(0x4f4308)
+        },
+        calipers: {
+            color: new Color('black')
+        },
+        interiorBase: {
+            color: new Color("black")
+        },
+        interiorAccent: {
+            color: new Color('white')
+        }
+    }, 
     blue: {
         body: {
-            color: new Color(0x20337e),
+            color: new Color(0x0fadcc),
             roughness: 0,
             metalness: 0.25
         },
@@ -91,13 +91,13 @@ export const presets = {
             color: new Color(0x8f8f8f)
         },
         calipers: {
-            color: new Color(0x000000)
+            color: new Color(0x0f3686)
         },
         interiorBase: {
             color: new Color("white")
         },
         interiorAccent: {
-            color: new Color(0x7d7d7d)
+            color: new Color(0x0f3686)
         }
     },
     pumpkin: {
@@ -117,6 +117,25 @@ export const presets = {
         },
         interiorAccent: {
             color: new Color(0x4f4f4f)
+        }
+    },
+    galaxy: {
+        body: {
+            color: new Color(0x5400a8),
+            roughness: 0,
+            metalness: 0.8
+        },
+        rims: {
+            color: new Color('black')
+        },
+        calipers: {
+            color: new Color(0xb800a8)
+        },
+        interiorBase: {
+            color: new Color(0x4e195d)
+        },
+        interiorAccent: {
+            color: new Color(0xb800a8)
         }
     }
 };

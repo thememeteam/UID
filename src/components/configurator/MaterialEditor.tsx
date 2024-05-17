@@ -32,7 +32,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 
 	return (
 		<div className="flex flex-col gap-2 my-2">
-			<details className="py-1">
+			<details className="py-1" open>
 				<summary>Body</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
 					<label className="flex flex-row justify-between">
@@ -91,7 +91,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 					</label>
 				</div>
 			</details>
-			<details className="py-1">
+			<details className="py-1" open>
 				<summary>Wheels</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
 					<label className="flex flex-row justify-between">
@@ -126,7 +126,7 @@ const MaterialEditor: React.FC<MaterialEditorProps> = ({ state, dispatch }) => {
 					</label>
 				</div>
 			</details>
-			<details className="py-1">
+			<details className="py-1" open>
 				<summary>Interior</summary>
 				<div className="flex flex-col gap-2 ml-4 mt-2">
 					<label className="flex flex-row justify-between">
