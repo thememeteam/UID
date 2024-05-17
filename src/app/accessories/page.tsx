@@ -11,12 +11,15 @@ import Dialog from "@/components/Dialog";
 import CloseIcon from "@/components/icons/Close";
 
 type Tabs = "Accessories" | "Parts";
+type AccessoriesData = typeof aData[number];
+type PartsData = typeof pData[number];
 
 const Accessories: React.FC = () => {
 	const [filter, setFilter] = useState<string>("");
 	const [currentTab, setCurrentTab] = useState<Tabs>("Accessories");
 	const [isOpen, setIsOpen] = useState<boolean>(false);
-	const [displayData, setDisplayData] = useState(null);
+	const dData = currentTab === "Accessories" ? aData : pData;
+	const [displayData, setDisplayData] = useState<AccessoriesData | PartsData>();
 	const actualData = currentTab === "Accessories" ? aData : pData;
 
 	return (
@@ -41,10 +44,13 @@ const Accessories: React.FC = () => {
 					whatever the road, or the lack thereof, may throw at you.
 				</p>
 			</div>
-			<div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12">
+			{/* <div className="grid gap-y-8 md:w-3/5 mx-8 md:mx-auto mb-12"> */}
+			<div className="grid gap-y-8 ml-56 mr-56">
 				<div>
 					<Segmented
 						options={["Accessories", "Parts"]}
+						selected={currentTab}
+
 						onChange={(e) => setCurrentTab(e as Tabs)}
 					/>
 				</div>
@@ -57,7 +63,7 @@ const Accessories: React.FC = () => {
 					/>
 					<SearchIcon className="w-6 h-full absolute left-0 ml-4 text-secondary" />
 				</div>
-				<div className="grid md:grid-cols-[1fr_1fr_1fr] gap-4">
+				<div className="grid md:grid-cols-2 gap-4">
 					{actualData
 						.filter((e) =>
 							filter
@@ -68,18 +74,18 @@ const Accessories: React.FC = () => {
 							// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 							<div
 								key={item.partNumber}
-								className="p-4 border border-card-stroke rounded text-center grid grid-flow-col items-center hover:cursor-pointer"
-								onClick={() => setIsOpen(true)}
+								className="p-4 border border-card-stroke rounded text-center  items-center hover:cursor-pointer"
+								onClick={() => { setIsOpen(true); setDisplayData(item) }}
 							>
+								{item.url && (
+									<img className=" ml-32 mb-6 mt-6 w-80" src={item.url} />
+								)}
 								<div>
 									<h2 className="text-xl font-bold">
 										{item.name}
 									</h2>
 									<h4>Part number: {item.partNumber}</h4>
 								</div>
-								{item.url && (
-									<img className="w-80" src={item.url} />
-								)}
 							</div>
 						))}
 				</div>
@@ -97,6 +103,18 @@ const Accessories: React.FC = () => {
 						<CloseIcon className="w-6 h-6" />
 					</button>
 				</div>
+				<div>
+					{displayData?.name
+					}</div>
+				<div>
+					{displayData?.partNumber}
+				</div>
+				{
+					(displayData as AccessoriesData)?.description && <div>{(displayData as AccessoriesData).description}</div>
+				}
+				{
+					(displayData as AccessoriesData)?.url && <img  src={(displayData as AccessoriesData).url}   />
+				}
 			</Dialog>
 		</>
 	);
