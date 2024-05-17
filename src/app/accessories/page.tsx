@@ -93,28 +93,35 @@ const Accessories: React.FC = () => {
 			<Dialog
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
-				className="backdrop:backdrop-blur-md"
-			>
-				<div className="bg-background p-8 relative">
-					<button
-						className="absolute right-0 top-0 p-2"
-						onClick={() => setIsOpen(false)}
-					>
-						<CloseIcon className="w-6 h-6" />
-					</button>
+				className="backdrop:backdrop-blur-md bg-background w-1/2 text-wrap band"
+			><div className="mb-10 ">
+					<div className="flex flex-initial  ml-8 ">
+						<div className=" p-8 ">
+							<button
+								className="absolute right-0 top-0 p-2"
+								onClick={() => setIsOpen(false)}
+							>
+								<CloseIcon className="w-6 h-6" />
+							</button>
+							<div className="font-display text-h2 accentline mt-2">
+								{displayData?.name
+								}</div>
+						</div>
+					</div>
+					<div className="ml-16 mr-16 grid" >
+							{
+								(displayData as AccessoriesData)?.url && <img src={(displayData as AccessoriesData).url} />
+							}
+						<div className="mb-6 mt-4">
+							<span>Part number:&nbsp;&nbsp;</span>
+							{displayData?.partNumber}
+						</div>
+							<span className="font-display accentline">Details:</span>
+							{
+								(displayData as AccessoriesData)?.description && <div className="w-fit ">{(displayData as AccessoriesData).description}</div>
+							}
+					</div>
 				</div>
-				<div>
-					{displayData?.name
-					}</div>
-				<div>
-					{displayData?.partNumber}
-				</div>
-				{
-					(displayData as AccessoriesData)?.description && <div>{(displayData as AccessoriesData).description}</div>
-				}
-				{
-					(displayData as AccessoriesData)?.url && <img  src={(displayData as AccessoriesData).url}   />
-				}
 			</Dialog>
 		</>
 	);
