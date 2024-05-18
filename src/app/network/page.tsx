@@ -10,9 +10,9 @@ const Network: React.FC = () => {
 			<iframe
 				title="maps"
 				src="https://www.google.com/maps/d/embed?mid=16b1wRMebZgQuMdUbbN1wZM59MIZAMTk&ehbc=2E312F&noprof=1"
-				className="w-full md:w-96 h-80 md:h-full"
+				className="w-full md:w-96 h-80 md:h-3/4"
 			/>
-			<div className="mt-8 md:mt-0 mx-4">
+			<div className="mt-8 md:mt-0 mx-4 md:h-3/4 overflow-y-hidden">
 				<h1 className="text-h1 font-display accentline">Dealerships</h1>
 				<ul className="overflow-y-scroll self-start max-h-full">
 					<li>
@@ -80,14 +80,6 @@ const Network: React.FC = () => {
 					</li>
 				</ul>
 			</div>
-			{/* <Spacer />
-			<div className="grid pt-16 md:pt-0 max-h-11 md:h-3/5 gap-8 md:grid-cols-[1fr_1fr] items-center">
-				
-				<div className="">
-					
-					
-				</div>
-			</div> */}
 		</div>
 	);
 };
