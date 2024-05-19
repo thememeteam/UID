@@ -82,10 +82,11 @@ const Accessories: React.FC = () => {
 									setDisplayData(item);
 								}}
 							>
-								{item.url && (
+								{(item as AccessoriesData).url && (
 									<img
 										className="mx-auto mb-4 w-80"
-										src={item.url}
+										src={(item as AccessoriesData).url}
+										alt={item.name}
 									/>
 								)}
 								<div>

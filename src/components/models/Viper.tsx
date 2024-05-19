@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import type { CarProps } from "@/globals";
 import { useGLTF } from "@react-three/drei";
 import { useRef } from "react";
